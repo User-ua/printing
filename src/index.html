@@ -5,9 +5,42 @@
     "title":"Главная"
 })
 <body>
-    @@include('html/header.html',{}) 
-    <main><span>Hallo</span></main>
-    <img class="pic" src="img/photo.jpg">    
+    <div class="topsection">
+        @@include('html/header.html',{})
+        <div class="subheader">
+            <div class="subheader__picture">
+                <img src="img/header-picture.png">
+                  </div>
+                <div class="subheader__items">
+                  <div class="titlewrapper" >
+                    <h1 class="titlewrapper__title">Услуги <span class="titlewrapper__title-thred">3D</span>-печати</h1>
+                  </div>
+                  <div>
+                    <div class="subheader__items-one">
+                        <p class="subheader__items-content">Используем готовую модель или поможем 
+                            с проектированием</p>
+                    </div>
+                    
+                  </div>
+                  <div>
+                    <div class="subheader__items-two">
+                        <p class="subheader__items-content">Производим как единичные экземпляры, 
+                            так и выпускаем тиражи</p>
+                    </div>
+                    
+                  </div>
+                  <div>
+                    <div class="subheader__items-three">
+                        <p class="subheader__items-content">Печатаем по технологии FDM и SLA
+                    </div>
+                    
+                    </p>
+                  </div>        
+                </div>
+            </div>
+        </div>   
+    </div>
+     
     @@include('html/footer.html',{})
     <script src="js/app.min.js"></script>
 </body>

@@ -1,17 +1,4 @@
 @import "fonts";
-
-header {
-    color: red;
-}
-
-body {
-    background: black;
-    span {
-        color: green;
-    }
-}
-
-.pic {
-    width: 50px;
-    height: 50px;
-}
+@import "header";
+@import "top";
+@import "nullstyle";
