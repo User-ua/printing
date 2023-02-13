@@ -9,62 +9,136 @@
     <title>Главная</title>
 </head>
 <body>
-    <div class="topsection">
-        <header>
+  <section class="topsection">
+    <header>
   <div class="wrapper">
-    <img class="logo" src="img/logo.png"> 
-    <div class="navadaptiv">
-      <div class="navadaptiv__button"></div>
-    </div>
-    <nav class="nav">
+    <a href="/" class="logo">
+      <img class="logo-img" src="img/logo.png">
+    </a> 
+    <nav class="nav nav--open nav-block">
+      <button class="button button--menu button--open">
+        <span class="visually-hidden">Menu</span>
+        <svg class="button__icon button__icon--open" width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="26" height="2" rx="1" fill="white"/>
+          <rect x="12" y="8" width="14" height="2" rx="1" fill="white"/>
+          <rect x="5" y="16" width="21" height="2" rx="1" fill="white"/>
+        </svg>
+        <svg class="button__icon button__icon--close" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="#fff">
+              <path d="M14 12.3503L19.775 6.57532L21.4246 8.22498L15.6496 14L21.4246 19.775L19.775 21.4246L14 15.6496L8.22498 21.4246L6.57532 19.775L12.3503 14L6.57532 8.22498L8.22498 6.57532L14 12.3503Z" fill="white"/>
+          </g>
+        </svg>
+      </button>
       <ul class="nav__list">
         <li class="nav__item"><a class="nav__link" href="about_us.html">3D-печать</a></li>
         <li class="nav__item"><a class="nav__link" href="projects.html">3D-моделирование</a></li>
-        <li class="nav__item"><a class="nav__link" href="installation.html">Контакты</a></li>
-        <li><button class="button" type="button">Рассчитать стоимость</button></li>
+        <li class="nav__item--and"><a class="nav__link" href="installation.html">Контакты</a></li>
+        <li class="nav__item--btn"><button class="button" type="button">Рассчитать стоимость</button></li>
       </ul>
     </nav>
   </div> 
 </header>
-        <div class="subheader">
-            <div class="subheader__picture">
-                <img src="img/header-picture.png">
-                  </div>
-                <div class="subheader__items">
-                  <div class="titlewrapper" >
-                    <h1 class="titlewrapper__title">Услуги <span class="titlewrapper__title-thred">3D</span>-печати</h1>
-                  </div>
-                  <div class="subheader__block">
-                    <div class="subheader__items-one"></div>
-                        <p class="subheader__items-content">Используем готовую модель или поможем 
-                            с проектированием</p>
-                    
-             
-                  </div>
-                  <div class="subheader__block">
-                    <div class="subheader__items-two"></div>
-                        <p class="subheader__items-content">Производим как единичные экземпляры, 
-                            так и выпускаем тиражи</p>
-                    
-                    
-                  </div>
-                  <div class="subheader__block">
-                    <div class="subheader__items-three"></div>
-                        <p class="subheader__items-content">Печатаем по технологии FDM и SLA
-                    
-                    
-                    </p>
-                  </div>        
-                </div>
-                <div class="bg-adaptive-bottum">
-                <img src="img/bg_adaptive_bottum.png">
-                </div>
-
-                 
-            </div>
-        </div>   
+    <div class="subheader">
+      <div class="subheader__picture">
+        <img src="img/header-picture.png">
+      </div>
+      <div class="subheader__items">
+        <div class="titlewrapper" >
+          <h1 class="titlewrapper__title">Услуги <span class="titlewrapper__title-thred">3D</span>-печати</h1>
+        </div>
+        <div class="subheader__block">
+          <div class="subheader__items-one"></div>
+          <p class="subheader__items-content">Используем готовую модель или поможем с проектированием</p>
+        </div>
+        <div class="subheader__block">
+          <div class="subheader__items-two"></div>
+          <p class="subheader__items-content">Производим как единичные экземпляры, так и выпускаем тиражи</p>
+        </div>
+        <div class="subheader__block">
+          <div class="subheader__items-three"></div>
+          <p class="subheader__items-content">Печатаем по технологии FDM и SLA</p>
+        </div>        
+      </div>
+      <div class="bg-adaptive-bottum">
+        <img src="img/bg_adaptive_bottum.png">
+      </div>
     </div>
-     
+  </section>
+
+  <section class="manufacturing">
+    <h2 class="title">Изготовим что угодно</h2>
+    <div class="manufacturing-wrapper adaptiv-wrapper">
+      <div class="manufacturing-item-one adaptiv-wrapper__item">
+        <p class="content-title adaptiv-wrapper__item--title">Промышленные прототипы</p>
+        <p class="content-text adaptiv-wrapper__item--text">Для испытания образцов перед началом производства</p>
+      </div>
+      <div class="manufacturing-item-two manufacturing-block">
+        <p class="content-title manufacturing-block__title">Архитектурные макеты</p>
+        <p class="content-text manufacturing-block__text">Для наглядной презентации ваших проектов</p>
+      </div>
+      <div class="manufacturing-item-three manufacturing-block">
+        <p class="content-title manufacturing-block__title">Ювелирные изделия</p>
+        <p class="content-text manufacturing-block__text">Для придания индивидуального стиля</p>
+      </div>
+      <div class="manufacturing-item-four manufacturing-block">
+        <p class="content-title manufacturing-block__title">Скульптуры</p>
+        <p class="content-text manufacturing-block__text">Для творческой декорации интерьера</p>
+      </div>
+      <div class="manufacturing-item-five manufacturing-block">
+        <p class="content-title manufacturing-block__title">Инженерные детали</p>
+        <p class="content-text manufacturing-block__text">Для воплощения в жизнь смелых идей</p>
+      </div>
+      <div class="manufacturing-item-six manufacturing-block">
+        <p class="content-title manufacturing-block__title">Презентационные макеты</p>
+        <p class="content-text manufacturing-block__text">Для демонстрации на выставках или на витринах</p>
+      </div>
+      <div class="manufacturing-item-seven manufacturing-block">
+        <p class="content-title manufacturing-block__title">Медицинские 
+          и образовательные модели</p>
+        <p class="content-text manufacturing-block__text">Для использования в качестве учебных пособий</p>
+      </div>
+      <div class="manufacturing-item-eight manufacturing-block">
+        <p class="content-title manufacturing-block__title">Автозапчасти</p>
+        <p class="content-text manufacturing-block__text">Для замены редких или снятых с производства деталей</p>
+      </div>
+      <div class="manufacturing-item-nine manufacturing-block">
+        <p class="content-title manufacturing-block__title">Сувенирная продукция</p>
+        <p class="content-text manufacturing-block__text">Для создания необычных и запоминающихся даров</p>
+      </div>
+    </div>
+  </section>   
+    <section class="work">
+    <h2 class="work-title title">Как мы работаем </h2>
+    <div class="work-wrapper">
+      <!--<div class="work-adaptiv">
+        <div class="work-adaptiv__picture"></div>
+      </div>-->
+      <div class="work-container">
+        <div class="work-container__picture"></div>
+      </div>
+      <div class="work-empty"></div>
+      <div class="work-list">
+        <div class="work-list">
+          <p class="work-list__content">Составление заявки на просчёт стоимости и сроков</p>
+        </div>
+        <div class="work-list__two">
+          <p class="work-list__content">Предоплата работы</p>
+        </div>
+        <div class="work-list__three">
+          <p class="work-list__content">Создание и согласование 3D-модели</p>
+        </div>
+        <div class="work-list__four">
+          <p class="work-list__content">Предоплата работы</p>
+        </div>
+        <div class="work-list__five">
+          <p class="work-list__content">
+            Отправка клиенту после оплаты остатка
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>   
+
     <footer></footer>
     <script src="js/app.min.js"></script>
 </body>

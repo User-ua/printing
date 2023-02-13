@@ -25,6 +25,7 @@ import {images} from './mygulp/tasks/images.js';
 import {otfToTtf, ttfToWoff, fontsStyle} from './mygulp/tasks/fonts.js';
 import {zip} from './mygulp/tasks/zip.js';
 import {ftp} from './mygulp/tasks/ftp.js';
+import {svgSprive} from './mygulp/tasks/svgSprive.js';
 
 //Наблюдатель за изменениями в файлах
 function watcher () {
@@ -34,6 +35,8 @@ function watcher () {
     gulp.watch (path.watch.js, js);
     gulp.watch (path.watch.img, images);
 }
+
+export { svgSprive }
 
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 

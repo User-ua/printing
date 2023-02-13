@@ -18,10 +18,11 @@ export const path = {
     },
     src: {
         js: `${srcFolder}/js/app.js`,
-        img: `${srcFolder}/img/**/*.{jpg,png}`,
+        img: `${srcFolder}/img/**/*.{jpg,png,svg}`,
         scss: `${srcFolder}/scss/style.scss`,
         html: `${srcFolder}/*.html`,
         files: `${srcFolder}/files/**/*.*`,
+        svgicons: `${srcFolder}/svgicons/*.svg`,
     },
     watch: {
         js: `${srcFolder}/js/**/*.js`,

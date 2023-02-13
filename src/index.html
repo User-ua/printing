@@ -5,47 +5,78 @@
     "title":"Главная"
 })
 <body>
-    <div class="topsection">
-        @@include('html/header.html',{})
-        <div class="subheader">
-            <div class="subheader__picture">
-                <img src="img/header-picture.png">
-                  </div>
-                <div class="subheader__items">
-                  <div class="titlewrapper" >
-                    <h1 class="titlewrapper__title">Услуги <span class="titlewrapper__title-thred">3D</span>-печати</h1>
-                  </div>
-                  <div class="subheader__block">
-                    <div class="subheader__items-one"></div>
-                        <p class="subheader__items-content">Используем готовую модель или поможем 
-                            с проектированием</p>
-                    
-             
-                  </div>
-                  <div class="subheader__block">
-                    <div class="subheader__items-two"></div>
-                        <p class="subheader__items-content">Производим как единичные экземпляры, 
-                            так и выпускаем тиражи</p>
-                    
-                    
-                  </div>
-                  <div class="subheader__block">
-                    <div class="subheader__items-three"></div>
-                        <p class="subheader__items-content">Печатаем по технологии FDM и SLA
-                    
-                    
-                    </p>
-                  </div>        
-                </div>
-                <div class="bg-adaptive-bottum">
-                <img src="img/bg_adaptive_bottum.png">
-                </div>
-
-                 
-            </div>
-        </div>   
+  <section class="topsection">
+    @@include('html/header.html',{})
+    <div class="subheader">
+      <div class="subheader__picture">
+        <img src="img/header-picture.png">
+      </div>
+      <div class="subheader__items">
+        <div class="titlewrapper" >
+          <h1 class="titlewrapper__title">Услуги <span class="titlewrapper__title-thred">3D</span>-печати</h1>
+        </div>
+        <div class="subheader__block">
+          <div class="subheader__items-one"></div>
+          <p class="subheader__items-content">Используем готовую модель или поможем с проектированием</p>
+        </div>
+        <div class="subheader__block">
+          <div class="subheader__items-two"></div>
+          <p class="subheader__items-content">Производим как единичные экземпляры, так и выпускаем тиражи</p>
+        </div>
+        <div class="subheader__block">
+          <div class="subheader__items-three"></div>
+          <p class="subheader__items-content">Печатаем по технологии FDM и SLA</p>
+        </div>        
+      </div>
+      <div class="bg-adaptive-bottum">
+        <img src="img/bg_adaptive_bottum.png">
+      </div>
     </div>
-     
+  </section>
+
+  <section class="manufacturing">
+    <h2 class="title">Изготовим что угодно</h2>
+    <div class="manufacturing-wrapper adaptiv-wrapper">
+      <div class="manufacturing-item-one adaptiv-wrapper__item">
+        <p class="content-title adaptiv-wrapper__item--title">Промышленные прототипы</p>
+        <p class="content-text adaptiv-wrapper__item--text">Для испытания образцов перед началом производства</p>
+      </div>
+      <div class="manufacturing-item-two manufacturing-block">
+        <p class="content-title manufacturing-block__title">Архитектурные макеты</p>
+        <p class="content-text manufacturing-block__text">Для наглядной презентации ваших проектов</p>
+      </div>
+      <div class="manufacturing-item-three manufacturing-block">
+        <p class="content-title manufacturing-block__title">Ювелирные изделия</p>
+        <p class="content-text manufacturing-block__text">Для придания индивидуального стиля</p>
+      </div>
+      <div class="manufacturing-item-four manufacturing-block">
+        <p class="content-title manufacturing-block__title">Скульптуры</p>
+        <p class="content-text manufacturing-block__text">Для творческой декорации интерьера</p>
+      </div>
+      <div class="manufacturing-item-five manufacturing-block">
+        <p class="content-title manufacturing-block__title">Инженерные детали</p>
+        <p class="content-text manufacturing-block__text">Для воплощения в жизнь смелых идей</p>
+      </div>
+      <div class="manufacturing-item-six manufacturing-block">
+        <p class="content-title manufacturing-block__title">Презентационные макеты</p>
+        <p class="content-text manufacturing-block__text">Для демонстрации на выставках или на витринах</p>
+      </div>
+      <div class="manufacturing-item-seven manufacturing-block">
+        <p class="content-title manufacturing-block__title">Медицинские 
+          и образовательные модели</p>
+        <p class="content-text manufacturing-block__text">Для использования в качестве учебных пособий</p>
+      </div>
+      <div class="manufacturing-item-eight manufacturing-block">
+        <p class="content-title manufacturing-block__title">Автозапчасти</p>
+        <p class="content-text manufacturing-block__text">Для замены редких или снятых с производства деталей</p>
+      </div>
+      <div class="manufacturing-item-nine manufacturing-block">
+        <p class="content-title manufacturing-block__title">Сувенирная продукция</p>
+        <p class="content-text manufacturing-block__text">Для создания необычных и запоминающихся даров</p>
+      </div>
+    </div>
+  </section>   
+    @@include('html/how-work.html',{})
     @@include('html/footer.html',{})
     <script src="js/app.min.js"></script>
 </body>

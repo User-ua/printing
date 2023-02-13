@@ -1,15 +1,27 @@
 <header>
   <div class="wrapper">
-    <img class="logo" src="img/logo.png"> 
-    <div class="navadaptiv">
-      <div class="navadaptiv__button"></div>
-    </div>
-    <nav class="nav">
+    <a href="/" class="logo">
+      <img class="logo-img" src="img/logo.png">
+    </a> 
+    <nav class="nav nav--open nav-block">
+      <button class="button button--menu button--open">
+        <span class="visually-hidden">Menu</span>
+        <svg class="button__icon button__icon--open" width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="26" height="2" rx="1" fill="white"/>
+          <rect x="12" y="8" width="14" height="2" rx="1" fill="white"/>
+          <rect x="5" y="16" width="21" height="2" rx="1" fill="white"/>
+        </svg>
+        <svg class="button__icon button__icon--close" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="#fff">
+              <path d="M14 12.3503L19.775 6.57532L21.4246 8.22498L15.6496 14L21.4246 19.775L19.775 21.4246L14 15.6496L8.22498 21.4246L6.57532 19.775L12.3503 14L6.57532 8.22498L8.22498 6.57532L14 12.3503Z" fill="white"/>
+          </g>
+        </svg>
+      </button>
       <ul class="nav__list">
         <li class="nav__item"><a class="nav__link" href="about_us.html">3D-печать</a></li>
         <li class="nav__item"><a class="nav__link" href="projects.html">3D-моделирование</a></li>
-        <li class="nav__item"><a class="nav__link" href="installation.html">Контакты</a></li>
-        <li><button class="button" type="button">Рассчитать стоимость</button></li>
+        <li class="nav__item--and"><a class="nav__link" href="installation.html">Контакты</a></li>
+        <li class="nav__item--btn"><button class="button" type="button">Рассчитать стоимость</button></li>
       </ul>
     </nav>
   </div> 
