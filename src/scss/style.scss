@@ -1,8 +1,18 @@
-@import "fonts";
-@import "./blocks/header";
-@import "top";
 @import "nullstyle";
-@import "./blocks/buttons";
-@import "./blocks/nav";
+@import "fonts";
+@import "top";
 @import "manufacturing";
 @import "how-work";
+@import "price";
+@import "question";
+@import "footer";
+
+@import "./blocks/header";
+@import "./blocks/logo";
+@import "./blocks/button";
+@import "./blocks/nav";
+@import "./blocks/product-card";
+@import "./blocks/form_1_3";
+
+
+

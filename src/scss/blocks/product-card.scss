@@ -1,0 +1,35 @@
+.product-card {
+    margin-right: 30px;
+    position: relative;
+    background: rgba(10,144,66,0.1);
+    border-radius: 35px;
+    height: 284px;
+    width: 320px;
+    
+    &__title {
+        text-align: center;
+        transform: translateY(130px);
+        margin-left: 53px;
+        margin-right: 53px;
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        color: #2C2F36;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: #2C2F36;
+        transform: translateY(136px);
+        margin-left: 46px;
+        margin-right: 46px;
+    }
+}
