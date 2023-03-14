@@ -7,36 +7,23 @@
 <body>
   <section class="topsection">
     @@include('html/header.html',{})
-    <div class="subheader">
-      <div class="subheader__picture">
-        <img src="img/header-picture.png">
+    <div class="topsection-wrapper">
+      <img class="topsection-wrapper__picture" src="img/header-picture.png">
+      <div class="title-wrapper" >
+        <h1 class="title title__top title__top--breakWord">Услуги <span class="title__top--breakWord"><span class="title-wrapper__thred title-wrapper__thred--home">3D</span>-печати</span></h1>
       </div>
-      <div class="subheader__items">
-        <div class="title-wrapper" >
-          <h1 class="title-wrapper__title">Услуги <span class="title-wrapper__title-thred">3D</span>-печати</h1>
-        </div>
-        <div class="subheader__block">
-          <div class="subheader__items-one"></div>
-          <p class="subheader__items-content">Используем готовую модель или поможем с проектированием</p>
-        </div>
-        <div class="subheader__block">
-          <div class="subheader__items-two"></div>
-          <p class="subheader__items-content">Производим как единичные экземпляры, так и выпускаем тиражи</p>
-        </div>
-        <div class="subheader__block">
-          <div class="subheader__items-three"></div>
-          <p class="subheader__items-content">Печатаем по технологии FDM и SLA</p>
-        </div>        
-      </div>
-      <div class="bg-adaptive-bottum">
-        <img src="img/bg_adaptive_bottum.png">
-      </div>
+      <ul class="topsection-wrapper__list">
+        <li class="topsection-wrapper__item topsection-wrapper__item--house"><p class="topsection-wrapper__content topsection-wrapper__content--house">Используем готовую модель или поможем с проектированием</p></li>
+        <li class="topsection-wrapper__item topsection-wrapper__item--stack"><p class="topsection-wrapper__content topsection-wrapper__content--stack">Производим как единичные экземпляры, так и выпускаем тиражи</p></li>
+        <li class="topsection-wrapper__item topsection-wrapper__item--printer"><p class="topsection-wrapper__content topsection-wrapper__content--printer">Печатаем по технологии FDM и SLA</p></li>
+      </ul>
     </div>
+    <img class="bg-adaptive" src="img/bg_adaptive_bottum.png">
   </section>
 
   <section class="manufacturing">
     <div class="manufacturing__wrapper">
-      <h2 class="manufacturing__title title-secondary">Изготовим что угодно</h2>
+      <h2 class="title-secondary title-secondary--manufacturing">Изготовим что угодно</h2>
       <div class="list-wrapper">
         <ul class="product-list">
           <li class="product-list__item">
@@ -115,76 +102,9 @@
         </ul>
       </div>
     </div>
-  </section>
-     
+  </section>   
   @@include('html/how-work.html',{})
-
-  <section class="price">
-    <div class="price__bg"><img class="price__bg--desktop" src="img/price_bg_top_adaptive.png"></div>
-    <div class="price__wrapper">
-      <div class="price__title-container">
-        <h2 class="title-secondary price__title">Рассчитать стоимость <span class="price__thred">3D</span>-печати</h2>
-      </div>
-      <div class="price-container">
-        <div class="promo">
-          <div class="promo__wrapper">
-            <div class="promo__menu">
-              <p class="promo__menu--materials">Материалы</p> 
-              <p class="promo__menu--printer">Принтеры</p>
-            </div>
-            <div class="promo__line"></div>
-            <p class="promo__abs">ABS PRO (FDM)</p>
-            <p class="promo__abs--text">ABS-пластик - ударопрочная техническая термопластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
-            <div class="promo__abs--line"></div>
-            <p class="promo__content">PLA (FDM)</p>
-            <div class="promo__line-text"></div>
-            <p class="promo__content">ELASTAN (FDM)</p>
-            <div class="promo__line-text"></div>
-            <p class="promo__content">COPET (FDM)</p>
-            <div class="promo__line-text"></div>
-            <p class="promo__content">NYLON CARBON (FDM)</p>
-            <div class="promo__line-text"></div>
-            <p class="promo__content">TANGO (POLYJET)</p>
-            <div class="promo__line-text"></div>
-            <p class="promo__content">VERO WHITE (POLYJET)</p>
-            <div class="promo__line-text"></div>
-            <p class="promo__content">VERO CLEAR (POLYJET)</p>
-            <div class="promo__line-text"></div> 
-          </div>
-        </div>
-        <div class="price-form">
-          <div class="price-form__wrapper">
-            <h3 class="form-stap">Шаг 1 из 3</h3>
-            <div class="form-indicator">
-              <div class="form-indicator__active"></div>
-              <div class="form-indicator__dot"></div>
-              <div class="form-indicator__passive"></div>
-              <div class="form-indicator__dot"></div>
-              <div class="form-indicator__passive"></div>
-            </div>
-            <div class="photo-upload">
-              <p class="photo-upload__text">Кликните, чтобы прикрепить 3D модель или фото</p>
-            </div>
-            <div class="foto-information">
-              <div class="foto-information__title"><p class="foto-information__content">Допустимые расширения:</p></div>
-              <p class="foto-information__content">.jpg, .jpeg, .png, .gif, .pdf, .psd, .ai, .max, .cdr, .3ds, .stl, .igs, .model, .mxp, .obj, .wrl, .3dm, .fbx, .matpart, .matamx, .zip, .rar, .7z, .skp, .dae, .ply, .magics, .mgx, .x3d, .x3dv, .3mf, .stp, .step, .prt, .zpr</p></div>
-            <div class="foto-information__size">
-              <p class="foto-information__content">Максимальный размер файла:</p>
-              <p class="foto-information__content">10 Мб</p>
-            </div>
-            <div class="foto-link">
-              <p class="foto-link__content">Или добавьте ссылку на макет в облаке (Dropbox, Mega, Google Drive и т.п.)</p>
-            </div>
-            <div class="form-nav">
-              <button class="button button__next" type="button">Назад</button>
-              <button class="button button__prev" type="button">далее</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--<div class="price__bg--bottom"><img class="price__bg--desktop" src="img/price_bg_adbottom.png"></div>-->
-  </section>
+  @@include('html/prise.html',{})
   @@include('html/question.html',{})
   @@include('html/footer.html',{})
     <script src="js/app.js"></script>

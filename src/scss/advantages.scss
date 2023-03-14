@@ -1,0 +1,145 @@
+.advantages {
+    &__wrapper {
+        margin-left: 15px;
+        margin-bottom: 100px;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        margin-bottom: 27px;
+        background: radial-gradient(98.97% 276.64% at 1.03% 40.7%, #EBF6FF 0%, #EFF8FF 100%);
+        width: 345px;
+        height: 201px;
+        border-radius: 35px;
+        padding: 32px 36px 37px 146px;
+
+        &--text {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            color: #2C2F36;
+        }
+    }
+
+    &__item-boldtext {
+        position: relative;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        color: #2C2F36;
+        margin-bottom: 16px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-color: white;
+            width: 98px;
+            height: 98px;
+            border-radius: 49px;
+            left: -120px;
+            top: 0px;
+        }
+
+        &--list {
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url("../img/advantages-list.png");
+                background-repeat: no-repeat;
+                z-index: 5;
+                width: 40px;
+                height: 40px;
+                left: -88px;
+                top: 29px;
+            }
+        }
+
+        &--spiral {
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url("../img/advantages-spiral.png");
+                background-repeat: no-repeat;
+                z-index: 5;
+                width: 40px;
+                height: 40px;
+                left: -88px;
+                top: 29px;
+            }
+        }
+
+        &--arrow {
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url("../img/advantages-arrow.png");
+                background-repeat: no-repeat;
+                z-index: 5;
+                width: 47px;
+                height: 40px;
+                left: -92px;
+                top: 33px;
+            }
+        }
+
+        &--truck {
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url("../img/advantages-truck.png");
+                background-repeat: no-repeat;
+                z-index: 5;
+                width: 44px;
+                height: 40px;
+                left: -88px;
+                top: 33px;
+            }
+        }
+
+        &--stack {
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url("../img/advantages-stack.png");
+                background-repeat: no-repeat;
+                z-index: 5;
+                width: 40px;
+                height: 43px;
+                left: -88px;
+                top: 29px;
+            }
+        }
+    }   
+}
+
+@media (min-width: 900px) {
+    .advantages {
+        &__wrapper {
+            width: 1170px;
+            margin: 0 auto;
+            margin-bottom: 211px;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-rows: 204px 204px;
+            grid-template-columns: 370px 370px 370px;
+            grid-row-gap: 30px;
+            grid-column-gap: 30px;
+        }
+    
+        &__item {
+            margin-bottom: 0;
+            padding-left: 162px;
+            padding-right: 45px;
+            width: 370px;
+        }
+    }
+}
+    
+
+
+

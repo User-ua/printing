@@ -4,28 +4,25 @@
         margin-right: 15px;
         margin-bottom: 194px;
     }
-
-    &__title {
-        width: 345px;
-        margin-bottom: 113px;
-    }    
 }
-
-.title-secondary {
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 59px;
-    color: #2C2F36;
-}    
 
 .list-wrapper {
     position: relative;
     margin-bottom: 100px;
+    overflow-x: auto;
+    overflow-y: hidden; 
+}
+
+.list-wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 .product-list {
     position: relative;
     display: flex;
+    margin-top: 80px;
+    
 
     &__item {
         list-style: none;
@@ -155,17 +152,17 @@
     }
 }
 
-
-
 @media (min-width: 900px) {
     .manufacturing {
         max-width: 1170px;
         margin: 0 auto;
         margin-bottom: 194px;
-    }
+    }   
 
     .list-wrapper {
         position: static;
+        overflow-y: visible;
+        overflow-x: visible;
     }
 
     .product-list {

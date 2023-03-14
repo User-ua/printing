@@ -7,17 +7,11 @@
     margin-bottom: 100px;
 
     &__wrapper {
-        margin-left: 24px;
-        margin-right: 24px;
-
-        &--title {
-            padding-top: 50px;
-            margin-bottom: 25px;
-        }
+        padding-top: 50px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
-    &__title {
-        width: 282px;
-    }
+    
     &__text {
         font-weight: 500;
         font-size: 16px;
@@ -56,6 +50,16 @@
     color: #959CAC;
     margin-bottom: 24px;
     padding-left: 24px;
+    border-style: none;
+
+    &:hover {
+        border: 3px solid #FB8C00; 
+    }
+
+    &:focus {
+        outline: none;
+        border: 3px solid #FB8C00; 
+    }
 
     &__your-question {
         height: 200px;
@@ -75,18 +79,12 @@
     
         &__wrapper {
             display: flex;
-            margin-left: 0;
-            margin-right: 0;
-    
-            &--title {
-                padding-top: 0;
-                margin-bottom: 24px;
-            }
+            padding: 70px;
         }
 
         &__info {
-            margin: 70px 35px 70px 70px;
             width: 50%;
+            margin-right: 35px;
         }
 
         &__title {
@@ -99,7 +97,7 @@
 
         &__input {
             width: 50%;
-            margin: 70px 70px 70px 35px;
+            margin-left: 35px;
         }
 
         &__comment {
@@ -111,13 +109,10 @@
 
     .form-label {
         display: flex;
-        &__block {
-            display: flex;
-            flex-direction: column;
-        }
     }
+
     .input {
-        width: 210px;
+        width: 222px;
         height: 50px;
         margin-bottom: 24px;
         padding-left: 24px;

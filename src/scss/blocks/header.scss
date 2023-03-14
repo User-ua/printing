@@ -1,6 +1,6 @@
 .header {
     &__wrapper {
-        max-width: 1170px;
+        
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -9,5 +9,16 @@
         padding-top: 20px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+}
+
+@media (min-width: 900px) {
+    .header {
+        &__wrapper {
+            max-width: 1170px;
+            padding-top: 24px;
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 }

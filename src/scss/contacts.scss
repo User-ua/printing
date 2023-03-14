@@ -1,0 +1,70 @@
+.contacts {
+    &__wrapper {
+        margin-left: 15px;
+    }
+
+    &__wrapper-info {
+        margin-bottom: 67px;
+    }
+}
+
+.map {
+    position: relative;
+    margin-bottom: 100px;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url("../img/contacts_elipse.png");
+        background-repeat: no-repeat;
+        z-index: -5;
+        width: 375px;
+        height: 375px;
+        left: 0;
+        top: 35px;
+    }
+
+    &__desktop {
+        display: none;
+    }
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 900px) {
+    .contacts {
+        &__wrapper {
+            display: flex;
+            margin: 0 auto;
+            width: 1170px;
+        }
+
+        &__wrapper-info {
+            width: 33.3%;
+        }
+    }
+
+    .map {
+        width: 66.7%;
+        padding-left: 103px;
+
+        &::after {
+            width: 400px;
+            height: 400px;
+            left: 500px;
+            top: 300px;
+        }
+
+        &__adaptiv {
+            display: none;
+        }
+
+        &__desktop {
+            display: block;
+            border-radius: 35px;
+        }
+    }
+}

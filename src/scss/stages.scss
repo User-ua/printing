@@ -1,0 +1,165 @@
+.stages {
+    &__wrapper {
+        margin-bottom: 5px;
+        margin-left: 15px;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__point {
+        display: none;
+    }
+
+    &__item {
+        position: relative;
+        width: 345px;
+        height: 246px;
+        background-color: white;
+        border-radius: 35px;
+        margin-bottom: 93px;
+        box-shadow: 0px 4px 68px rgba(32, 52, 91, 0.08);
+        padding-left: 40px;
+        padding-top: 40px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            background: #FB8C00;
+            width: 310px;
+            height: 4px;
+            border-radius: 0 0 60px 60px;
+            top: 240px;
+            left: 15px;
+        }
+
+        &--title {
+            width: 204px;
+            margin-bottom: 42px;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 29px;
+            color: #2C2F36;
+        }
+
+        &--title-one {
+            &::after {
+                position: absolute;
+                content: "01";
+                color: #2F80ED;
+                opacity: 0.3;
+                z-index: -20;
+                font-weight: 700;
+                font-size: 110px;
+                line-height: 145px;
+                width: 50px;
+                height: 50px; 
+                font-family: Helvetica, sans-serif;
+                top:-100px;
+                left: 50px;
+            }
+        }
+
+        &--title-two {
+            &::after {
+                position: absolute;
+                content: "02";
+                color: #2F80ED;
+                opacity: 0.3;
+                z-index: -20;
+                font-weight: 700;
+                font-size: 110px;
+                line-height: 145px;
+                width: 50px;
+                height: 50px; 
+                font-family: Helvetica, sans-serif;
+                top:-100px;
+                left: 50px;
+            }
+        }
+
+        &--title-three {
+            &::after {
+                position: absolute;
+                content: "03";
+                color: #2F80ED;
+                opacity: 0.3;
+                z-index: -20;
+                font-weight: 700;
+                font-size: 110px;
+                line-height: 145px;
+                width: 50px;
+                height: 50px; 
+                font-family: Helvetica, sans-serif;
+                top:-100px;
+                left: 50px;
+            }
+        }
+
+        &--text {
+            width: 265px;
+            margin-bottom: 36px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            align-items: flex-end;
+            color: #2C2F36;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .stages {
+        &__wrapper {
+            margin: 0 auto;
+            width: 1170px;
+        }
+        
+        &__list {
+            display: flex;
+        }
+
+        &__point {
+            position: relative;
+            display: block;
+            width: 8px;
+            height: 8px;
+            margin-right: 11px;
+            top: 120px;
+
+            &::after {
+                position: absolute;
+                content: "";;
+                background-image: url("../img/stages-litle-point.png");
+                width: 4px;
+                height: 4px;
+                left: -5px;
+                top: 9px;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url("../img/stages-litle-point.png");
+                width: 4px;
+                height: 4px;
+                left: 9px;
+                top: 9px;
+            }
+        }
+    
+        &__item {
+            width: 370px;
+            margin-right: 11px;
+
+            &--three {
+                margin-right: 0;
+            }
+
+            &::after {
+                width: 330px;  
+            }
+        }
+    }
+}

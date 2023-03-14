@@ -1,0 +1,108 @@
+.title-wrapper {
+    margin-bottom: 183px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 76px;
+    color: #2C2F36;
+
+    &__top {
+        width: 350px;
+
+        &--breakWord {
+            display: block;
+          }
+    }
+
+    &__desktop {
+        &--modeling {
+            width: 300px;
+        }
+    }
+}
+
+.title-secondary {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 59px;
+    color: #2C2F36;
+    width: 345px;
+
+    &--manufacturing {
+        margin-bottom: 30px;
+    }
+    
+    &--prise {
+        margin-bottom: 64px;
+        width: 310px;  
+    }
+
+    &--question {
+        width: 282px;
+        margin-bottom: 24px;
+    }
+
+    &--advantages {
+        background: none;
+        width: 370px;
+        margin-bottom: 60px;
+    }
+
+    &--sales {
+        margin-bottom: 64px;
+    }
+
+    &--stages {
+        width: 345px;
+        margin-bottom: 121px;
+    }
+}
+
+@media (min-width: 900px) {
+    .title-wrapper {
+        margin-bottom: 199px;
+    }
+
+    .title {
+        &__top {
+            width: auto;
+            font-size: 72px;
+            line-height: 88px;
+        }
+
+        &__desktop {
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 59px;
+        }
+    }
+
+    .title-secondary {
+        width: auto;
+
+        &--manufacturing {
+            margin-bottom: 129px;
+            width: auto;
+        }
+        
+        &--work {
+            margin-bottom: 64px;
+        }
+
+        &--advantages {
+            margin-bottom: 0;
+            padding-top: 32px;
+        }
+
+        &--sales {
+            margin-bottom: 64px;
+        }
+
+        &--stages {
+            width: 470px;
+            margin-bottom: 125px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.price {
+    &__thred {
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 59px;
+        color: #FB8C00
+    }
+}
+.title-wrapper {
+    &__thred {
+        position: relative;
+        font-weight: 800;
+        font-size: 62px;
+        line-height: 76px;
+        color: #FB8C00;
+
+        &--home {
+            &::before {
+                position: absolute;
+                content: "";
+                width: 72px;
+                height: 3px;
+                background-color:  #FB8C00;
+                left: 0px;
+                top: 115px;
+            }
+        }
+    }
+} 
+
+.three-d-line {
+    width: 72px;
+    height: 3px;
+    background-color:  #FB8C00;
+    margin-bottom: 32px;
+}
+

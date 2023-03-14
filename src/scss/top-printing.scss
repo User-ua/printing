@@ -1,0 +1,34 @@
+.top-printing {
+    background: rgba(10,144,66,0.1);
+
+    &__title-wrapper {
+        margin-top: 78px;
+        margin-left: 15px;
+        margin-bottom: 100px; 
+
+        &--desktop {
+            display: none;
+        }
+    }
+}
+
+
+@media (min-width: 900px) {
+    .top-printing {
+        max-width: 1600px;
+        margin: 0 auto;
+        
+        &__title-wrapper {
+            width: 1170px;
+            margin: 0 auto;
+            
+            &--adaptiv {
+                display: none;
+            }
+
+            &--desktop {
+                display: block;
+            }
+        }
+    }
+}

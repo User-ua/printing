@@ -8,20 +8,63 @@
 
     &__wrapper {
         margin-left: 15px;
+    }
+
+    &__block {
         margin-top: 20px;
     }
 
     &__text {
         margin-bottom: 45px;
-
     }
 
-    .footer__content {
+    &__line {
+        width: auto;
+        height: 4px;
+        background: #B4BBCE;
+        opacity: 0.3;
+        border-radius: 38px;
+        margin-bottom: 27px;
+
+        &--contact {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__content {
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
         color: #2C2F36;
         margin-bottom: 13px;
+    }
+
+    &__year {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #2C2F36;
+        margin-bottom: 11px;
+    }
+
+    &__made-in {
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #B4BBCE;
+        padding-bottom: 27px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(../img/heart.png);
+            background-repeat: no-repeat;
+            width: 10px;
+            height: 10px;
+            top: 2px;
+            left: 157px;
+        }
     }
 }
 
@@ -35,6 +78,10 @@
         font-size: 24px;
         line-height: 29px;
         color: #2C2F36;
+
+        &--contact {
+            margin-bottom: 12px;
+        }
     }
 }
 
@@ -47,6 +94,10 @@
         font-size: 14px;
         line-height: 16px;
         color: #2C2F36;
+
+        &--contact {
+            margin-bottom: 15px;
+        }
     }
 
     &__email-wrapper {
@@ -58,26 +109,40 @@
         font-size: 14px;
         line-height: 16px;
         color: #2F80ED;
+
+        &--contact {
+            margin-bottom: 15px;
+        }
     }
 }
 
 .button-link {
     display: flex;
+    margin-bottom: 33px;
+
+    &--contact {
+        margin-bottom: 40px;
+    }
 }
 
 @media (min-width: 900px) {
     .footer {
         background: rgba(10,144,66,0.1);
         max-width: 1600px;
-        height: 415px;
         margin: 0 auto;
+
+        &__wrapper {
+            margin-left: 0;
+            margin: 0 auto;
+            max-width: 1170px;
+        }
     
         &__bg {
             background-size: cover;
             background-repeat: no-repeat;
         }
     
-        &__wrapper {
+        &__block {
             max-width: 1170px;
             margin: 0 auto;
             display: flex;
@@ -87,6 +152,26 @@
     
         &__text {
             padding-left: 75px; 
+        }
+
+        &__line {
+            &--contact {
+                margin-bottom: 60px;
+            }
+        }
+
+        &__rights {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__year {
+            margin-bottom: 0;
+        }
+
+        &__made-in {
+            margin-bottom: 0;
+            margin-right: 20px;
         }
     }
 
@@ -144,5 +229,10 @@
     .button-link {
         display: flex;
         justify-content: end;
+
+        &--contact {
+            margin-bottom: 60px;
+            justify-content: start;
+        }
     }
 }

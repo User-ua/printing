@@ -1,13 +1,94 @@
+/*nav*/
+
 const openButtonElement = document.querySelector(".button--menu");
 const openNavElement = document.querySelector(".nav");
-
 const buttonClickHandler = function() {
     openNavElement.classList.toggle("nav--open"); 
     openButtonElement.classList.toggle("button--open");     
 }
 openButtonElement.addEventListener("click", buttonClickHandler);
 
-let left = 0;
+/*fotm-block*/
+
+const prevButtonElementStapOne = document.querySelector(".button__prev--stap-one");
+const prevButtonElementStapTwo = document.querySelector(".button__prev--stap-two");
+const prevButtonElementStepThree = document.querySelector(".button__prev--stap-three");
+const nextButtonElement = document.querySelector(".button__next");
+
+const priseFormStapOne = document.querySelector(".form-block--stap-one");
+const priseFormStapTwo = document.querySelector(".form-block--stap-two");
+const priseFormStapThree = document.querySelector(".form-block--stap-three");
+const smileForm = document.querySelector(".smile");
+const clickHandlerStapOne = function() {
+    priseFormStapTwo.classList.toggle("form-block--clouse"); 
+    priseFormStapOne.classList.toggle("form-block--clouse");     
+}
+const clickHandlerStapTwo = function() {
+    priseFormStapTwo.classList.toggle("form-block--clouse"); 
+    priseFormStapThree.classList.toggle("form-block--clouse");     
+}
+const clickHandlerStapThree = function() {
+    priseFormStapThree.classList.toggle("form-block--clouse"); 
+    smileForm.classList.toggle("form-block--clouse");     
+}
+
+/*const smileFormHandler = function() {
+    priseFormStapTwo.classList.toggle("price-form--clouse"); 
+    priseFormStapOne.classList.toggle("price-form--clouse");     
+}*/
+
+prevButtonElementStapOne.addEventListener("click", clickHandlerStapOne);
+prevButtonElementStapTwo.addEventListener("click", clickHandlerStapTwo);
+prevButtonElementStepThree.addEventListener("click", clickHandlerStapThree);
+/*nextButtonElement.addEventListener("click", nextClickHandler);*/
+
+/*prevButtonElement.forEach (prevButtonElementItem => {
+    prevButtonElementItem.addEventListener("click", nextClickHandler)
+    });*/
+
+
+/*slider*/
+
+let offset = 0;
+const sliderline = document.querySelector(".slider-container__line");
+
+document.querySelector (".slider-button--next").addEventListener ("click", 
+function () {
+    offset +=490;
+    if (offset > 1000) {
+        offset = 980;
+    }
+    sliderline.style.left = -offset + "px";
+});
+
+document.querySelector (".slider-button--prev").addEventListener ("click", 
+function () {
+    offset -=490;
+    if (offset < -1000) {
+        offset = -980;
+    }
+    sliderline.style.left = -offset + "px";
+});
+
+/*servises*/
+
+const fdmTechnology = document.querySelector(".technologies-block--fdm");
+const slaTechnology = document.querySelector(".technologies-block--sla");
+
+fdmTechnology.addEventListener("click",
+function () {
+    fdmTechnology.classList.toggle("technologies-block--open");   
+});
+
+slaTechnology.addEventListener("click",
+function () {
+    slaTechnology.classList.toggle("technologies-block--open");   
+});
+
+
+
+
+/*let left = 0;
 const sliderElement = document.querySelector(".product-list");
 const sliderLine = document.querySelector(".list-wrapper");
 const sliderElementkHandler = function(e) {
@@ -30,7 +111,7 @@ sliderElement.addEventListener("wheel", sliderElementkHandler);
 
 
 
-/*let n = 10;
+let n = 10;
 for (let index = 0; index < n; index++){ 
         console.log(index)
     } 

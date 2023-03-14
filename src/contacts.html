@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+    "title":"Главная"
+})
+
+<section class="top-printing">
+    @@include('html/header.html',{})
+      <div class="top-printing__title-wrapper" >
+        <h1 class="title title__top">Контакты</h1>
+      </div>
+      <img class="bg-adaptive" src="img/bg_adaptive_bottum.png">
+      <img class="bg-bottom" src="img/modeling-header-bottom.png">
+  </section>
+
+  <section class="contacts">
+    <div class="contacts__wrapper">
+        <div class="contacts__wrapper-info">
+            <p class="contact__telefon-namber contact__telefon-namber--contact">+38 (097) 999-99-99</p>
+            <p class="info__adress info__adress--contact">г. Киев, ул. Гагарина 25/68</p>  
+            <p class="info__email info__email--contact">pochta@gmail.com</p> 
+            <div class="button-link button-link--contact">
+            <div class="button-link__youtube">
+                <button class="button__youtube" type="button"></button>
+            </div>
+            <div class="button-link__facebook">
+                <button class="button__facebook" type="button"></button>
+            </div>
+            </div>
+            <div class="footer__line footer__line--contact"></div>
+            <p class="form-block__text form-block__text--contact">Свяжитесь с нами</p>
+            <label class="label">
+                <input class="form-block__input form-block__input--contact" placeholder="Ваше имя">
+            </label>
+            <label class="label">
+                <input class="form-block__input form-block__input--contact" placeholder="Ваш телефон">
+            </label>
+            <label class="label">
+                <input class="form-block__input form-block__input--contact form-block__input--contact-massage" placeholder="Ваше сообщение">
+            </label>
+            <button class="button button--contact">Напишите нам</button>
+            <div class="footer__rights">
+                <div class="footer__year">@2021. Все права защищены</div>
+                <div class="footer__made-in">Сделано в Webnauts c </div>  
+            </div>
+        </div>
+        <div class="map">
+            <div class="map__adaptiv"><iframe class="map-link" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2674.535367165515!2d33.40516269685724!3d47.90667768341852!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40db20bcd8b1c511%3A0xf36a67b5e31cac50!2z0K7QndCY0KLQkNCb!5e0!3m2!1sru!2sua!4v1668266638071!5m2!1sru!2sua" width="375" height="347" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="map__desktop"><iframe class="map-link" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2674.535367165515!2d33.40516269685724!3d47.90667768341852!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40db20bcd8b1c511%3A0xf36a67b5e31cac50!2z0K7QndCY0KLQkNCb!5e0!3m2!1sru!2sua!4v1668266638071!5m2!1sru!2sua" width="668" height="527" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          </div>
+      </div>
+      
+      
+  </section>
+
+
+  @@include('html/footer.html',{})
+    <script src="js/app.js"></script>
+</body>
+</html>

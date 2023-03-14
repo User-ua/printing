@@ -7,8 +7,23 @@
     border-radius: 88px;
     padding: 13px 30px;
 
+    &--upload {
+        padding: 8px 24px;
+        background-color: #B4BBCE;
+        margin-bottom: 31px;
+    }
+
     &:hover {
         background: #2F80ED;
+    }
+
+    &--contact {
+        padding: 14px 89px;
+        margin-bottom: 16px;
+    }
+
+    &--not-found {
+        padding: 14px 80px;
     }
 
     &--menu {
@@ -19,6 +34,8 @@
         align-items: center;
         justify-content: center;
 
+        
+
         & .button__icon {
             &--close {
                 display: none;
@@ -27,7 +44,7 @@
 
         &.button--open {
             margin-top: 20px;
-            margin-right: 15px;
+            
             & .button__icon {
                 &--open {
                     display: none;
@@ -36,6 +53,7 @@
                 &--close {
                     display: block;
                 }
+
             }    
         }   
     }
@@ -44,6 +62,10 @@
         background: #B4BBCE;
         border-radius: 37px;
         padding: 8px 34px;
+
+        &--smile {
+            padding: 14px 56px;
+        }
 
         &:hover {
             background: #2C2F36;
@@ -59,6 +81,10 @@
     &__form {
         margin-bottom: 16px;
         padding: 14px 44px;
+    }
+
+    &__send {
+        display: none;
     }
 }
 
@@ -133,21 +159,35 @@
         position: relative;
 
         &::before {
-            position: absolute;
-            content: "";
-            width: 10.5px;
-            height: 20px;
-            background-image: url('../img/face_wite.png');
-            background-repeat: no-repeat;
-            top: 11px;
-            left: 17px;
+        position: absolute;
+        content: "";
+        width: 10.5px;
+        height: 20px;
+        background-image: url('../img/face_wite.png');
+        background-repeat: no-repeat;
+        top: 11px;
+        left: 17px;
         }
     }
 }
 
+.button-block {
+    display: flex;
+    justify-content: space-between;
+}
 
 @media (min-width: 900px) {
     .button {
+        &--upload {
+            margin-bottom: 0;
+            margin-left: 24px;
+        }
+
+        &__send {
+            display: block;
+            padding: 14px 64px 14px 89px;
+        }
+
         &--menu {
             display: none;
         }
@@ -164,6 +204,71 @@
             margin-bottom: 0;
             padding: 14px 76px;
             margin-right: 30px;
+        }
+    }
+
+    .slider-button {
+        position: relative;
+        border: none;
+        width: 46px;
+        height: 46px;   
+        background: #FF7129;
+        box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+        border-radius: 50px;
+
+        &--next {
+            margin-right: 24px;
+            &::after {
+                position: absolute;
+                content: "";
+                background: white;
+                width: 10px;
+                height: 2px;    
+                transform:rotate(45deg);
+                top: 24px;
+                left: 17px;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                background: white;
+                width: 10px;
+                height: 2px;    
+                transform:rotate(-45deg);
+                top: 18px;
+                left: 17px;
+            }
+        }
+
+        &--prev {
+            &::after {
+                position: absolute;
+                content: "";
+                background: white;
+                width: 10px;
+                height: 2px;    
+                transform:rotate(45deg);
+                top: 18px;
+                left: 20px;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                background: white;
+                width: 10px;
+                height: 2px;    
+                transform:rotate(-45deg);
+                top: 24px;
+                left: 20px;
+            }
+        }
+    }
+
+    .button-block {
+        &--terms {
+            display: none;
         }
     }
 }
