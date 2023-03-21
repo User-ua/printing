@@ -10,12 +10,12 @@
     position: relative;
     margin-bottom: 100px;
     overflow-x: auto;
-    overflow-y: hidden; 
-}
-
-.list-wrapper::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+    overflow-y: hidden;
+    
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
 }
 
 .product-list {

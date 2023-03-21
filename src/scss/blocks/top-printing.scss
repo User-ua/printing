@@ -2,9 +2,9 @@
     background: rgba(10,144,66,0.1);
 
     &__title-wrapper {
-        margin-top: 78px;
-        margin-left: 15px;
-        margin-bottom: 100px; 
+        padding-top: 78px;
+        padding-left: 15px;
+        padding-bottom: 100px; 
 
         &--desktop {
             display: none;
@@ -20,6 +20,7 @@
         
         &__title-wrapper {
             width: 1170px;
+            padding-left: 0;
             margin: 0 auto;
             
             &--adaptiv {

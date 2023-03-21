@@ -5,151 +5,153 @@
     "title":"Про нас"
 })
 <body>
-    <section class="top-printing">
-        @@include('html/header.html',{})
-        <div class="top-printing__title-wrapper"> 
-            <h1 class="title title__desktop"><span class="title-wrapper__thred title-wrapper__thred--printing">3D</span>-печать</span></h1>
-        </div>
-        <img class="bg-adaptive" src="img/bg_adaptive_bottum.png">
-        <img class="bg-bottom" src="img/modeling-header-bottom.png">
-    </section>
-    <section class="services">
-        <div class="services__wrapper">
-            <div class="services__offer">
-                <p class="services__offer--text">Предлагаем услуги 3D-печати для производства прототипов или готовых изделий любой формы, цвета и прочности. Готовы производить как единичные экземпляры, так и целые партии для мелких и больших производств.</p>
-                <div class="three-d-line"></div>
+    @@include('html/header.html',{})
+    <main class="main">
+        <section class="top-printing">
+            <div class="top-printing__title-wrapper"> 
+                <h1 class="title title__desktop"><span class="title-wrapper__thred title-wrapper__thred--printing">3D</span>-печать</span></h1>
             </div>
-            <div class="technologies">
-                <p class="technologies__text">В нашей студии используются две основных технологии печати:</p>
-                <div class="technologies-block technologies-block--fdm">
-                    <div class="technologies-block__description technologies-block__description--title"><p class="technologies-block__description--content">FDM</p></div>
-                    <div class="technologies-block__description technologies-block__description--text">Печать методом аддитивного производства: расплавленный пластик (или другой филамент) наносится слой за слоем для построения объекта. Для создания изделий из широкого спектра материалов с различными характеристиками и свойствами.</div>
+            <img class="bg-adaptive" src="img/bg_adaptive_bottum.png">
+            <img class="bg-bottom" src="img/modeling-header-bottom.png">
+        </section>
+        <section class="services services-block">
+            <div class="services__wrapper">
+                <div class="services__offer">
+                    <p class="services__offer--text">Предлагаем услуги 3D-печати для производства прототипов или готовых изделий любой формы, цвета и прочности. Готовы производить как единичные экземпляры, так и целые партии для мелких и больших производств.</p>
+                    <div class="three-d-line"></div>
                 </div>
-                <div class="technologies-block technologies-block--sla">
-                    <div class="technologies-block__description technologies-block__description--title"><p class="technologies-block__description--content">SLA</p></div>
-                    <div class="technologies-block__description technologies-block__description--text">Печать методом аддитивного производства: расплавленный пластик (или другой филамент) наносится слой за слоем для построения объекта. Для создания изделий из широкого спектра материалов с различными характеристиками и свойствами.</div>
-                </div>
-                <p class="technologies__text">Благодаря высокой точности проработки и качеству материалов можем быть полезны для целого ряда отраслей: промышленных стартапов, автомобильного производства, сферы архитектуры и медицины, сувениров и произведений искусства.</p>
-            </div>
-        </div>
-    </section>
-    @@include('html/slider.html',{})
-    <section class="advantages">
-        <div class="advantages__wrapper">
-            <ul class="advantages__list">
-                <li class="advantages__item--title"><h2 class="title-secondary--advantages title-secondary">Наши преимущества</h2></li>
-                <li class="advantages__item">
-                    <p class="advantages__item-boldtext advantages__item-boldtext--list">Полный спектр услуг</p>
-                    <p class="advantages__item--text">3D-моделирование, печать изделий, постобработка</p>
-                </li>
-                <li class="advantages__item">
-                    <p class="advantages__item-boldtext advantages__item-boldtext--spiral">Высокая точность</p>
-                    <p class="advantages__item--text">От 20 до 300 микрон</p>
-                </li>
-                <li class="advantages__item">
-                    <p class="advantages__item-boldtext advantages__item-boldtext--arrow">Скорость выполнения</p>
-                    <p class="advantages__item--text">На производство изделий уходит от 1 до 3 дней</p>
-                </li>
-                <li class="advantages__item">
-                    <p class="advantages__item-boldtext advantages__item-boldtext--truck">Доставка по всей Украине</p>
-                    <p class="advantages__item--text">Осуществляем доставку Новой Почтой</p>
-                </li>
-                <li class="advantages__item">
-                    <p class="advantages__item-boldtext advantages__item-boldtext--stack">Производство тиражами</p>
-                    <p class="advantages__item--text">Печатаем в количестве от 1 до 1000 штук</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    @@include('html/how-work.html',{})
-    <section class="sales">
-        <img class="total__bg" src="img/price_bg_top_adaptive.png">
-        <img class="total__bg--desktop" src="img/price_bg_top.png">
-        <div class="sales__wrapper">
-            <h2 class="title-secondary title-secondary--sales">Цены</h2>
-            <div class="sales-container">
-                <div class="sales-container__wrapper">
-                    <div class="sales-container__menu">
-                      <p class="sales-container__menu--fdm">FDM</p> 
-                      <p class="sales-container__menu--sla">SLA</p>
+                <div class="technologies">
+                    <p class="technologies__text">В нашей студии используются две основных технологии печати:</p>
+                    <div class="technologies-block technologies-block--fdm">
+                        <div class="technologies-block__description technologies-block__description--title"><p class="technologies-block__description--content">FDM</p></div>
+                        <div class="technologies-block__description technologies-block__description--text">Печать методом аддитивного производства: расплавленный пластик (или другой филамент) наносится слой за слоем для построения объекта. Для создания изделий из широкого спектра материалов с различными характеристиками и свойствами.</div>
                     </div>
-                    <p class="sales-container__method">Метод послойного наплавления, применяется для широкого спектра материалов.</p>
-                    
-                    <ul class="sales-container__list">
-                        <li class="sales-container__item sales-container__item--desktop sales-container__item--desktop-header"><p class="sales-container__material sales-container__material--row sales-container__material--row-top">Материал/Высота слоя</p>
-                        <p class="sales-container__standart">Стандартные (ABS, PLA)</p></li>
-                        <li class="sales-container__item sales-container__item--header">
-                            <p class="sales-container__material sales-container__material--row">Стандартное качество 300 микрон</p>
-                            <p class="sales-container__prise">от 4 грн/грамм</p>
-                        </li>
-                        <li class="sales-container__item sales-container__item--header">
-                            <p class="sales-container__material sales-container__material--row">Оптимальное качество 200 микрон</p>
-                            <p class="sales-container__prise">от 5,6 грн/грамм</p>
-                        </li>
-                        <li class="sales-container__item sales-container__item--header">
-                            <p class="sales-container__material sales-container__material--row">Высокое качество 100 микрон</p>
-                            <p class="sales-container__prise">от 8,9 грн/грамм</p>
-                        </li>
-                    </ul>
-                    <div class="sales-container__line"></div>
-                    <p class="sales-container__material">Материал/Высота слоя</p>
-                    <ul class="sales-container__list sales-container__list--color">
-                        <li class="sales-container__item sales-container__item--desktop"><p class="sales-container__standart">Высокопрочные и ударостойкие</p></li>
-                        <li class="sales-container__item">
-                            <p class="sales-container__material">Стандартное качество 300 микрон</p>
-                            <p class="sales-container__prise">от 4,2 грн/грамм</p>
-                        </li>
-                        <li class="sales-container__item">
-                            <p class="sales-container__material">Оптимальное качество 200 микрон</p>
-                            <p class="sales-container__prise">от 5,8 грн/грамм</p>
-                        </li>
-                        <li class="sales-container__item">
-                            <p class="sales-container__material">Высокое качество 100 микрон</p>
-                            <p class="sales-container__prise">от 8,9 грн/грамм</p>
-                        </li>
-                    </ul>
-                    <div class="sales-container__line"></div>
-                    <p class="sales-container__material">Материал/Высота слоя</p>
-                    <ul class="sales-container__list">
-                        <li class="sales-container__item sales-container__item--desktop"> <p class="sales-container__standart">Гибкие и резиноподобные</p></li>
-                        <li class="sales-container__item">
-                            <p class="sales-container__material">Стандартное качество 300 микрон</p>
-                            <p class="sales-container__prise">от 5,5 грн/грамм</p>
-                        </li>
-                        <li class="sales-container__item">
-                            <p class="sales-container__material">Оптимальное качество 200 микрон</p>
-                            <p class="sales-container__prise">от 7,1 грн/грамм</p>
-                        </li>
-                        <li class="sales-container__item">
-                            <p class="sales-container__material">Высокое качество 100 микрон</p>
-                            <p class="sales-container__prise">от 10,4 грн/грамм</p>
-                        </li>
-                    </ul>
-                    <div class="sales-container__line"></div>
-                    <p class="sales-container__material">Материал/Высота слоя</p>
-                    <ul class="sales-container__list sales-container__list--color">
-                        <li class="sales-container__item sales-container__item--desktop"><p class="sales-container__standart">Декоративные и специальные</p></li>
-                        <li class="sales-container__item sales-container__item--reverse">
-                            <p class="sales-container__material">Стандартное качество 300 микрон</p>
-                            <p class="sales-container__prise">от 4,5 грн/грамм</p>
-                        </li>
-                        <li class="sales-container__item sales-container__item--reverse">
-                            <p class="sales-container__material">Оптимальное качество 200 микрон</p>
-                            <p class="sales-container__prise">от 6,1 грн/грамм</p>
-                        </li>
-                        <li class="sales-container__item sales-container__item--reverse">
-                            <p class="sales-container__material">Высокое качество 100 микрон</p>
-                            <p class="sales-container__prise">от 9,4 грн/грамм</p>
-                        </li>
-                    </ul>
+                    <div class="technologies-block technologies-block--sla">
+                        <div class="technologies-block__description technologies-block__description--title"><p class="technologies-block__description--content">SLA</p></div>
+                        <div class="technologies-block__description technologies-block__description--text">Печать методом аддитивного производства: расплавленный пластик (или другой филамент) наносится слой за слоем для построения объекта. Для создания изделий из широкого спектра материалов с различными характеристиками и свойствами.</div>
+                    </div>
+                    <p class="technologies__text">Благодаря высокой точности проработки и качеству материалов можем быть полезны для целого ряда отраслей: промышленных стартапов, автомобильного производства, сферы архитектуры и медицины, сувениров и произведений искусства.</p>
                 </div>
-            </div> 
-        </div>
-        @@include('html/prise.html',{})
-    </section>
-    
-    @@include('html/question.html',{})  
-    
+            </div>
+        </section>
+        @@include('html/slider.html',{})
+        <section class="advantages">
+            <div class="advantages__wrapper">
+                <ul class="advantages__list">
+                    <li class="advantages__item--title"><h2 class="title-secondary--advantages title-secondary">Наши преимущества</h2></li>
+                    <li class="advantages__item">
+                        <p class="advantages__item-boldtext advantages__item-boldtext--list">Полный спектр услуг</p>
+                        <p class="advantages__item--text">3D-моделирование, печать изделий, постобработка</p>
+                    </li>
+                    <li class="advantages__item">
+                        <p class="advantages__item-boldtext advantages__item-boldtext--spiral">Высокая точность</p>
+                        <p class="advantages__item--text">От 20 до 300 микрон</p>
+                    </li>
+                    <li class="advantages__item">
+                        <p class="advantages__item-boldtext advantages__item-boldtext--arrow">Скорость выполнения</p>
+                        <p class="advantages__item--text">На производство изделий уходит от 1 до 3 дней</p>
+                    </li>
+                    <li class="advantages__item">
+                        <p class="advantages__item-boldtext advantages__item-boldtext--truck">Доставка по всей Украине</p>
+                        <p class="advantages__item--text">Осуществляем доставку Новой Почтой</p>
+                    </li>
+                    <li class="advantages__item">
+                        <p class="advantages__item-boldtext advantages__item-boldtext--stack">Производство тиражами</p>
+                        <p class="advantages__item--text">Печатаем в количестве от 1 до 1000 штук</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        @@include('html/how-work.html',{})
+        <section class="sales">
+            <img class="total__bg" src="img/price_bg_top_adaptive.png">
+            <img class="total__bg--desktop" src="img/price_bg_top.png">
+            <div class="sales__wrapper">
+                <h2 class="title-secondary title-secondary--sales">Цены</h2>
+                <div class="sales-container">
+                    <div class="sales-container__wrapper">
+                        <div class="sales-container__menu">
+                          <p class="sales-container__menu--fdm">FDM</p> 
+                          <p class="sales-container__menu--sla">SLA</p>
+                        </div>
+                        <p class="sales-container__method">Метод послойного наплавления, применяется для широкого спектра материалов.</p>
+                        
+                        <ul class="sales-container__list">
+                            <li class="sales-container__item sales-container__item--desktop sales-container__item--desktop-header">
+                                <p class="sales-container__material sales-container__material--row sales-container__material--row-top">Материал/Высота слоя</p>
+                                <p class="sales-container__standart">Стандартные (ABS, PLA)</p>
+                            </li>
+                            <li class="sales-container__item sales-container__item--header">
+                                <p class="sales-container__material sales-container__material--row">Стандартное качество 300 микрон</p>
+                                <p class="sales-container__prise">от 4 грн/грамм</p>
+                            </li>
+                            <li class="sales-container__item sales-container__item--header">
+                                <p class="sales-container__material sales-container__material--row">Оптимальное качество 200 микрон</p>
+                                <p class="sales-container__prise">от 5,6 грн/грамм</p>
+                            </li>
+                            <li class="sales-container__item sales-container__item--header">
+                                <p class="sales-container__material sales-container__material--row">Высокое качество 100 микрон</p>
+                                <p class="sales-container__prise">от 8,9 грн/грамм</p>
+                            </li>
+                        </ul>
+                        <div class="sales-container__line"></div>
+                        <p class="sales-container__material">Материал/Высота слоя</p>
+                        <ul class="sales-container__list sales-container__list--color">
+                            <li class="sales-container__item sales-container__item--desktop"><p class="sales-container__standart">Высокопрочные и ударостойкие</p></li>
+                            <li class="sales-container__item">
+                                <p class="sales-container__material">Стандартное качество 300 микрон</p>
+                                <p class="sales-container__prise">от 4,2 грн/грамм</p>
+                            </li>
+                            <li class="sales-container__item">
+                                <p class="sales-container__material">Оптимальное качество 200 микрон</p>
+                                <p class="sales-container__prise">от 5,8 грн/грамм</p>
+                            </li>
+                            <li class="sales-container__item">
+                                <p class="sales-container__material">Высокое качество 100 микрон</p>
+                                <p class="sales-container__prise">от 8,9 грн/грамм</p>
+                            </li>
+                        </ul>
+                        <div class="sales-container__line"></div>
+                        <p class="sales-container__material">Материал/Высота слоя</p>
+                        <ul class="sales-container__list">
+                            <li class="sales-container__item sales-container__item--desktop"> <p class="sales-container__standart">Гибкие и резиноподобные</p></li>
+                            <li class="sales-container__item">
+                                <p class="sales-container__material">Стандартное качество 300 микрон</p>
+                                <p class="sales-container__prise">от 5,5 грн/грамм</p>
+                            </li>
+                            <li class="sales-container__item">
+                                <p class="sales-container__material">Оптимальное качество 200 микрон</p>
+                                <p class="sales-container__prise">от 7,1 грн/грамм</p>
+                            </li>
+                            <li class="sales-container__item">
+                                <p class="sales-container__material">Высокое качество 100 микрон</p>
+                                <p class="sales-container__prise">от 10,4 грн/грамм</p>
+                            </li>
+                        </ul>
+                        <div class="sales-container__line"></div>
+                        <p class="sales-container__material">Материал/Высота слоя</p>
+                        <ul class="sales-container__list sales-container__list--color">
+                            <li class="sales-container__item sales-container__item--desktop"><p class="sales-container__standart">Декоративные и специальные</p></li>
+                            <li class="sales-container__item sales-container__item--reverse">
+                                <p class="sales-container__material">Стандартное качество 300 микрон</p>
+                                <p class="sales-container__prise">от 4,5 грн/грамм</p>
+                            </li>
+                            <li class="sales-container__item sales-container__item--reverse">
+                                <p class="sales-container__material">Оптимальное качество 200 микрон</p>
+                                <p class="sales-container__prise">от 6,1 грн/грамм</p>
+                            </li>
+                            <li class="sales-container__item sales-container__item--reverse">
+                                <p class="sales-container__material">Высокое качество 100 микрон</p>
+                                <p class="sales-container__prise">от 9,4 грн/грамм</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+            @@include('html/prise.html',{})
+        </section>
+        @@include('html/question.html',{})
+    </main>  
     @@include('html/footer.html',{})
     <script src="js/app.js"></script>
 </body>

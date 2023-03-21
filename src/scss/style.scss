@@ -1,12 +1,12 @@
 @import "nullstyle";
 @import "fonts";
-@import "top";
-@import "manufacturing";
-@import "how-work";
-@import "price";
-@import "question";
-@import "footer";
 
+@import "./blocks/top";
+@import "./blocks/manufacturing";
+@import "./blocks/how-work";
+@import "./blocks/price";
+@import "./blocks/question";
+@import "./blocks/footer";
 @import "./blocks/header";
 @import "./blocks/logo";
 @import "./blocks/button";
@@ -17,16 +17,15 @@
 @import "./blocks/smile";
 @import "./blocks/bg";
 @import "./blocks/title";
-
-@import "top-printing";
-@import "services";
-@import "slider";
-@import "advantages";
-@import "sales";
-@import "stages";
-@import "terms";
-@import "contacts";
-@import "not-found";
+@import "./blocks/advantages";
+@import "./blocks/contacts";
+@import "./blocks/top-printing";
+@import "./blocks/services";
+@import "./blocks/slider";
+@import "./blocks/sales";
+@import "./blocks/stages";
+@import "./blocks/terms";
+@import "./blocks/not-found";
 
 
 

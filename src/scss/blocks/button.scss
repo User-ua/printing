@@ -178,6 +178,22 @@
 
 @media (min-width: 900px) {
     .button {
+        position: relative;
+        padding: 13px 30px 13px 58px;
+
+        &--nav {
+            &::before {
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 16px;
+                background-image: url('../img/button-icon.png');
+                background-repeat: no-repeat;
+                top: 15px;
+                left: 35px;
+            }
+        }
+
         &--upload {
             margin-bottom: 0;
             margin-left: 24px;

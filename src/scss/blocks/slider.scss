@@ -15,7 +15,16 @@
 
 .slider-container {
     width: auto;
-    overflow: hidden;
+    position: relative;
+    margin-bottom: 100px;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+
     &__line {
         display: flex;
         list-style: none;

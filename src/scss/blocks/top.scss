@@ -8,6 +8,7 @@
 
 .topsection-wrapper {
     margin-left: 15px;
+    padding-top: 100px;
 
     &__picture {       
         background-size: cover;
@@ -127,7 +128,7 @@
         position: relative;
         margin: 0 auto;
         max-width: 1170px;
-        margin-top: 108.47px;
+        padding-top: 150px;
 
         &__picture {
             position: absolute;
@@ -136,7 +137,7 @@
             width: 813px;
             height: 501px;
             left: 625px;
-            top: -30px;
+            top: 120px;
         }
 
         &__list {

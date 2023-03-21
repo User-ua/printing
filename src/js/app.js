@@ -1,3 +1,7 @@
+const sliderElement = document.querySelector(".slider");
+const servisesElement = document.querySelector(".services-block");
+const fotmBlockElement = document.querySelector(".form-block-index");
+
 /*nav*/
 
 const openButtonElement = document.querySelector(".button--menu");
@@ -13,33 +17,39 @@ openButtonElement.addEventListener("click", buttonClickHandler);
 const prevButtonElementStapOne = document.querySelector(".button__prev--stap-one");
 const prevButtonElementStapTwo = document.querySelector(".button__prev--stap-two");
 const prevButtonElementStepThree = document.querySelector(".button__prev--stap-three");
-const nextButtonElement = document.querySelector(".button__next");
+const nextButtonSmileElement = document.querySelector(".button__next--smile");
+const nextButtonElementStapTwo = document.querySelector(".button__next--stap-two");
+const nextButtonElementStepThree = document.querySelector(".button__next--stap-three");
 
 const priseFormStapOne = document.querySelector(".form-block--stap-one");
 const priseFormStapTwo = document.querySelector(".form-block--stap-two");
 const priseFormStapThree = document.querySelector(".form-block--stap-three");
 const smileForm = document.querySelector(".smile");
-const clickHandlerStapOne = function() {
-    priseFormStapTwo.classList.toggle("form-block--clouse"); 
-    priseFormStapOne.classList.toggle("form-block--clouse");     
-}
-const clickHandlerStapTwo = function() {
-    priseFormStapTwo.classList.toggle("form-block--clouse"); 
-    priseFormStapThree.classList.toggle("form-block--clouse");     
-}
-const clickHandlerStapThree = function() {
-    priseFormStapThree.classList.toggle("form-block--clouse"); 
-    smileForm.classList.toggle("form-block--clouse");     
+
+if (fotmBlockElement)
+{
+    const clickHandlerStapOne = function() {
+        priseFormStapTwo.classList.toggle("form-block--clouse"); 
+        priseFormStapOne.classList.toggle("form-block--clouse");     
+    }
+    const clickHandlerStapTwo = function() {
+        priseFormStapTwo.classList.toggle("form-block--clouse"); 
+        priseFormStapThree.classList.toggle("form-block--clouse");     
+    }
+    const clickHandlerStapThree = function() {
+        priseFormStapThree.classList.toggle("form-block--clouse"); 
+        smileForm.classList.toggle("form-block--clouse");     
+    }
+    
+    prevButtonElementStapOne.addEventListener("click", clickHandlerStapOne);
+    prevButtonElementStapTwo.addEventListener("click", clickHandlerStapTwo);
+    prevButtonElementStepThree.addEventListener("click", clickHandlerStapThree);
+    nextButtonSmileElement.addEventListener("click", clickHandlerStapThree);
+    nextButtonElementStapTwo.addEventListener("click", clickHandlerStapOne);
+    nextButtonElementStepThree.addEventListener("click", clickHandlerStapTwo);
 }
 
-/*const smileFormHandler = function() {
-    priseFormStapTwo.classList.toggle("price-form--clouse"); 
-    priseFormStapOne.classList.toggle("price-form--clouse");     
-}*/
 
-prevButtonElementStapOne.addEventListener("click", clickHandlerStapOne);
-prevButtonElementStapTwo.addEventListener("click", clickHandlerStapTwo);
-prevButtonElementStepThree.addEventListener("click", clickHandlerStapThree);
 /*nextButtonElement.addEventListener("click", nextClickHandler);*/
 
 /*prevButtonElement.forEach (prevButtonElementItem => {
@@ -49,7 +59,9 @@ prevButtonElementStepThree.addEventListener("click", clickHandlerStapThree);
 
 /*slider*/
 
-let offset = 0;
+if (sliderElement)
+{
+    let offset = 0;
 const sliderline = document.querySelector(".slider-container__line");
 
 document.querySelector (".slider-button--next").addEventListener ("click", 
@@ -69,13 +81,16 @@ function () {
     }
     sliderline.style.left = -offset + "px";
 });
+}
 
 /*servises*/
 
 const fdmTechnology = document.querySelector(".technologies-block--fdm");
 const slaTechnology = document.querySelector(".technologies-block--sla");
 
-fdmTechnology.addEventListener("click",
+if (servisesElement)
+{
+    fdmTechnology.addEventListener("click",
 function () {
     fdmTechnology.classList.toggle("technologies-block--open");   
 });
@@ -84,69 +99,62 @@ slaTechnology.addEventListener("click",
 function () {
     slaTechnology.classList.toggle("technologies-block--open");   
 });
-
-
-
-
-/*let left = 0;
-const sliderElement = document.querySelector(".product-list");
-const sliderLine = document.querySelector(".list-wrapper");
-const sliderElementkHandler = function(e) {
-    if( window.innerWidth <= 900 ){
-        e.preventDefault();
-        let line = e.deltaY;
-    if (left > -40) {
-        left = -40
-    };
-    if (left < -2640) {
-        left = -2640
-    };
-    left = left - 0.4*line;
-    sliderLine.style.left = left + "px";
-   } else {
-        sliderElementkHandler
-   } 
 }
-sliderElement.addEventListener("wheel", sliderElementkHandler);
 
+const callFormElement = document.querySelector(".button__form");
 
-
-let n = 10;
-for (let index = 0; index < n; index++){ 
+callFormElement.addEventListener("click", formsend);
+let formInput = document.querySelectorAll(".input");
+let className = document.querySelector(".input__name");
+let telefon = document.querySelector(".input__tel");
+let invalidName = document.querySelector(".input-test-name");
+let invalidTelefon = document.querySelector(".input-test-telefon");
+function formsend(e) {
+    e.preventDefault();
+    
+    for (let index = 0; index < formInput.length; index++){
+        const input = formInput[index]
+        formRemuveError(input);
         console.log(index)
-    } 
 
+        if (input.classList.contains("telefon-namber")){
+            if(telTest(input)){
+                formRemuveError(input);
+            } else {
+                formAddError(input);
+            } 
+        }    
+        if(input.value === ""){
+            formAddError(input);
+            invalidName.classList.add("test-failed");
+            invalidTelefon.classList.add("test-failed");
+        }
+    }
+        
+    if (className.classList.contains("error")){
+        invalidName.classList.add("test-failed");
+    } else {
+        invalidName.classList.remove("test-failed");
+    }        
+    if(telefon.classList.contains("error")){
+        invalidTelefon.classList.add("test-failed");
+    } else {
+        invalidTelefon.classList.remove("test-failed");
+    }
+    
+    function formAddError(input){
+        input.parentElement.classList.add("error");
+        input.classList.add("error");
+    }
+    
+    function formRemuveError(input){
+        input.parentElement.classList.remove("error");
+        input.classList.remove("error");
+        
+    }
 
-
-СОБІТИЕ НАВЕДЕНИЕ НА БЛОК
-const sliderElement = document.querySelector(".product-list");
-const sliderElementkHandler = function() {
-    let n = 10;
-for (let index = 0; index < n; index++){ 
-        console.log(index)
-    }    
+    function telTest(input){
+        return/^([0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2})$/.test(input.value);   
+    }
+    
 }
-sliderElement.addEventListener("mouseover", sliderElementkHandler);
-
-
-
-let offset = 0;
-const sliderline = document.querySelector(".slider-line");
-
-document.querySelector (".slider-next").addEventListener ("click", 
-function () {
-    offset +=600;
-    if (offset > 1810) {
-        offset = 0;
-    }
-    sliderline.style.left = -offset + "px";
-});
-
-document.querySelector (".slider-prev").addEventListener ("click", 
-function () {
-    offset -=600;
-    if (offset < 0) {
-        offset = 1800;
-    }
-    sliderline.style.left = -offset + "px";
-});*/

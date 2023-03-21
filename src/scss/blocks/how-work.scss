@@ -1,6 +1,6 @@
 .work {
     margin: 0 auto;
-    margin-left: 15px;
+    padding-left: 15px;
     
 
     &__title {
@@ -21,8 +21,8 @@
             position: absolute;
             content: "";
             z-index: 10;
-            width: 680px;
-            height: 550px;
+            width: 360px;
+            height: 350px;
             background-image: url('../img/ellipse_adaptive.png');
             background-repeat: no-repeat;
             left: -31px;
@@ -33,7 +33,7 @@
             position: absolute;
             content: "";
             z-index: 20;
-            width: 570px;
+            width: 360px;
             height: 336px;
             background-image: url('../img/asset_adaptive.png');
             background-repeat: no-repeat;

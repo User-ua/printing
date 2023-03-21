@@ -292,6 +292,53 @@
     }
 }
 
+.button-clouse {
+    position: relative;
+    left: 300px;
+    top: 15px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button-clouse::before {
+    position: absolute;
+    content: "";
+    background: #FF7129;
+    width: 20px;
+    height: 2px;    
+    transform:rotate(45deg);
+    top: 13px;
+    left: 4px;
+}
+
+.button-clouse::after {
+    position: absolute;
+    content: "";
+    background: #FF7129;
+    width: 20px;
+    height: 2px;    
+    transform:rotate(-45deg);
+    top: 13px;
+    left: 4px;
+}
+
+.button-clouse:hover::before {
+    background: #7B7E85;
+    width: 23px;
+    height: 4px;
+}
+
+.button-clouse:hover::after {
+    background: #7B7E85;
+    width: 23px;
+    height: 4px;
+}
+
+
 
 @media (min-width: 900px) {
     .form-block {
@@ -417,7 +464,7 @@
     
             &--tel-stap-three {
                 width: 590px;
-                margin-bottom: 172px;
+                margin-bottom: 162px;
             }
 
             &--contact {
@@ -493,7 +540,7 @@
     }
 
     .foto-link {
-        margin-bottom: 40px;
+        margin-bottom: 47px;
 
         &__content {
             width: auto;

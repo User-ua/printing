@@ -13,37 +13,9 @@
     }
 
     &__item {
-        position: relative;
-        width: 345px;
-        height: 246px;
-        background-color: white;
-        border-radius: 35px;
-        margin-bottom: 93px;
-        box-shadow: 0px 4px 68px rgba(32, 52, 91, 0.08);
-        padding-left: 40px;
-        padding-top: 40px;
+        &--one {
+            position: relative;
 
-        &::after {
-            position: absolute;
-            content: "";
-            background: #FB8C00;
-            width: 310px;
-            height: 4px;
-            border-radius: 0 0 60px 60px;
-            top: 240px;
-            left: 15px;
-        }
-
-        &--title {
-            width: 204px;
-            margin-bottom: 42px;
-            font-weight: 800;
-            font-size: 24px;
-            line-height: 29px;
-            color: #2C2F36;
-        }
-
-        &--title-one {
             &::after {
                 position: absolute;
                 content: "01";
@@ -61,7 +33,9 @@
             }
         }
 
-        &--title-two {
+        &--two {
+            position: relative;
+
             &::after {
                 position: absolute;
                 content: "02";
@@ -79,7 +53,9 @@
             }
         }
 
-        &--title-three {
+        &--three {
+            position: relative;
+            
             &::after {
                 position: absolute;
                 content: "03";
@@ -96,6 +72,41 @@
                 left: 50px;
             }
         }
+
+        &--block {
+            position: relative;
+            width: 345px;
+            height: 246px;
+            background-color: white;
+            border-radius: 35px;
+            margin-bottom: 93px;
+            box-shadow: 0px 4px 68px rgba(32, 52, 91, 0.08);
+            padding-left: 40px;
+            padding-top: 40px;
+            overflow: hidden;
+
+            &::after {
+                position: absolute;
+                content: "";
+                background: #FB8C00;
+                width: 320px;
+                height: 4px;
+                border-radius: 0 0 60px 60px;
+                top: 242px;
+                left: 15px;
+            }
+        }
+
+        &--title {
+            width: 204px;
+            margin-bottom: 42px;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 29px;
+            color: #2C2F36;
+        }
+
+        
 
         &--text {
             width: 265px;

@@ -2,7 +2,7 @@
     &__wrapper {
         margin-left: 15px;
     }
-
+    
     &__wrapper-info {
         margin-bottom: 67px;
     }
@@ -18,8 +18,8 @@
         background-image: url("../img/contacts_elipse.png");
         background-repeat: no-repeat;
         z-index: -5;
-        width: 375px;
-        height: 375px;
+        width: 350px;
+        height: 350px;
         left: 0;
         top: 35px;
     }
@@ -50,12 +50,14 @@
     .map {
         width: 66.7%;
         padding-left: 103px;
+        height: 800px;
 
         &::after {
-            width: 400px;
-            height: 400px;
-            left: 500px;
-            top: 300px;
+            width: 600px;
+            height: 700px;
+            left: 260px;
+            top: 20px;
+            background-size: 100%;
         }
 
         &__adaptiv {

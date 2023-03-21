@@ -6,125 +6,133 @@
 })
 
     <body>
-        <section class="top-printing">
-            @@include('html/header.html',{})
-            <div class="top-printing__title-wrapper top-printing__title-wrapper--adaptiv">
-                <h1 class="title title__desktop title__desktop--modeling"><span class="title-wrapper__thred title-wrapper__thred--modeling">3D</span>-модели-
-                    рование 
-                    и промыш-
-                    ленный 
-                    дизайн</span></h1>
-            </div>
-            <div class="top-printing__title-wrapper top-printing__title-wrapper--desktop"><h1 class="title title__desktop"><span class="title-wrapper__thred title-wrapper__thred--modeling">3D</span>-моделирование и промышленный дизайн</span></h1></div> 
-            <img class="bg-adaptive" src="img/bg-bottom.png">
-            <img class="total__bg--desktop" src="img/modeling-header-bottom.png">
-        </section>
-        <section class="services">
-            <div class="services__wrapper">
-                <div class="services__wrapper--flex-left">
-                    <p class="services__offer services__offer--modeling">Разработаем трёхмерную модель объекта в цифровом формате, поможем спроектировать 
-                        и красиво преподнести будущее изделие.</p>
-                    <p class="technologies__text technologies__text--modeling">Для создания необходимо как можно больше информации: это могут быть чертежи, фотографии, эскизы с размерами.</p>
-                    <div class="three-d-line"></div>
+        @@include('html/header.html',{})
+        <main class="main">
+            <section class="top-printing">
+                <div class="top-printing__title-wrapper top-printing__title-wrapper--adaptiv">
+                    <h1 class="title title__desktop title__desktop--modeling"><span class="title-wrapper__thred title-wrapper__thred--modeling">3D</span>-модели-
+                        рование 
+                        и промыш-
+                        ленный 
+                        дизайн</span></h1>
                 </div>
-                <div class="technologies">
-                    <h4 class="services__list-title">Сферы применения</h4>
-                    <ul class="services__list">
-                        <li class="services__item">создание прототипов технических изделий</li>
-                        <li class="services__item">визуализация конструкций и инженерных сооружений</li>
-                        <li class="services__item">проектирование архитектуры, интерьеров и мебели</li>
-                        <li class="services__item">визуализация ювелирных изделий</li>
-                        <li class="services__item">использование 3D-моделей для презентации или рекламы</li>
-                        <li class="services__item">моделирование персонажей и локаций в игровой индустрии</li>
+                <div class="top-printing__title-wrapper top-printing__title-wrapper--desktop"><h1 class="title title__desktop"><span class="title-wrapper__thred title-wrapper__thred--modeling">3D</span>-моделирование и промышленный дизайн</span></h1></div> 
+                <img class="bg-adaptive" src="img/bg-bottom.png">
+                <img class="total__bg--desktop" src="img/modeling-header-bottom.png">
+            </section>
+            <section class="services">
+                <div class="services__wrapper">
+                    <div class="services__wrapper--flex-left">
+                        <p class="services__offer services__offer--modeling">Разработаем трёхмерную модель объекта в цифровом формате, поможем спроектировать 
+                            и красиво преподнести будущее изделие.</p>
+                        <p class="technologies__text technologies__text--modeling">Для создания необходимо как можно больше информации: это могут быть чертежи, фотографии, эскизы с размерами.</p>
+                        <div class="three-d-line"></div>
+                    </div>
+                    <div class="technologies">
+                        <h4 class="services__list-title">Сферы применения</h4>
+                        <ul class="services__list">
+                            <li class="services__item">создание прототипов технических изделий</li>
+                            <li class="services__item">визуализация конструкций и инженерных сооружений</li>
+                            <li class="services__item">проектирование архитектуры, интерьеров и мебели</li>
+                            <li class="services__item">визуализация ювелирных изделий</li>
+                            <li class="services__item">использование 3D-моделей для презентации или рекламы</li>
+                            <li class="services__item">моделирование персонажей и локаций в игровой индустрии</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            @@include('html/slider.html',{})
+            <section class="stages">
+                <div class="stages__wrapper">
+                    <div class="title-secondary--stages title-secondary">Этапы создания <span class="price__thred">3D</span>-модели</div>
+                    <ul class="stages__list">
+                        <li class="stages__item stages__item--one">
+                            <div class="stages__item--block">
+                                <p class="stages__item--title">Создание формы объекта</p>
+                                <p class="stages__item--text">Построение объёмной геометрической фигуры без учёта физических характеристик.</p>
+                            </div>
+                        </li>
+                        <div class="stages__point"><img src="img/stages-point.png"></div>
+                        <li class="stages__item stages__item--two">
+                            <div class="stages__item--block">
+                                <p class="stages__item--title">Текстурирование</p>
+                                <p class="stages__item--text">Построение объёмной геометрической фигуры без учёта физических характеристик.</p>
+                            </div>
+                        </li>
+                        <div class="stages__point"><img src="img/stages-point.png"></div>
+                        <li class="stages__item stages__item--three">
+                            <div class="stages__item--block">
+                                <p class="stages__item--title">Освещение</p>
+                                <p class="stages__item--text">Придание большей реалистичности благодаря наличию источника света и теней.</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-            </div>
-        </section>
-        @@include('html/slider.html',{})
-        <section class="stages">
-            <div class="stages__wrapper">
-                <div class="title-secondary--stages title-secondary">Этапы создания <span class="price__thred">3D</span>-модели</div>
-                <ul class="stages__list">
-                    <li class="stages__item">
-                        <p class="stages__item--title stages__item--title-one">Создание формы объекта</p>
-                        <p class="stages__item--text">Построение объёмной геометрической фигуры без учёта физических характеристик.</p>
-                    </li>
-                    <div class="stages__point"><img src="img/stages-point.png"></div>
-                    <li class="stages__item">
-                        <p class="stages__item--title stages__item--title-two">Текстурирование</p>
-                        <p class="stages__item--text">Построение объёмной геометрической фигуры без учёта физических характеристик.</p>
-                    </li>
-                    <div class="stages__point"><img src="img/stages-point.png"></div>
-                    <li class="stages__item stages__item--three">
-                        <p class="stages__item--title stages__item--title-three">Освещение</p>
-                        <p class="stages__item--text">Придание большей реалистичности благодаря наличию источника света и теней.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="price price--terms">
-            <img class="total__bg" src="img/price_bg_top_adaptive.png">
-            <img class="total__bg--desktop" src="img/price_bg_top.png">
-                <div class="price__wrapper">
-                    <div class="price__title-container">
-                    <h2 class="title-secondary title-secondary--prise">Рассчитать стоимость <span class="price__thred">3D</span>-печати</h2>
-                    </div>
-                    <div class="price__wrapper--total">
-                        <div class="terms">
-                            <div class="terms__wrapper">
-                                <ul class="terms__item">
-                                    <li class="terms__value terms__value--i">Стоимость: </li>
-                                    <li class="terms__value"><div class="terms__value--big">от 500 грн</div> 
-                                        <div class="terms_-block"><p class="terms__value--litle">(зависит от степени сложности)</p></div>
-                                    </li>
-                                </ul>
-                                
-                                <div class="terms__line"></div>
-                                <ul class="terms__item">
-                                    <li class="terms__value">Сроки:</li>
-                                    <li class="terms__value">от 2х дней</li>
-                                </ul>
-                            </div>
+            </section>
+            <section class="price price--terms">
+                <img class="total__bg" src="img/price_bg_top_adaptive.png">
+                <img class="total__bg--desktop" src="img/price_bg_top.png">
+                    <div class="price__wrapper">
+                        <div class="price__title-container">
+                        <h2 class="title-secondary title-secondary--prise">Рассчитать стоимость <span class="price__thred">3D</span>-печати</h2>
                         </div>
-                    
-                        <div class="form-block">
-                            <div class="form-block__wrapper">
-                                <h3 class="form-block__title">Введите ваши данные</h3>
-                                <div class="form-block__label-block">
-                                    <label class="form-block__label">
-                                        <input class="form-block__input form-block__input--name" placeholder="Ваше имя" name="name" required>
-                                    </label>
-                                    <label class="form-block__label">
-                                        <input class="form-block__input" placeholder="Ваш телефон" name="telefon" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
-                                    </label>
+                        <div class="price__wrapper--total">
+                            <div class="terms">
+                                <div class="terms__wrapper">
+                                    <ul class="terms__item">
+                                        <li class="terms__value terms__value--i">Стоимость: </li>
+                                        <li class="terms__value"><div class="terms__value--big">от 500 грн</div> 
+                                            <div class="terms_-block"><p class="terms__value--litle">(зависит от степени сложности)</p></div>
+                                        </li>
+                                    </ul>
+                                    
+                                    <div class="terms__line"></div>
+                                    <ul class="terms__item">
+                                        <li class="terms__value">Сроки:</li>
+                                        <li class="terms__value">от 2х дней</li>
+                                    </ul>
                                 </div>
-                                <label class="form-block__label form-block__label--email">
-                                    <input class="form-block__input form-block__input--email" placeholder="Электронная почта" name="email" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)" required>
-                                </label>
-                                <div class="form-block__upload-container">
-                                    <p class="form-block__upload">Загрузить макет:</p>
-                                    <div class="form-block__file-container">
-                                        <p class="form-block__file">Файл не выбран</p>
-                                        <button class="button button--upload">Выберите файл</button>
+                            </div>
+                        
+                            <div class="form-block">
+                                <div class="form-block__wrapper">
+                                    <h3 class="form-block__title">Введите ваши данные</h3>
+                                    <div class="form-block__label-block">
+                                        <label class="form-block__label">
+                                            <input class="form-block__input form-block__input--name" placeholder="Ваше имя" name="name" required>
+                                        </label>
+                                        <label class="form-block__label">
+                                            <input class="form-block__input" placeholder="Ваш телефон" name="telefon" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                                        </label>
                                     </div>
-                                </div>
-                                <div class="form-block__description">
-                                    <p class="form-block__text-description">Опишите Ваши пожелания, чтобы мы максимально точно выполнили Ваш заказ.</p>
-                                </div>
-                                <button class="button button__send">Отправить</button>
-                                <div class="button-block button-block--terms">
-                                    <button class="button button__next">Назад</button>
-                                    <button class="button button__prev">Далее</button>
+                                    <label class="form-block__label form-block__label--email">
+                                        <input class="form-block__input form-block__input--email" placeholder="Электронная почта" name="email" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)" required>
+                                    </label>
+                                    <div class="form-block__upload-container">
+                                        <p class="form-block__upload">Загрузить макет:</p>
+                                        <div class="form-block__file-container">
+                                            <p class="form-block__file">Файл не выбран</p>
+                                            <button class="button button--upload">Выберите файл</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-block__description">
+                                        <p class="form-block__text-description">Опишите Ваши пожелания, чтобы мы максимально точно выполнили Ваш заказ.</p>
+                                    </div>
+                                    <button class="button button__send">Отправить</button>
+                                    <div class="button-block button-block--terms">
+                                        <button class="button button__next">Назад</button>
+                                        <button class="button button__prev">Далее</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <img class="bg-adaptive" src="img/bg_adaptive_bottum.png">
-            <img class="bg-bottom" src="img/price_bg_bottom.png">
-        </section>
-        @@include('html/question.html',{})
+                <img class="bg-adaptive" src="img/bg_adaptive_bottum.png">
+                <img class="bg-bottom" src="img/price_bg_bottom.png">
+            </section>
+            @@include('html/question.html',{})
+        </main>
         @@include('html/footer.html',{})
         <script src="js/app.js"></script>
     </body>

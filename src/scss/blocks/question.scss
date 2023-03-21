@@ -42,15 +42,19 @@
 }
 
 .input {
-    width: 273px;
+    width: 297px;
     height: 50px;
     font-weight: 500;
     font-size: 14px;
     line-height: 140%;
-    color: #959CAC;
-    margin-bottom: 24px;
+    color: #2C2F36;
     padding-left: 24px;
     border-style: none;
+
+    input:-webkit-selected {
+        -webkit-box-shadow: inset 0 0 0 50px #FFF!important;
+        box-shadow: inset 0 0 0 50px #FFF!important;
+    }
 
     &:hover {
         border: 3px solid #FB8C00; 
@@ -64,6 +68,44 @@
     &__your-question {
         height: 200px;
         margin-bottom: 33px;
+    }
+}
+
+.input-test-name {
+    display: flex;
+    justify-content: end;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: transparent;
+    margin-bottom: 5px;
+}
+
+.input-test-telefon {
+    display: flex;
+    justify-content: end;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.test-failed {
+    color: #F00808;
+}
+
+.input {
+    &.error {
+        background: #FFFFFF;
+        border: 1px solid #F00808;
+        box-shadow: 0px 0px 9px rgba(240, 8, 8, 0.18);
     }
 }
 
