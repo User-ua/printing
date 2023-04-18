@@ -1,15 +1,14 @@
 .question {
     margin-left: 15px;
-    background: rgba(10,144,66,0.1);
+    background: radial-gradient(98.97% 276.64% at 1.03% 40.7%, #EBF6FF 0%, #EFF8FF 100%);
     border-radius: 35px;
-    width: 345px;
-    height: 850px;
+    min-width: 345px;
+    width: 70%;
+    height: auto;
     margin-bottom: 100px;
 
     &__wrapper {
-        padding-top: 50px;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding: 50px 24px;
     }
     
     &__text {
@@ -17,10 +16,11 @@
         font-size: 16px;
         line-height: 140%;
         color: #2C2F36;
-        margin-bottom: 30px;
+        margin-bottom: 52px;
     }
 
     &__comment {
+        width: 218px;
         font-weight: 500;
         font-size: 12px;
         line-height: 140%;
@@ -32,69 +32,34 @@
     }
 }
 
-.form-label {
-    &__block {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 140%;
-        color: #959CAC;
-    }
-}
-
-.input {
-    width: 297px;
-    height: 50px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 140%;
-    color: #2C2F36;
-    padding-left: 24px;
-    border-style: none;
-
-    input:-webkit-selected {
-        -webkit-box-shadow: inset 0 0 0 50px #FFF!important;
-        box-shadow: inset 0 0 0 50px #FFF!important;
-    }
-
-    &:hover {
-        border: 3px solid #FB8C00; 
-    }
-
-    &:focus {
-        outline: none;
-        border: 3px solid #FB8C00; 
-    }
-
-    &__your-question {
-        height: 200px;
-        margin-bottom: 33px;
-    }
-}
-
-.input-test-name {
+.input-test-name, .description-test-name, .stap-two-test{
     display: flex;
     justify-content: end;
-    font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    text-align: right;
     color: transparent;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-.input-test-telefon {
+.input-test-telefon, .description-test-telefon {
     display: flex;
     justify-content: end;
-    font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    text-align: right;
     color: transparent;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.input-test-email, .description-test-email{
+    display: flex;
+    justify-content: end;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: transparent;
+    margin-bottom: 15px;
 }
 
 .test-failed {
@@ -106,10 +71,22 @@
         background: #FFFFFF;
         border: 1px solid #F00808;
         box-shadow: 0px 0px 9px rgba(240, 8, 8, 0.18);
+        
+        &:focus {
+            border: 1px solid #F00808;
+        }
+
+        &:hover {
+            border: 1px solid #F00808;
+        }
+
+        & + label {
+            color: #F00808;
+        }
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
     .question {
         margin-left: 0;
         background: rgba(10,144,66,0.1);
@@ -126,12 +103,13 @@
 
         &__info {
             width: 50%;
-            margin-right: 35px;
+            margin-right: 20px;
         }
 
         &__title {
             width: auto;
         }
+        
         &__text {
             margin-bottom: 0;
             width: 380px;
@@ -141,33 +119,10 @@
             width: 50%;
             margin-left: 35px;
         }
-
-        &__comment {
-            &--privacy-policy {
-                width: 218px;
-            }
-        }
     }
 
     .form-label {
         display: flex;
-    }
-
-    .input {
-        width: 222px;
-        height: 50px;
-        margin-bottom: 24px;
-        padding-left: 24px;
-
-        &__name {
-            margin-right: 30px;
-        }
-    
-        &__your-question {
-            width: 474px;
-            height: 109px;
-            margin-bottom: 33px;
-        }
     }
 
     .button-blok {

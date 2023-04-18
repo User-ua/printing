@@ -1,14 +1,15 @@
 .topsection {
-    background-size: cover;
-    background-image: url("../img/bg_adaptive.jpg");
-    background-repeat: no-repeat;
+    background: url("../img/bg_adaptive_bottum.png") bottom/100% 150px no-repeat, 
+    radial-gradient(98.97% 276.64% at 1.03% 40.7%, #EBF6FF 0%, #EFF8FF 100%);
     margin: 0 auto;
     margin-bottom: 38px;
 }
 
 .topsection-wrapper {
-    margin-left: 15px;
+    padding-left: 15px;
     padding-top: 100px;
+    padding-bottom: 150px;
+
 
     &__picture {       
         background-size: cover;
@@ -120,7 +121,7 @@
         max-width: 1600px;
         min-height: 940px;
         margin: 0 auto;
-        background-image: url('../img/bg.jpg');
+        background: url('../img/bg.jpg') no-repeat;
         margin-bottom: 100px;
     }
 
@@ -129,15 +130,17 @@
         margin: 0 auto;
         max-width: 1170px;
         padding-top: 150px;
+        padding-left: 15px;
+        padding-bottom: 0;
 
         &__picture {
             position: absolute;
-            content: "";
             z-index: 10;
             width: 813px;
             height: 501px;
             left: 625px;
-            top: 120px;
+            top: 167px;
+            margin-bottom: 0;
         }
 
         &__list {

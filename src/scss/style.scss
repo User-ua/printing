@@ -1,10 +1,12 @@
 @import "nullstyle";
 @import "fonts";
+@import "test";
 
 @import "./blocks/top";
 @import "./blocks/manufacturing";
 @import "./blocks/how-work";
 @import "./blocks/price";
+@import "./blocks/form-block";
 @import "./blocks/question";
 @import "./blocks/footer";
 @import "./blocks/header";
@@ -13,7 +15,7 @@
 @import "./blocks/nav";
 @import "./blocks/product-card";
 @import "./blocks/three-d";
-@import "./blocks/form-block";
+
 @import "./blocks/smile";
 @import "./blocks/bg";
 @import "./blocks/title";

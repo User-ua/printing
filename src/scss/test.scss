@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    width: 900px;
+    height: auto;
+    border-radius: 35px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 40px;
+    border: red solid 2px;
+    background: yellowgreen;
+    opacity: 0.4;
+}
+
+.input-test {
+    width: auto;
+    height: 50px;
+    background: red;
+}
+
+.form-container {
+    flex: 1;
+    width: auto;
+}

@@ -1,31 +1,34 @@
-<form class="question">
-    <div class="question__wrapper">
-        <div class="question__info">   
-            <h2 class="title-secondary title-secondary--question">Остались вопросы?</h2>   
-            <p class="question__text">Оформите заявку на сайте и мы свяжемся с вами в ближайшее время.</p>
-        </div>
-        <div class="question__input">
-            <div class="form-label">
-                <label class="form-label__block">
-                    Ваше имя
-                    <input class="input input__name" placeholder="Дмитрий" name="name">
-                    <span class="input-test-name">Укажите Ваше имя</span>
-                </label>
-                <label class="form-label__block">
-                    Ваш телефон
-                    <input class="input input__tel" placeholder="050 000 00 00" name="tel">
-                    <span class="input-test-telefon">Укажите телефон в указанном формате</span>
-                </label>
+<section class="question-section">
+    <form class="question">
+        <div class="question__wrapper">
+            <div class="question__info">   
+                <h2 class="title-secondary title-secondary--question">Остались вопросы?</h2>   
+                <p class="question__text">Оформите заявку на сайте и мы свяжемся с вами в ближайшее время.</p>
             </div>
-                <label class="form-label__block">
-                   <input class="input input__your-question" placeholder="Ваш вопрос" name="name">
-                </label>
-            <div class="button-blok">
-                <button class="button button__form">Отправить</button>
-                <div class="question__comment">Нажимая на кнопку, вы соглашаетесь 
-                с <span class="question__comment--privacy-policy">Политикой конфиденциальности</span>
+            <div class="question__input">
+                <div class="form-label">
+                    <div class="form-input-fields form-input-fields--your-name">
+                        <input placeholder=" " type="text" class="input input-form-question input--question input--your-name" autocomplete="off">
+                        <label for="">Ваше имя</label>
+                        <span class="input-test-name">Укажите Ваше имя</span>
+                    </div>
+                    <div class="form-input-fields">
+                        <input placeholder=" " type="text" class="input input-form-question input--question input--your-tel" autocomplete="off">
+                        <label for="">Телефон</label>
+                        <span class="input-test-telefon">Укажите в формате 38-000-000-00-00</span>
+                    </div>
                 </div>
-            </div>   
-        </div>           
-    </div>
-</form>
+                <div class="form-input-fields">
+                    <textarea placeholder=" " type="text" class="input input-form-question input--question-text" autocomplete="off"></textarea>
+                    <label for="">Ваш вопрос</label>
+                </div>
+                <div class="button-blok">
+                    <button class="button button__form">Отправить</button>
+                    <div class="question__comment">Нажимая на кнопку, вы соглашаетесь 
+                    с <span class="question__comment--privacy-policy">Политикой конфиденциальности</span>
+                    </div>
+                </div>   
+            </div>           
+        </div>
+    </form>
+</section>

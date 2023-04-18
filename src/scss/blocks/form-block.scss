@@ -1,10 +1,10 @@
 .form-block {
-    width: 345px;
+    min-width: 345px;
     height: 654px;
+    margin-right: 15px;
     background: #FFFFFF;
     box-shadow: 0px 4px 68px rgba(33, 33, 33, 0.06);
     border-radius: 35px;
-    z-index: 10;
 
     &__wrapper {
         padding: 44px 24px;
@@ -15,8 +15,11 @@
     }
 
     &__photo-upload {
-        width: 298px;
+        min-width: 298px;
         height: 114px;
+        padding-top: 24px;
+        padding-left: 66px;
+        padding-right: 24px;
         border: 3px dashed #e2e5f0;
         border-radius: 7px;
         cursor: pointer;
@@ -29,9 +32,7 @@
         
     &__text {
         position: relative;
-        width: 177px;
-        margin-top: 24px;
-        margin-left: 66px;
+        min-width: 177px;
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
@@ -52,7 +53,7 @@
         &--stap {
             width: auto;
             margin: 0;
-            margin-bottom: 38px;
+            margin-bottom: 55px;
 
             &::before {
                 display: none;
@@ -81,24 +82,126 @@
 
     &__label-block {
         display: flex;
-        margin-bottom: 24px;
         
         &--stap-next {
-            margin-bottom: 210px;
+            margin-bottom: 176px;
         }
     }
 
-    &__label {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
+    &__upload {
+        margin-bottom: 24px;
+        font-weight: 600;
+        font-size: 16px;
         line-height: 140%;
-        color: #959CAC;
-        
+        color: #2C2F36;
+    }
 
-        &--stap-two {
-            display: none;
+    &__file-container {
+        margin-bottom: 24px;
+    }
+
+    &__file {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        color: #2C2F36;
+        margin-bottom: 12px;
+        opacity: 0.5;
+    }
+
+    .form-stap {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        color: #2C2F36;
+        margin-bottom: 32px;
+    }
+}
+
+
+
+.form-input-fields {
+    position: relative;
+    width: 100%;
+
+    &--width {
+        margin-right: 19px;
+    }
+
+    &--stap-two {
+        display: none;
+    }
+
+    &--stap-three-tel {
+        margin-bottom: 191px; 
+    }
+
+    &--typefile {
+        margin-bottom: 50px;
+    }
+
+    & .input {
+        width: 100%;
+        height: 50px;
+        background: #F9FAFB;
+        border: 1px solid #ECEEF1;
+        border-radius: 7px;
+        padding-left: 24px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        color: #2C2F36;
+
+        &:hover {
+            border: 1px solid #FB8C00; 
         }
+
+        &:focus {
+            outline: none;
+            border: 1px solid #FB8C00;
+        }
+
+        &--question {
+            width: 100%;
+        }
+        
+        &--question-text {
+            width: 100%;
+            height: 200px;
+            padding-top: 12px;
+            margin-bottom: 33px;
+        }
+
+        &--description {
+            width: 100%;
+            height: auto;
+            padding: 15px 24px 32px 24px;
+            color: #959CAC;
+            margin-bottom: 40px;
+        }
+
+        &--stap-three {
+            width: 100%;
+        }
+
+        &--contact {
+            width: 345px;
+            margin-bottom: 30px;
+        }
+
+        &--contact-massage {
+            height: 129px;
+            margin-bottom: 40px;
+        }
+    }
+
+    & label {
+        position: absolute;
+        color: #959CAC;
+        top: 15px;
+        left: 27px;
+        pointer-events: none;
+        transition: all 400ms ease-in-out;
 
         &--email {
             position: relative;
@@ -115,107 +218,24 @@
         }   
     }
 
-    &__input {
-        width: 139px;
-        height: 50px;
-        background: #F9FAFB;
-        border: 1px solid #ECEEF1;
-        border-radius: 7px;
-        padding-left: 24px;
+    & input:focus + label,
+      textarea:focus + label {
+        top: -16px;
+        left: 0;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 140%;
-        color: #2C2F36;
-
-        &:hover {
-            border: 3px solid #FB8C00; 
-        }
-
-        &:focus {
-            outline: none;
-            border: 3px solid #FB8C00; 
-        }
-        
-        &--name {
-            margin-right: 19px;
-        }
-
-        &--name-stap-three {
-            width: 298px;
-            margin-bottom: 24px;
-        }
-
-        &--tel-stap-three {
-            width: 298px;
-            margin-bottom: 210px;
-        }
-
-        &--width {
-            margin-right: 19px;
-        }
-
-        &--bottom {
-            color: #959CAC;
-            font-size: 12px;
-        }
-
-        &--email {
-            width: 297px;
-            margin-bottom: 32px;
-        }
-
-        &--contact {
-            width: 345px;
-            margin-bottom: 30px;
-        }
-
-        &--contact-massage {
-            height: 129px;
-            margin-bottom: 40px;
-        }
     }
-
-    &__upload {
-        margin-bottom: 24px;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 140%;
-        color: #2C2F36;
-    }
-
-    &__file {
+    
+    & input:not(:placeholder-shown) + label,
+      textarea:not(:placeholder-shown) + label {
+        top: -16px;
+        left: 0;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 140%;
-        color: #2C2F36;
-        margin-bottom: 12px;
-        opacity: 0.5;
     }
-
-    &__description {
-        width: 297px;
-        margin-bottom: 40px;
-        background: #F9FAFB;
-        border: 1px solid #ECEEF1;
-        border-radius: 7px;
-    }
-
-    &__text-description {
-        padding: 15px 24px 32px 24px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 140%;
-        color: #959CAC;
-    }
-
-    .form-stap {
-        font-weight: 800;
-        font-size: 24px;
-        line-height: 29px;
-        color: #2C2F36;
-        margin-bottom: 40px;
-    }
-}   
+}
 
 .form-indicator {
     display: flex;
@@ -227,7 +247,7 @@
     }
 
     &__active {
-        width: 89px;
+        width: 100%;
         height: 4px;
         background: #FB8C00;
         border-radius: 38px;
@@ -236,6 +256,8 @@
     &__dot {
         width: 4px;
         height: 4px;
+        margin-left: 6px;
+        margin-right: 6px;
         background: #B4BBCE;
         opacity: 0.3;
         border-radius: 38px;
@@ -247,7 +269,7 @@
     }
     
     &__passive {
-        width: 89px;
+        width: 100%;
         height: 4px;
         background: #B4BBCE;
         opacity: 0.3;
@@ -280,10 +302,10 @@
     background: #F9FAFB;
     border: 1px solid #ECEEF1;
     border-radius: 7px;
-    margin-bottom: 40px;
+    margin-bottom: 56px;
 
     &__content {
-        width: 241px;
+        min-width: 241px;
         padding: 16px 32px 16px 24px;
         font-weight: 500;
         font-size: 14px;
@@ -340,7 +362,7 @@
 
 
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
     .form-block {
         width: 670px;
         height: 635px;
@@ -352,17 +374,17 @@
         &__photo-upload {
             width: 590px;
             height: 109px;
-            margin-bottom: 20px;
+            padding: 44px 91px 43px 126px;
+            margin-bottom: 16px;
+           
         }
 
         &__text {
             width: 373px;
-            margin-top: 44px;
-            margin-left: 126px;
             
             &--stap {
                 margin-left: 0;
-                margin-bottom: 32px;
+                margin-bottom: 49px;
             }
 
             &--contact {
@@ -372,27 +394,19 @@
         }
     
         &__title {
-            margin-bottom: 47px;
+            margin-bottom: 37px;
     
         }
     
         &__label-block {
             display: flex;
-            margin-bottom: 30px;
 
             &--stap-next {
-                margin-bottom: 172px;
+                margin-bottom: 150px;
             }
         }
     
-        &__label {
-            &--color-white {
-                color: white;
-            }
-
-            &--stap-two {
-                display: block;
-            }
+        /*&__label {
 
             &--color {
                 position: relative;
@@ -421,61 +435,9 @@
                     top: 0;
                 }
             }   
-        }
+        }*/
     
-        &__input {
-            width: 287px;
-    
-            &--name {
-                margin-right: 30px;
-            }
-
-            &--stap-two {
-                width: 186px;
-            }
-
-            &--color {
-                font-size: 14px;
-                color: #2C2F36;
-            }
-
-            &--width {
-                margin-right: 16px;
-            }
-
-            &--indent {
-                margin-right: 16px;
-            }
-    
-            &--email {
-                width: 590px;
-                margin-bottom: 30px;
-            }
-
-            &--name-stap-three {
-                width: 590px;
-                margin-bottom: 36px;
-
-                &::placeholder {
-                    font-size: 12px;
-                    color: #959CAC;
-                }
-            }
-    
-            &--tel-stap-three {
-                width: 590px;
-                margin-bottom: 162px;
-            }
-
-            &--contact {
-                width: 400px;
-            }
-
-            &--contact-massage {
-                margin-bottom: 56px;
-            }
-        }
-
+        
         &__upload-container {
             display: flex;
             justify-content: space-between;
@@ -487,6 +449,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 0;
         }
     
         &__upload {
@@ -497,17 +460,71 @@
             margin-bottom: 0;  
         }
     
-        &__description {
-            width: 590px;
-            margin-bottom: 67px;
-        }
-    
-        &__text-description {
-            padding: 15px 33px 94px 24px;
-        }
-    
         &__button-block {
             display: none;  
+        }
+    }
+
+    .form-input-fields {
+        width: auto;
+        &--stap-two {
+            display: block;
+        }
+
+        &--width {
+            margin-right: 16px;
+        }
+
+        &--width-desktop {
+            margin-right: 16px;
+        }
+
+        &--your-name {
+            margin-right: 30px;
+        }
+
+        &--stap-three-name {
+            margin-bottom: 30px;
+        }
+
+        &--stap-three-tel {
+            margin-bottom: 150px;
+        }
+
+        & .input {
+            width: 100%;
+
+            &--question {
+                width: 235px;
+            }
+            
+            &--question-text {
+                width: 100%;
+                height: 109px;
+            }
+    
+            &--name {
+                width: 280px;
+            }
+
+            &--tel {
+                width: 280px;
+            }
+
+            &--description {
+                width: 100%;
+                height: auto;
+                margin-bottom: 40px;
+                padding: 15px 33px 94px 24px;
+            }
+
+            &--contact {
+                width: 400px;
+            }
+
+            &--contact-massage {
+                margin-bottom: 56px;
+            }
         }
     }
 
@@ -540,7 +557,7 @@
     }
 
     .foto-link {
-        margin-bottom: 47px;
+        margin-bottom: 60px;
 
         &__content {
             width: auto;

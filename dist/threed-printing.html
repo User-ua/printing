@@ -32,7 +32,7 @@
         <li class="nav__item"><a class="nav__link" href="threed-printing.html">3D-печать</a></li>
         <li class="nav__item"><a class="nav__link" href="modeling.html">3D-моделирование</a></li>
         <li class="nav__item--and"><a class="nav__link" href="contacts.html">Контакты</a></li>
-        <li class="nav__item--btn"><button class="button button--nav" type="button">Рассчитать стоимость</button></li>
+        <li class="nav__item--btn"><button class="button button--nav">Рассчитать стоимость</button></li>
       </ul>
     </nav>
   </div> 
@@ -42,8 +42,6 @@
             <div class="top-printing__title-wrapper"> 
                 <h1 class="title title__desktop"><span class="title-wrapper__thred title-wrapper__thred--printing">3D</span>-печать</span></h1>
             </div>
-            <img class="bg-adaptive" src="img/bg_adaptive_bottum.png">
-            <img class="bg-bottom" src="img/modeling-header-bottom.png">
         </section>
         <section class="services services-block">
             <div class="services__wrapper">
@@ -150,8 +148,6 @@
   </section>   
 
         <section class="sales">
-            <img class="total__bg" src="img/price_bg_top_adaptive.png">
-            <img class="total__bg--desktop" src="img/price_bg_top.png">
             <div class="sales__wrapper">
                 <h2 class="title-secondary title-secondary--sales">Цены</h2>
                 <div class="sales-container">
@@ -234,9 +230,7 @@
                     </div>
                 </div> 
             </div>
-            <section class="price">
-  <img class="total__bg" src="img/price_bg_top_adaptive.png">
-  <img class="total__bg--desktop" src="img/price_bg_top.png">
+            <section id="sand" class="price">
   <div class="price__wrapper">
     <h2 class="title-secondary title-secondary--prise">Рассчитать стоимость <span class="price__thred">3D</span>-печати</h2>
     <div class="price-container">
@@ -247,17 +241,56 @@
             <p class="promo__menu--printer">Принтеры</p>
           </div>
           <div class="promo__line"></div>
-          <p class="promo__abs">ABS PRO (FDM)</p>
-          <p class="promo__abs--text">ABS-пластик - ударопрочная техническая термопластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
           <div class="promo__abs--line"></div>
           <ul>
-            <li class="promo__content">PLA (FDM)</li>
-            <li class="promo__content">ELASTAN (FDM)</li>
-            <li class="promo__content">COPET (FDM)</li>
-            <li class="promo__content">NYLON CARBON (FDM)</li>
-            <li class="promo__content">TANGO (POLYJET)</li>
-            <li class="promo__content">VERO WHITE (POLYJET)</li>
-            <li class="promo__content">VERO CLEAR (POLYJET)</li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">ABS PRO (FDM)</summary>
+                <p class="promo__title--text">ABS-пластик - ударопрочная техническая термопластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
+              </details>
+            </li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">PLA (FDM)</summary>
+                <p class="promo__title--text">Печать методом аддитивного производства: расплавленный пластик (или другой филамент) наносится слой за слоем для построения объекта. Для создания изделий из широкого спектра материалов с различными характеристиками и свойствами.</p>
+              </details>
+            </li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">ELASTAN (FDM)</summary>
+                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+              </details>
+            </li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">COPET (FDM)</summary>
+                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+              </details>
+            </li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">NYLON CARBON (FDM)</summary>
+                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+              </details>
+            </li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">TANGO (POLYJET)</summary>
+                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+              </details>
+            </li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">VERO WHITE (POLYJET)</summary>
+                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+              </details>
+            </li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">VERO CLEAR (POLYJET)</summary>
+                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+              </details>
+            </li>
           </ul>
         </div>
       </div>
@@ -305,26 +338,33 @@
           </div>
           <p class="form-block__text form-block__text--stap">Введите данные фигуры</p>
           <div class="form-block__label-block">
-            <label class="form-block__label">
-              Ширина, мм
-              <input class="form-block__input form-block__input--width form-block__input--stap-two form-block__input--indent" placeholder="50">
-            </label>
-            <label class="form-block__label">
-              Высота, мм
-              <input class="form-block__input form-block__input--stap-two form-block__input--indent" placeholder="120">
-            </label>
-            <label class="form-block__label form-block__label--stap-two">
-              Длинна, мм
-              <input class="form-block__input form-block__input--stap-two" placeholder="45">
-            </label>
+            <div class="form-input-fields form-input-fields--width">
+              <input placeholder=" " type="text" class="input input-next" autocomplete="off">
+              <label for="">Ширина, мм</label>
+              <span class="stap-two-test">Укажите ширину</span>
+            </div>
+            <div class="form-input-fields form-input-fields--width-desktop">
+              <input placeholder=" " type="text" class="input input-next" autocomplete="off">
+              <label for="">Высота, мм</label>
+              <span class="stap-two-test">Укажите высоту</span>
+            </div>
+            <div class="form-input-fields form-input-fields--stap-two">
+              <input placeholder=" " type="text" class="input input-next" autocomplete="off">
+              <label for="">Длинна, мм</label>
+              <span class="stap-two-test">Укажите длинну</span>
+            </div>
           </div>
           <div class="form-block__label-block form-block__label-block--stap-next">
-            <label class="form-block__label">
-              <input class="form-block__input form-block__input--width form-block__input--bottom" placeholder="Количество">
-            </label>
-            <label class="form-block__label form-block__label--color">
-              <input class="form-block__input form-block__input--bottom form-block__input--color" placeholder="Красный">
-            </label>
+            <div class="form-input-fields form-input-fields--width">
+              <input placeholder=" " type="text" class="input input-next" autocomplete="off">
+              <label for="">Количкство</label>
+              <span class="stap-two-test">Укажите количество</span>
+            </div>
+            <div class="form-input-fields">
+              <input placeholder=" " type="text" class="input input-next" autocomplete="off">
+              <label for="">Цвет</label>
+              <span class="stap-two-test">Укажите цвет</span>
+            </div>
           </div>
           <div class="button-block">
             <button class="button button__next button__next--stap-two" type="button">Назад</button>
@@ -344,13 +384,16 @@
             <div class="form-indicator__active"></div>
           </div>
           <p class="form-block__text form-block__text--stap">Оставьте ваши данные</p>
-            <label class="form-block__label form-block__label--color-white">
-              Ваше имя
-              <input class="form-block__input form-block__input--name-stap-three" placeholder="Дмитрий">
-            </label>
-            <label class="form-block__label">
-              <input class="form-block__input form-block__input--tel-stap-three form-block__input--bottom" placeholder="Телефон">
-            </label>
+          <div class="form-input-fields form-input-fields--stap-three-name">
+            <input placeholder=" " type="text" class="input input--stap-three input--name-stap-three" autocomplete="off">
+            <label for="">Ваше имя</label>
+            <span class="description-test-name">Укажите имя</span>
+          </div>
+          <div class="form-input-fields form-input-fields--stap-three-tel">
+            <input placeholder=" " type="text" class="input input--stap-three input--telefon-stap-three" autocomplete="off">
+            <label for="">Телефон</label>
+            <span class="description-test-telefon">Укажите телефон</span>
+          </div>
           <div class="button-block">
             <button class="button button__next button__next--stap-three" type="button">Назад</button>
             <button class="button button__prev button__prev--stap-three" type="button">далее</button>
@@ -370,45 +413,46 @@
       </div>
     </div>
   </div>
-  <div class="bg-adaptive bg-adaptive--price"><img src="img/price_bg_adbottom.png"></div>
-  <div class="price__bg"></div>
 </section>
         </section>
-        <form class="question">
-    <div class="question__wrapper">
-        <div class="question__info">   
-            <h2 class="title-secondary title-secondary--question">Остались вопросы?</h2>   
-            <p class="question__text">Оформите заявку на сайте и мы свяжемся с вами в ближайшее время.</p>
-        </div>
-        <div class="question__input">
-            <div class="form-label">
-                <label class="form-label__block">
-                    Ваше имя
-                    <input class="input input__name" placeholder="Дмитрий" name="name">
-                    <span class="input-test-name">Укажите Ваше имя</span>
-                </label>
-                <label class="form-label__block">
-                    Ваш телефон
-                    <input class="input input__tel" placeholder="050 000 00 00" name="tel">
-                    <span class="input-test-telefon">Укажите телефон в указанном формате</span>
-                </label>
+        <section class="question-section">
+    <form class="question">
+        <div class="question__wrapper">
+            <div class="question__info">   
+                <h2 class="title-secondary title-secondary--question">Остались вопросы?</h2>   
+                <p class="question__text">Оформите заявку на сайте и мы свяжемся с вами в ближайшее время.</p>
             </div>
-                <label class="form-label__block">
-                   <input class="input input__your-question" placeholder="Ваш вопрос" name="name">
-                </label>
-            <div class="button-blok">
-                <button class="button button__form">Отправить</button>
-                <div class="question__comment">Нажимая на кнопку, вы соглашаетесь 
-                с <span class="question__comment--privacy-policy">Политикой конфиденциальности</span>
+            <div class="question__input">
+                <div class="form-label">
+                    <div class="form-input-fields form-input-fields--your-name">
+                        <input placeholder=" " type="text" class="input input-form-question input--question input--your-name" autocomplete="off">
+                        <label for="">Ваше имя</label>
+                        <span class="input-test-name">Укажите Ваше имя</span>
+                    </div>
+                    <div class="form-input-fields">
+                        <input placeholder=" " type="text" class="input input-form-question input--question input--your-tel" autocomplete="off">
+                        <label for="">Телефон</label>
+                        <span class="input-test-telefon">Укажите в формате 38-000-000-00-00</span>
+                    </div>
                 </div>
-            </div>   
-        </div>           
-    </div>
-</form>
+                <div class="form-input-fields">
+                    <textarea placeholder=" " type="text" class="input input-form-question input--question-text" autocomplete="off"></textarea>
+                    <label for="">Ваш вопрос</label>
+                </div>
+                <div class="button-blok">
+                    <button class="button button__form">Отправить</button>
+                    <div class="question__comment">Нажимая на кнопку, вы соглашаетесь 
+                    с <span class="question__comment--privacy-policy">Политикой конфиденциальности</span>
+                    </div>
+                </div>   
+            </div>           
+        </div>
+    </form>
+</section>
     </main>  
     <footer class="footer">
-    <img class="bg-adaptive bg-adaptive--footer" src="img/footer_bg_top.png">
-    <img class="bg-bottom bg-bottom__footer" src="img/footer_bg_dt.png">
+    <!--<img class="bg-adaptive bg-adaptive--footer" src="img/footer_bg_top.png">
+    <img class="bg-bottom bg-bottom__footer" src="img/footer_bg_dt.png">-->
     <div class="footer__wrapper">
       <div class="footer__block">
         <div class="logo-block">

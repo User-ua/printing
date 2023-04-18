@@ -1,31 +1,36 @@
 .price {
     margin: 0 auto;
-    background: rgba(10,144,66,0.1);
+    background: url("../img/price_bg_top_adaptive.png") top/100% 139px no-repeat, 
+    url("../img/price_bg_adbottom.png") bottom/100% 300px no-repeat, 
+    radial-gradient(98.97% 276.64% at 1.03% 40.7%, #EBF6FF 0%, #EFF8FF 100%);
     width: auto;
-    height: 80%;
-    z-index: -10;
-    background-repeat: no-repeat;
     margin-bottom: 102px;
 
+    &--terms {
+        background: url("../img/price_bg_top_adaptive.png") top/100% 139px no-repeat, 
+        url("../img/terms_ad_bottom.png") bottom/100% 122px no-repeat, 
+        radial-gradient(98.97% 276.64% at 1.03% 40.7%, #EBF6FF 0%, #EFF8FF 100%); 
+    }
+
     &__wrapper {
-        margin-left: 15px;
+        padding-left: 15px;
+        padding-top: 180px;
     }
 }
 
 .promo {
     background: #F1F5F8;
     box-shadow: 0px 4px 68px rgba(33, 33, 33, 0.06);
-    width: 345px;
-    height: 693px;
+    min-width: 345px;
+    height: auto;
+    margin-right: 15px;
     border-radius: 35px;
-    margin-bottom: 32px;
     z-index: 10;
     
 
     &__wrapper {
-       padding-top: 44px;
-       margin-left: 24px;
-       margin-right: 24px;
+       padding: 44px 24px;
+       
     }
 
     &__menu {
@@ -61,107 +66,111 @@
         margin-bottom: 40px;
     }
 
-    &__abs {
+    &__title {
         position: relative;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 140%;
-        color: #2F80ED;
-        margin-bottom: 16px;
-
-        &::before {
-            position: absolute;
-            content: "";
-            background-color: #2F80ED;
-            width: 10px;
-            height: 2px;
-            top: 10px;
-            left: 275px;
-        }
-
-        &--text {
-            width: 246px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 140%;
-            color: #2C2F36;
-            margin-bottom: 25px;  
-        }
-
-        &--line {
-            width: 100%;
-            height: 3px;
-            margin-bottom: 24px;
-            background: #2F80ED;
-        }
-    }
-
-    &__content {
-        position: relative;
-        margin-bottom: 28px;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
         line-height: 140%;
         color: #2C2F36;
+        padding-bottom: 10px;
         list-style: none;
+        cursor: pointer;
 
-        &::after {
-            position: absolute;
-            content: "";
-            background: #B4BBCE;
-            width: 297px;
-            height: 3px;
-            opacity: 0.3;
-            top: 35px;
-            left: 0px;
+        &:hover {
+            color: #2F80ED;
         }
 
-        &::before {
-            position: absolute;
-            content: "";
-            background-image: url('../img/price_plus.png');
-            background-repeat: no-repeat;
-            width: 13px;
-            height: 13px;
-            top: 4px;
-            left: 270px;
+        &--text {
+            min-width: 246px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 140%;
+            color: #2C2F36;   
+        }
+    }
+
+    &__list-item {
+        margin-bottom: 25px;
+        list-style: none;
+        
+
+        &--details {
+            background: url('../img/price_plus.png') right 5px no-repeat;
+            border-bottom: rgba(180, 187, 206, 0.3) 3px solid;
+
+            &:hover {
+                background: url('../img/plus_blu.png') right 5px no-repeat;
+            }
+        }
+
+        &--details[open] {
+            background: url('../img/minus_blu.png') right 10px no-repeat;
+            border-bottom: #2F80ED 3px solid;
+
+            & .promo__title {
+                color: #2F80ED;
+
+                &--text {
+                    padding-bottom: 15px;
+                }
+            }
         }
     }
 }
 
-@media (min-width: 900px) {
+details summary::-webkit-details-marker { display:none}
+
+@media (min-width: 750px) {
+    
+    .price-container {
+        display: flex;
+    }
+
+    .promo {
+        width: 50%;
+    }
+
+    .form-block {
+        width: 50%;
+    }
+
+    /*.sales {
+        .price {
+            .form-block {
+                width: 100%;
+            }
+        }
+    }*/
+
+}
+
+@media (min-width: 1200px) {
     .price {
         max-width: 1600px;
-        margin: 0 auto;
-        background: rgba(10,144,66,0.1);
-        background-repeat: no-repeat;
-        margin-bottom: 184px;
+        margin-bottom: 120px;
+        background: url("../img/price_bg_top.png") top/100% 257px no-repeat, 
+        url("../img/price_bg_bottom.png") bottom/100% 300px no-repeat, 
+        radial-gradient(98.97% 276.64% at 1.03% 40.7%, #EBF6FF 0%, #EFF8FF 100%);
+
+        &--terms {
+            background: url("../img/price_bg_top.png") top/100% 257px no-repeat, 
+            url("../img/price_bg_bottom.png") bottom/100% 200px no-repeat, 
+            radial-gradient(98.97% 276.64% at 1.03% 40.7%, #EBF6FF 0%, #EFF8FF 100%);
+            
+
+            &::before{
+                display: none;
+            }
+        }
 
         &__wrapper { 
-            position: relative; 
+            padding-top: 257px;
             max-width: 1170px;
             margin: 0 auto;
         }
-
-        &__bg {
-            position: relative;
-            &::before {
-                position: absolute;
-                content: "";
-                background-image: url('../img/price_bg_bottom.png');
-                background-repeat: no-repeat;
-                z-index: 0;
-                width: 1600px;
-                height: 250px;
-                left: 0px;
-                top: -200px;
-            }
-        }
         
-
         &__title-container {
             margin: 0 auto;
             max-width: 1170px;
@@ -175,7 +184,7 @@
     .promo {
         margin-right: 30px;
         width: 470px;
-        height: 635px;
+        min-height: 635px;
         margin-bottom: 0;
 
         &__wrapper {

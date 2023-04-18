@@ -1,6 +1,4 @@
-<section class="price">
-  <img class="total__bg" src="img/price_bg_top_adaptive.png">
-  <img class="total__bg--desktop" src="img/price_bg_top.png">
+<section id="sand" class="price">
   <div class="price__wrapper">
     <h2 class="title-secondary title-secondary--prise">Рассчитать стоимость <span class="price__thred">3D</span>-печати</h2>
     <div class="price-container">
@@ -11,17 +9,56 @@
             <p class="promo__menu--printer">Принтеры</p>
           </div>
           <div class="promo__line"></div>
-          <p class="promo__abs">ABS PRO (FDM)</p>
-          <p class="promo__abs--text">ABS-пластик - ударопрочная техническая термопластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
           <div class="promo__abs--line"></div>
           <ul>
-            <li class="promo__content">PLA (FDM)</li>
-            <li class="promo__content">ELASTAN (FDM)</li>
-            <li class="promo__content">COPET (FDM)</li>
-            <li class="promo__content">NYLON CARBON (FDM)</li>
-            <li class="promo__content">TANGO (POLYJET)</li>
-            <li class="promo__content">VERO WHITE (POLYJET)</li>
-            <li class="promo__content">VERO CLEAR (POLYJET)</li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">ABS PRO (FDM)</summary>
+                <p class="promo__title--text">ABS-пластик - ударопрочная техническая термопластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
+              </details>
+            </li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">PLA (FDM)</summary>
+                <p class="promo__title--text">Печать методом аддитивного производства: расплавленный пластик (или другой филамент) наносится слой за слоем для построения объекта. Для создания изделий из широкого спектра материалов с различными характеристиками и свойствами.</p>
+              </details>
+            </li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">ELASTAN (FDM)</summary>
+                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+              </details>
+            </li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">COPET (FDM)</summary>
+                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+              </details>
+            </li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">NYLON CARBON (FDM)</summary>
+                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+              </details>
+            </li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">TANGO (POLYJET)</summary>
+                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+              </details>
+            </li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">VERO WHITE (POLYJET)</summary>
+                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+              </details>
+            </li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">VERO CLEAR (POLYJET)</summary>
+                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+              </details>
+            </li>
           </ul>
         </div>
       </div>
@@ -69,26 +106,33 @@
           </div>
           <p class="form-block__text form-block__text--stap">Введите данные фигуры</p>
           <div class="form-block__label-block">
-            <label class="form-block__label">
-              Ширина, мм
-              <input class="form-block__input form-block__input--width form-block__input--stap-two form-block__input--indent" placeholder="50">
-            </label>
-            <label class="form-block__label">
-              Высота, мм
-              <input class="form-block__input form-block__input--stap-two form-block__input--indent" placeholder="120">
-            </label>
-            <label class="form-block__label form-block__label--stap-two">
-              Длинна, мм
-              <input class="form-block__input form-block__input--stap-two" placeholder="45">
-            </label>
+            <div class="form-input-fields form-input-fields--width">
+              <input placeholder=" " type="text" class="input input-next" autocomplete="off">
+              <label for="">Ширина, мм</label>
+              <span class="stap-two-test">Укажите ширину</span>
+            </div>
+            <div class="form-input-fields form-input-fields--width-desktop">
+              <input placeholder=" " type="text" class="input input-next" autocomplete="off">
+              <label for="">Высота, мм</label>
+              <span class="stap-two-test">Укажите высоту</span>
+            </div>
+            <div class="form-input-fields form-input-fields--stap-two">
+              <input placeholder=" " type="text" class="input input-next" autocomplete="off">
+              <label for="">Длинна, мм</label>
+              <span class="stap-two-test">Укажите длинну</span>
+            </div>
           </div>
           <div class="form-block__label-block form-block__label-block--stap-next">
-            <label class="form-block__label">
-              <input class="form-block__input form-block__input--width form-block__input--bottom" placeholder="Количество">
-            </label>
-            <label class="form-block__label form-block__label--color">
-              <input class="form-block__input form-block__input--bottom form-block__input--color" placeholder="Красный">
-            </label>
+            <div class="form-input-fields form-input-fields--width">
+              <input placeholder=" " type="text" class="input input-next" autocomplete="off">
+              <label for="">Количкство</label>
+              <span class="stap-two-test">Укажите количество</span>
+            </div>
+            <div class="form-input-fields">
+              <input placeholder=" " type="text" class="input input-next" autocomplete="off">
+              <label for="">Цвет</label>
+              <span class="stap-two-test">Укажите цвет</span>
+            </div>
           </div>
           <div class="button-block">
             <button class="button button__next button__next--stap-two" type="button">Назад</button>
@@ -108,13 +152,16 @@
             <div class="form-indicator__active"></div>
           </div>
           <p class="form-block__text form-block__text--stap">Оставьте ваши данные</p>
-            <label class="form-block__label form-block__label--color-white">
-              Ваше имя
-              <input class="form-block__input form-block__input--name-stap-three" placeholder="Дмитрий">
-            </label>
-            <label class="form-block__label">
-              <input class="form-block__input form-block__input--tel-stap-three form-block__input--bottom" placeholder="Телефон">
-            </label>
+          <div class="form-input-fields form-input-fields--stap-three-name">
+            <input placeholder=" " type="text" class="input input--stap-three input--name-stap-three" autocomplete="off">
+            <label for="">Ваше имя</label>
+            <span class="description-test-name">Укажите имя</span>
+          </div>
+          <div class="form-input-fields form-input-fields--stap-three-tel">
+            <input placeholder=" " type="text" class="input input--stap-three input--telefon-stap-three" autocomplete="off">
+            <label for="">Телефон</label>
+            <span class="description-test-telefon">Укажите телефон</span>
+          </div>
           <div class="button-block">
             <button class="button button__next button__next--stap-three" type="button">Назад</button>
             <button class="button button__prev button__prev--stap-three" type="button">далее</button>
@@ -134,6 +181,4 @@
       </div>
     </div>
   </div>
-  <div class="bg-adaptive bg-adaptive--price"><img src="img/price_bg_adbottom.png"></div>
-  <div class="price__bg"></div>
 </section>

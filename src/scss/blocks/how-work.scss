@@ -15,6 +15,7 @@
         height: 352px;
         z-index: -20;
         border-radius: 175px;
+        margin-bottom: 20px;
         overflow: hidden;
 
         &::after {
@@ -61,7 +62,7 @@
 }
 .work-list {
     display: grid;
-    grid-template-columns: 345px;
+    grid-template-columns: auto;
     grid-template-rows: 151px 151px 151px 151px 151px;
     grid-gap: 30px; 
     
@@ -70,6 +71,7 @@
         background: #FFFFFF;
         box-shadow: 0px 4px 68px rgba(32, 52, 91, 0.08);
         border-radius: 35px;
+        margin-right: 15px;
         overflow: hidden;
         
         &--one {
@@ -155,8 +157,7 @@
         }
     
     &__content {
-        margin: 38px 31px 38px 118px;
-        width: 196px;
+        margin: 38px 31px 38px 118px;;
         font-weight: 700;
         font-size: 18px;
         line-height: 140%;
@@ -219,14 +220,14 @@
         width: 49%;
 
         &__content {
-            width: 128px;
+            margin: 50px 25px 50px 106px;
 
             &--top {
-                width: 378px;
+                margin: 50px 50px 50px 137px;
             }
 
             &--end {
-                width: 136px;
+                margin: 38px 10px 38px 106px;
             }
         }   
     }

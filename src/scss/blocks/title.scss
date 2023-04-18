@@ -29,25 +29,26 @@
     font-size: 48px;
     line-height: 59px;
     color: #2C2F36;
-    width: 345px;
+    min-width: 345px;
+    padding-right: 15px;
 
     &--manufacturing {
         margin-bottom: 30px;
     }
     
     &--prise {
-        margin-bottom: 64px;
-        width: 310px;  
+        padding-bottom: 64px;
+        min-width: 310px;  
     }
 
     &--question {
-        width: 282px;
+        min-width: 282px;
         margin-bottom: 24px;
     }
 
     &--advantages {
         background: none;
-        width: 358px;
+        min-width: 358px;
         margin-bottom: 60px;
     }
 
@@ -56,7 +57,7 @@
     }
 
     &--stages {
-        width: 345px;
+        min-width: 345px;
         margin-bottom: 121px;
     }
 }
@@ -81,15 +82,17 @@
     }
 
     .title-secondary {
-        width: auto;
 
         &--manufacturing {
             margin-bottom: 129px;
-            width: auto;
         }
         
         &--work {
             margin-bottom: 64px;
+        }
+
+        &--question {
+            min-width: auto;
         }
 
         &--advantages {

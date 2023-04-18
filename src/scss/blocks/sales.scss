@@ -1,11 +1,12 @@
 .sales {
-    background: rgba(10,144,66,0.1);
-    z-index: -5;
-    background-repeat: no-repeat;
+    background: url("../img/price_bg_top_adaptive.png") top/100% 150px no-repeat, 
+    url("../img/price_bg_adbottom.png") bottom/100% 300px no-repeat,  
+    radial-gradient(98.97% 276.64% at 1.03% 40.7%, #EBF6FF 0%, #EFF8FF 100%);
 
     &__wrapper {
-        margin-left: 15px;
-        margin-bottom: 32px;
+        padding-top: 150px;
+        padding-left: 15px;
+        padding-bottom: 32px;
     }
 
     .promo {
@@ -120,11 +121,12 @@
 
 .sales {
     .price {
-        background: none;
-
-        .total__bg {
-            display: none;
+        margin-bottom: 0;
+        &__wrapper {
+            padding-top: 40px;
+            padding-bottom: 350px;
         }
+        background: none;
 
         &__title-container {
             display: none;
@@ -134,16 +136,18 @@
 
 @media (min-width: 900px) {
     .sales {
-        background: rgba(10,144,66,0.1);
-        z-index: -5;
-        background-repeat: no-repeat;
-        margin-bottom: 180px;
-        width: 1600px;
+        max-width: 1600px;
+        background: url("../img/price_bg_top.png") top/100% 257px no-repeat, 
+        url("../img/price_bg_bottom.png") bottom/100% 300px no-repeat, 
+        radial-gradient(98.97% 276.64% at 1.03% 40.7%, #EBF6FF 0%, #EFF8FF 100%);
+        margin-bottom: 0;
         margin: 0 auto;
     
         &__wrapper {
+            padding-top: 257px;
             width: 1170px;
             margin: 0 auto;
+            padding-left: 0;
         }
             
         .promo {
@@ -151,8 +155,13 @@
         }
 
         .price {
+            margin-bottom: 0;
             &__title-container {
                 display: block;
+            }
+
+            &__wrapper {
+                padding-bottom: 400px;
             }
         }
     }
@@ -246,11 +255,9 @@
 
     .sales {
         .price {
-            .total__bg {
-                &--desktop {
-                    display: none;
-                }
-            }
+            &__wrapper {
+               padding-top: 0;
+            }         
         }
     }
 }
