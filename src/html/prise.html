@@ -5,12 +5,10 @@
       <div class="promo">
         <div class="promo__wrapper">
           <div class="promo__menu">
-            <p class="promo__menu--materials">Материалы</p> 
-            <p class="promo__menu--printer">Принтеры</p>
+            <button class="promo__menu--button promo__menu--button-material promo__menu--button-open">Материалы</button>
+            <button class="promo__menu--button promo__menu--button-printer">Принтеры</button>
           </div>
-          <div class="promo__line"></div>
-          <div class="promo__abs--line"></div>
-          <ul>
+          <ul class="promo__list-block promo__list-block-material">
             <li class="promo__list-item">
               <details class="promo__list-item--details">
                 <summary class="promo__title">ABS PRO (FDM)</summary>
@@ -56,6 +54,20 @@
             <li class="promo__list-item">
               <details class="promo__list-item--details">
                 <summary class="promo__title">VERO CLEAR (POLYJET)</summary>
+                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+              </details>
+            </li>
+          </ul>
+          <ul class="promo__list-block promo__list-block-printer">
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">ELASTAN (FDM)</summary>
+                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+              </details>
+            </li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">COPET (FDM)</summary>
                 <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
               </details>
             </li>
@@ -109,29 +121,29 @@
             <div class="form-input-fields form-input-fields--width">
               <input placeholder=" " type="text" class="input input-next" autocomplete="off">
               <label for="">Ширина, мм</label>
-              <span class="stap-two-test">Укажите ширину</span>
+              <span class="input-staptwo-error">Укажите ширину</span>
             </div>
             <div class="form-input-fields form-input-fields--width-desktop">
               <input placeholder=" " type="text" class="input input-next" autocomplete="off">
               <label for="">Высота, мм</label>
-              <span class="stap-two-test">Укажите высоту</span>
+              <span class="input-staptwo-error">Укажите высоту</span>
             </div>
             <div class="form-input-fields form-input-fields--stap-two">
               <input placeholder=" " type="text" class="input input-next" autocomplete="off">
               <label for="">Длинна, мм</label>
-              <span class="stap-two-test">Укажите длинну</span>
+              <span class="input-staptwo-error">Укажите длинну</span>
             </div>
           </div>
           <div class="form-block__label-block form-block__label-block--stap-next">
             <div class="form-input-fields form-input-fields--width">
               <input placeholder=" " type="text" class="input input-next" autocomplete="off">
               <label for="">Количкство</label>
-              <span class="stap-two-test">Укажите количество</span>
+              <span class="input-staptwo-error">Укажите количество</span>
             </div>
             <div class="form-input-fields">
               <input placeholder=" " type="text" class="input input-next" autocomplete="off">
               <label for="">Цвет</label>
-              <span class="stap-two-test">Укажите цвет</span>
+              <span class="input-staptwo-error">Укажите цвет</span>
             </div>
           </div>
           <div class="button-block">
@@ -155,12 +167,12 @@
           <div class="form-input-fields form-input-fields--stap-three-name">
             <input placeholder=" " type="text" class="input input--stap-three input--name-stap-three" autocomplete="off">
             <label for="">Ваше имя</label>
-            <span class="description-test-name">Укажите имя</span>
+            <span class="input-stapthree-error">Укажите имя</span>
           </div>
           <div class="form-input-fields form-input-fields--stap-three-tel">
             <input placeholder=" " type="text" class="input input--stap-three input--telefon-stap-three" autocomplete="off">
             <label for="">Телефон</label>
-            <span class="description-test-telefon">Укажите телефон</span>
+            <span class="input-stapthree-error">Укажите телефон</span>
           </div>
           <div class="button-block">
             <button class="button button__next button__next--stap-three" type="button">Назад</button>

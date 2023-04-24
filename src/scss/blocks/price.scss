@@ -33,36 +33,24 @@
        
     }
 
-    &__menu {
-        display: flex;
-        
-       
-        &--materials {
-            margin: 0;
-            margin-bottom: 5px;
-            margin-right: 32px;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 140%;
-            color: #FB8C00;
-        }
-
-        &--printer {
-            margin: 0;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 140%;
-            color: #2C2F36;
-            opacity: 0.4;
-        }
+    &__list-block-printer {
+        display: none;
     }
     
-    &__line {
-        width: 100px;
-        height: 3px;
-        background-color: #FB8C00;
+    &__list-block-open {
+        &.promo {
+            &__list-block-printer {
+                display: block;
+            }
+
+            &__list-block-material {
+                display: none;
+            }
+        }
+    }
+
+    &__menu {
+        display: flex;
         margin-bottom: 40px;
     }
 
@@ -90,6 +78,8 @@
             color: #2C2F36;   
         }
     }
+
+    
 
     &__list-item {
         margin-bottom: 25px;
@@ -176,10 +166,6 @@ details summary::-webkit-details-marker { display:none}
             max-width: 1170px;
         }
     }   
-
-    .price-container {
-        display: flex;
-    }
 
     .promo {
         margin-right: 30px;

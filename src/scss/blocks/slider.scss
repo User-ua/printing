@@ -75,15 +75,14 @@
     }
 
     .slider-container {
-        width: 1386px;
-        margin: 0 auto;
-        overflow: hidden; 
+        width: 1350px;
+        margin: 0 auto; 
 
         &__line {
             width: 1470px;
             height: auto;
             position: relative;
-            left: 0;
+            left: 0; 
             transition: all ease 1s;
         }
 

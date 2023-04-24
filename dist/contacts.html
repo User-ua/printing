@@ -61,15 +61,22 @@
                         </div>
                         <div class="footer__line footer__line--contact"></div>
                         <p class="form-block__text form-block__text--contact">Свяжитесь с нами</p>
-                        <label class="label">
-                            <input class="form-block__input form-block__input--contact" placeholder="Ваше имя">
-                        </label>
-                        <label class="label">
-                            <input class="form-block__input form-block__input--contact" placeholder="Ваш телефон">
-                        </label>
-                        <label class="label">
-                            <input class="form-block__input form-block__input--contact form-block__input--contact-massage" placeholder="Ваше сообщение">
-                        </label>
+                        <div class="form-input-fields form-input-fields--contact">
+                            <input placeholder=" " type="text" class="input input--contact" autocomplete="off">
+                            <label for="">Ваше имя</label>
+                            <span class="input-contact-error">Укажите Ваше имя</span>
+                        </div>
+                        <div class="form-input-fields form-input-fields--contact">
+                            <input placeholder=" " type="text" class="input input--contact input--contact-telefon" autocomplete="off">
+                            <label for="">Телефон</label>
+                            <span class="input-contact-error">Укажите в формате 38-000-000-00-00</span>
+                        </div>
+                        <div class="form-input-fields form-input-fields--contact">
+                            <textarea placeholder=" " type="text" class="input input--contact input--contact-text" autocomplete="off"></textarea>
+                            <label for="">Ваш вопрос</label>
+                            <span class="input-contact-error">Напишите Ваш вопрос</span>
+                        </div>
+                        
                         <button class="button button--contact">Напишите нам</button>
                         <div class="footer__rights">
                             <div class="footer__year">@2021. Все права защищены</div>
@@ -84,38 +91,32 @@
             </section>
         </main>
         <footer class="footer">
-    <!--<img class="bg-adaptive bg-adaptive--footer" src="img/footer_bg_top.png">
-    <img class="bg-bottom bg-bottom__footer" src="img/footer_bg_dt.png">-->
     <div class="footer__wrapper">
       <div class="footer__block">
         <div class="logo-block">
-          <div class="logo">
-          <img class="logo__img logo__img--footer" src="img/logo.png">         
-          </div>
+          <a href="/" class="logo">
+            <img class="logo__img logo__img--footer" src="img/logo.png">
+          </a>
           <div class="footer__text">
-            <p class="footer__content">3D-печать</p>
-            <p class="footer__content">3D-моделирование</p>
-            <p class="footer__content">Контакты</p>
+            <a class="nav__link nav__link--footer" href="threed-printing.html">3D-печать</a>
+            <a class="nav__link nav__link--footer" href="modeling.html">3D-моделирование</a>
+            <a class="nav__link nav__link--footer" href="contacts.html">Контакты</a>
           </div>
         </div>
         <div class="contact">
           <div class="contact__telefon-box">
-            <p class="contact__telefon-namber">+38 (097) 999-99-99</p>
+            <a href="tel:+38 (096) 77-50-115" class="contact__telefon-namber">+38 (096) 77-50-115</a>
           </div>
           <div class="info">
             <div class="info__adress-wrapper">
               <p class="info__adress">г. Киев, ул. Гагарина 25/68</p>
             </div>
             <div class="info__email-wrapper">
-              <p class="info__email">pochta@gmail.com</p>
+              <a href="mailto:" class="info__email">pochta@gmail.com</a>
             </div>
-            <div class="button-link">
-              <div class="button-link__youtube">
-                <button class="button__youtube" type="button"></button>
-              </div>
-              <div class="button-link__facebook">
-                <button class="button__facebook" type="button"></button>
-              </div>
+            <div class="button-link">       
+              <a href="https://www.youtube.com" class="button-link__youtube"></a>
+              <a href="https://www.facebook.com" class="button-link__facebook"></a>
             </div>
           </div>
         </div>

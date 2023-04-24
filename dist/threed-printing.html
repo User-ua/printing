@@ -237,12 +237,10 @@
       <div class="promo">
         <div class="promo__wrapper">
           <div class="promo__menu">
-            <p class="promo__menu--materials">Материалы</p> 
-            <p class="promo__menu--printer">Принтеры</p>
+            <button class="promo__menu--button promo__menu--button-material promo__menu--button-open">Материалы</button>
+            <button class="promo__menu--button promo__menu--button-printer">Принтеры</button>
           </div>
-          <div class="promo__line"></div>
-          <div class="promo__abs--line"></div>
-          <ul>
+          <ul class="promo__list-block promo__list-block-material">
             <li class="promo__list-item">
               <details class="promo__list-item--details">
                 <summary class="promo__title">ABS PRO (FDM)</summary>
@@ -288,6 +286,20 @@
             <li class="promo__list-item">
               <details class="promo__list-item--details">
                 <summary class="promo__title">VERO CLEAR (POLYJET)</summary>
+                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+              </details>
+            </li>
+          </ul>
+          <ul class="promo__list-block promo__list-block-printer">
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">ELASTAN (FDM)</summary>
+                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+              </details>
+            </li>
+            <li class="promo__list-item">
+              <details class="promo__list-item--details">
+                <summary class="promo__title">COPET (FDM)</summary>
                 <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
               </details>
             </li>
@@ -341,29 +353,29 @@
             <div class="form-input-fields form-input-fields--width">
               <input placeholder=" " type="text" class="input input-next" autocomplete="off">
               <label for="">Ширина, мм</label>
-              <span class="stap-two-test">Укажите ширину</span>
+              <span class="input-staptwo-error">Укажите ширину</span>
             </div>
             <div class="form-input-fields form-input-fields--width-desktop">
               <input placeholder=" " type="text" class="input input-next" autocomplete="off">
               <label for="">Высота, мм</label>
-              <span class="stap-two-test">Укажите высоту</span>
+              <span class="input-staptwo-error">Укажите высоту</span>
             </div>
             <div class="form-input-fields form-input-fields--stap-two">
               <input placeholder=" " type="text" class="input input-next" autocomplete="off">
               <label for="">Длинна, мм</label>
-              <span class="stap-two-test">Укажите длинну</span>
+              <span class="input-staptwo-error">Укажите длинну</span>
             </div>
           </div>
           <div class="form-block__label-block form-block__label-block--stap-next">
             <div class="form-input-fields form-input-fields--width">
               <input placeholder=" " type="text" class="input input-next" autocomplete="off">
               <label for="">Количкство</label>
-              <span class="stap-two-test">Укажите количество</span>
+              <span class="input-staptwo-error">Укажите количество</span>
             </div>
             <div class="form-input-fields">
               <input placeholder=" " type="text" class="input input-next" autocomplete="off">
               <label for="">Цвет</label>
-              <span class="stap-two-test">Укажите цвет</span>
+              <span class="input-staptwo-error">Укажите цвет</span>
             </div>
           </div>
           <div class="button-block">
@@ -387,12 +399,12 @@
           <div class="form-input-fields form-input-fields--stap-three-name">
             <input placeholder=" " type="text" class="input input--stap-three input--name-stap-three" autocomplete="off">
             <label for="">Ваше имя</label>
-            <span class="description-test-name">Укажите имя</span>
+            <span class="input-stapthree-error">Укажите имя</span>
           </div>
           <div class="form-input-fields form-input-fields--stap-three-tel">
             <input placeholder=" " type="text" class="input input--stap-three input--telefon-stap-three" autocomplete="off">
             <label for="">Телефон</label>
-            <span class="description-test-telefon">Укажите телефон</span>
+            <span class="input-stapthree-error">Укажите телефон</span>
           </div>
           <div class="button-block">
             <button class="button button__next button__next--stap-three" type="button">Назад</button>
@@ -427,22 +439,23 @@
                     <div class="form-input-fields form-input-fields--your-name">
                         <input placeholder=" " type="text" class="input input-form-question input--question input--your-name" autocomplete="off">
                         <label for="">Ваше имя</label>
-                        <span class="input-test-name">Укажите Ваше имя</span>
+                        <span class="input-question-error">Укажите Ваше имя</span>
                     </div>
                     <div class="form-input-fields">
                         <input placeholder=" " type="text" class="input input-form-question input--question input--your-tel" autocomplete="off">
                         <label for="">Телефон</label>
-                        <span class="input-test-telefon">Укажите в формате 38-000-000-00-00</span>
+                        <span class="input-question-error">Укажите в формате 38-000-000-00-00</span>
                     </div>
                 </div>
-                <div class="form-input-fields">
+                <div class="form-input-fields form-input-fields--text">
                     <textarea placeholder=" " type="text" class="input input-form-question input--question-text" autocomplete="off"></textarea>
                     <label for="">Ваш вопрос</label>
+                    <span class="input-question-error">Напишите Ваш вопрос</span>
                 </div>
                 <div class="button-blok">
                     <button class="button button__form">Отправить</button>
                     <div class="question__comment">Нажимая на кнопку, вы соглашаетесь 
-                    с <span class="question__comment--privacy-policy">Политикой конфиденциальности</span>
+                    с <a href="#" class="question__comment--privacy-policy">Политикой конфиденциальности</a>
                     </div>
                 </div>   
             </div>           
@@ -451,38 +464,32 @@
 </section>
     </main>  
     <footer class="footer">
-    <!--<img class="bg-adaptive bg-adaptive--footer" src="img/footer_bg_top.png">
-    <img class="bg-bottom bg-bottom__footer" src="img/footer_bg_dt.png">-->
     <div class="footer__wrapper">
       <div class="footer__block">
         <div class="logo-block">
-          <div class="logo">
-          <img class="logo__img logo__img--footer" src="img/logo.png">         
-          </div>
+          <a href="/" class="logo">
+            <img class="logo__img logo__img--footer" src="img/logo.png">
+          </a>
           <div class="footer__text">
-            <p class="footer__content">3D-печать</p>
-            <p class="footer__content">3D-моделирование</p>
-            <p class="footer__content">Контакты</p>
+            <a class="nav__link nav__link--footer" href="threed-printing.html">3D-печать</a>
+            <a class="nav__link nav__link--footer" href="modeling.html">3D-моделирование</a>
+            <a class="nav__link nav__link--footer" href="contacts.html">Контакты</a>
           </div>
         </div>
         <div class="contact">
           <div class="contact__telefon-box">
-            <p class="contact__telefon-namber">+38 (097) 999-99-99</p>
+            <a href="tel:+38 (096) 77-50-115" class="contact__telefon-namber">+38 (096) 77-50-115</a>
           </div>
           <div class="info">
             <div class="info__adress-wrapper">
               <p class="info__adress">г. Киев, ул. Гагарина 25/68</p>
             </div>
             <div class="info__email-wrapper">
-              <p class="info__email">pochta@gmail.com</p>
+              <a href="mailto:" class="info__email">pochta@gmail.com</a>
             </div>
-            <div class="button-link">
-              <div class="button-link__youtube">
-                <button class="button__youtube" type="button"></button>
-              </div>
-              <div class="button-link__facebook">
-                <button class="button__facebook" type="button"></button>
-              </div>
+            <div class="button-link">       
+              <a href="https://www.youtube.com" class="button-link__youtube"></a>
+              <a href="https://www.facebook.com" class="button-link__facebook"></a>
             </div>
           </div>
         </div>

@@ -47,7 +47,8 @@
                         ленный 
                         дизайн</span></h1>
                 </div>
-                <div class="top-printing__title-wrapper top-printing__title-wrapper--desktop"><h1 class="title title__desktop"><span class="title-wrapper__thred title-wrapper__thred--modeling">3D</span>-моделирование и промышленный дизайн</span></h1></div> 
+                <div class="top-printing__title-wrapper top-printing__title-wrapper--desktop">
+                    <h1 class="title title__desktop"><span class="title-wrapper__thred title-wrapper__thred--modeling">3D</span>-моделирование и промышленный дизайн</span></h1></div> 
             </section>
             <section class="services">
                 <div class="services__wrapper">
@@ -106,28 +107,26 @@
                     <ul class="stages__list">
                         <li class="stages__item stages__item--one">
                             <div class="stages__item--block">
-                                <p class="stages__item--title">Создание формы объекта</p>
+                                <p class="stages__item--title stages__item--title-one">Создание формы объекта</p>
                                 <p class="stages__item--text">Построение объёмной геометрической фигуры без учёта физических характеристик.</p>
                             </div>
                         </li>
-                        <div class="stages__point"><img src="img/stages-point.png"></div>
                         <li class="stages__item stages__item--two">
                             <div class="stages__item--block">
-                                <p class="stages__item--title">Текстурирование</p>
-                                <p class="stages__item--text">Построение объёмной геометрической фигуры без учёта физических характеристик.</p>
+                                <p class="stages__item--title stages__item--title-two">Текстурирование</p>
+                                <p class="stages__item--text">Придание цвета и рельефа, воспроизведение мелких деталей.</p>
                             </div>
                         </li>
-                        <div class="stages__point"><img src="img/stages-point.png"></div>
                         <li class="stages__item stages__item--three">
                             <div class="stages__item--block">
-                                <p class="stages__item--title">Освещение</p>
+                                <p class="stages__item--title stages__item--title-three">Освещение</p>
                                 <p class="stages__item--text">Придание большей реалистичности благодаря наличию источника света и теней.</p>
                             </div>
                         </li>
                     </ul>
                 </div>
             </section>
-            <section class="price price--terms">
+            <section id="terms" class="price price--terms">
                     <div class="price__wrapper">
                         <div class="price__title-container">
                         <h2 class="title-secondary title-secondary--prise">Рассчитать стоимость <span class="price__thred">3D</span>-печати</h2>
@@ -150,25 +149,25 @@
                                 </div>
                             </div>
 
-                            <div class="form-block terms--form-block">
+                            <form class="form-block terms--form-block">
                                 <div class="form-block__wrapper">
                                     <h3 class="form-block__title">Введите ваши данные</h3>
                                     <div class="form-block__label-block">
                                         <div class="form-input-fields form-input-fields--width">
                                             <input placeholder=" " type="text" class="input input--name input--form-description" autocomplete="off">
                                             <label for="">Ваше имя</label>
-                                            <span class="description-test-name">Укажите Ваше имя</span>
+                                            <span class="input-description-error">Укажите Ваше имя</span>
                                         </div>
                                         <div class="form-input-fields">
                                             <input placeholder=" " type="text" class="input input--tel input--form-description" autocomplete="off">
                                             <label for="">Ваш телефон</label>
-                                            <span class="description-test-telefon">38-000-000-00-00</span>
+                                            <span class="input-description-error">38-000-000-00-00</span>
                                         </div>
                                     </div>
                                     <div class="form-input-fields">
                                         <input placeholder=" " type="text" class="input input--email input--form-description" autocomplete="off">
                                         <label for="">Ваш e-mail</label>
-                                        <span class="description-test-email">Укажите в формате index@gmail.com</span>
+                                        <span class="input-description-error">Укажите в формате index@gmail.com</span>
                                     </div>
                                     <div class="form-block__upload-container">
                                         <p class="form-block__upload">Загрузить макет:</p>
@@ -179,54 +178,29 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="form-input-fields">
+                                    <div class="form-input-fields form-input-fields--description">
                                         <textarea placeholder="Опишите Ваши пожелания, чтобы мы максимально точно выполнили Ваш заказ" type="text" class="input input--description input--form-description" autocomplete="off"></textarea>
                                         <label for=""></label>
+                                        <span class="input-description-error">Введите текст</span>
                                     </div>
+                                    
+
                                     <button class="button button__send">Отправить</button>
                                     <div class="button-block button-block--terms">
                                         <button class="button button__next">Назад</button>
                                         <button class="button button__prev button__prev--stap">Далее</button>
                                     </div>
                                 </div>
-                            </div>
-                        
-                            <div class="form-block form-block--terms form-block--clouse">
-                                <div class="form-block__wrapper">
-                                    <h3 class="form-block__title">Введите ваши данные</h3>
-                                    <div class="form-block__label-block">
-                                        <div class="form-input-fields">
-                                            <input placeholder=" " type="text" class="input input--name" autocomplete="off">
-                                            <label for="">Ваше имя</label>
-                                        </div>
-                                        <div class="form-input-fields">
-                                            <input placeholder=" " type="text" class="input input--tel" autocomplete="off">
-                                            <label for="">Ваш телефон</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-input-fields">
-                                        <input placeholder=" " type="text" class="input input--email" autocomplete="off">
-                                        <label for="">Ваш e-mail</label>
-                                    </div>
-                                    <!--<label class="form-block__label form-block__label--email">
-                                        <input class="form-block__input form-block__input--email" placeholder="Электронная почта" name="email" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)" required>
-                                    </label>-->
-                                    <div class="form-block__upload-container">
-                                        <p class="form-block__upload">Загрузить макет:</p>
-                                        <div class="form-block__file-container">
-                                            <p class="form-block__file">Файл не выбран</p>
-                                            <button class="button button--upload">Выберите файл</button>
-                                        </div>
-                                    </div>
-                                    <div class="form-input-fields">
-                                        <textarea placeholder="Опишите Ваши пожелания, чтобы мы максимально точно выполнили Ваш заказ" type="text" class="input input--description" autocomplete="off"></textarea>
-                                        <label for=""></label>
-                                    </div>
-                                    <button class="button button__send">Отправить</button>
-                                    <div class="button-block button-block--terms">
-                                        <button class="button button__next">Назад</button>
-                                        <button class="button button__prev">Далее</button>
-                                    </div>
+                            </form>
+
+                            <div class="smile form-block--clouse">
+                                <button class="button-clouse" type="button"></button>
+                                <div class="smile__wrapper">
+                                  <img class="smile__picture" src="img/smile.png">
+                                  <p class="smile__title">Спасибо за заявку!</p>
+                                  <p class="smile__text">Скоро наш менеджер свяжется с вами
+                                    и уточнит стоимость вашего изделия</p>
+                                    <button class="button button__next button__next--smile-moddeling">Назад</button>
                                 </div>
                             </div>
                         </div>
@@ -245,22 +219,23 @@
                     <div class="form-input-fields form-input-fields--your-name">
                         <input placeholder=" " type="text" class="input input-form-question input--question input--your-name" autocomplete="off">
                         <label for="">Ваше имя</label>
-                        <span class="input-test-name">Укажите Ваше имя</span>
+                        <span class="input-question-error">Укажите Ваше имя</span>
                     </div>
                     <div class="form-input-fields">
                         <input placeholder=" " type="text" class="input input-form-question input--question input--your-tel" autocomplete="off">
                         <label for="">Телефон</label>
-                        <span class="input-test-telefon">Укажите в формате 38-000-000-00-00</span>
+                        <span class="input-question-error">Укажите в формате 38-000-000-00-00</span>
                     </div>
                 </div>
-                <div class="form-input-fields">
+                <div class="form-input-fields form-input-fields--text">
                     <textarea placeholder=" " type="text" class="input input-form-question input--question-text" autocomplete="off"></textarea>
                     <label for="">Ваш вопрос</label>
+                    <span class="input-question-error">Напишите Ваш вопрос</span>
                 </div>
                 <div class="button-blok">
                     <button class="button button__form">Отправить</button>
                     <div class="question__comment">Нажимая на кнопку, вы соглашаетесь 
-                    с <span class="question__comment--privacy-policy">Политикой конфиденциальности</span>
+                    с <a href="#" class="question__comment--privacy-policy">Политикой конфиденциальности</a>
                     </div>
                 </div>   
             </div>           
@@ -269,38 +244,32 @@
 </section>
         </main>
         <footer class="footer">
-    <!--<img class="bg-adaptive bg-adaptive--footer" src="img/footer_bg_top.png">
-    <img class="bg-bottom bg-bottom__footer" src="img/footer_bg_dt.png">-->
     <div class="footer__wrapper">
       <div class="footer__block">
         <div class="logo-block">
-          <div class="logo">
-          <img class="logo__img logo__img--footer" src="img/logo.png">         
-          </div>
+          <a href="/" class="logo">
+            <img class="logo__img logo__img--footer" src="img/logo.png">
+          </a>
           <div class="footer__text">
-            <p class="footer__content">3D-печать</p>
-            <p class="footer__content">3D-моделирование</p>
-            <p class="footer__content">Контакты</p>
+            <a class="nav__link nav__link--footer" href="threed-printing.html">3D-печать</a>
+            <a class="nav__link nav__link--footer" href="modeling.html">3D-моделирование</a>
+            <a class="nav__link nav__link--footer" href="contacts.html">Контакты</a>
           </div>
         </div>
         <div class="contact">
           <div class="contact__telefon-box">
-            <p class="contact__telefon-namber">+38 (097) 999-99-99</p>
+            <a href="tel:+38 (096) 77-50-115" class="contact__telefon-namber">+38 (096) 77-50-115</a>
           </div>
           <div class="info">
             <div class="info__adress-wrapper">
               <p class="info__adress">г. Киев, ул. Гагарина 25/68</p>
             </div>
             <div class="info__email-wrapper">
-              <p class="info__email">pochta@gmail.com</p>
+              <a href="mailto:" class="info__email">pochta@gmail.com</a>
             </div>
-            <div class="button-link">
-              <div class="button-link__youtube">
-                <button class="button__youtube" type="button"></button>
-              </div>
-              <div class="button-link__facebook">
-                <button class="button__facebook" type="button"></button>
-              </div>
+            <div class="button-link">       
+              <a href="https://www.youtube.com" class="button-link__youtube"></a>
+              <a href="https://www.facebook.com" class="button-link__facebook"></a>
             </div>
           </div>
         </div>

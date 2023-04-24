@@ -12,6 +12,8 @@
     }
 
     &__text {
+        display: flex;
+        flex-direction: column;
         margin-bottom: 45px;
     }
 
@@ -27,14 +29,6 @@
             margin-right: 15px;
             margin-bottom: 40px;
         }
-    }
-
-    &__content {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        color: #2C2F36;
-        margin-bottom: 13px;
     }
 
     &__year {
@@ -72,6 +66,7 @@
     }
 
     &__telefon-namber {
+        text-decoration: none;
         font-weight: 600;
         font-size: 24px;
         line-height: 29px;
@@ -103,6 +98,7 @@
     }
 
     &__email {
+        text-decoration: none;
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
@@ -118,8 +114,87 @@
     display: flex;
     margin-bottom: 33px;
 
-    &--contact {
-        margin-bottom: 40px;
+    &__youtube {
+        position: relative;
+        width: 44px;
+        height: 44px;
+        background: rgba(180,187,206,0.3);
+        border-radius: 22px;
+        border: none;
+    
+        &::before {
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 16px;
+            background-image: url('../img/youtube_picture.png');
+            background-repeat: no-repeat;
+            top: 15px;
+            left: 12px;
+        }
+    
+        &:hover {
+            background: #2C2F36;
+            position: relative;
+    
+            &::before {
+                width: 18px;
+                height: 13px;
+                background: white;
+                border-radius: 3px;
+                top: 16px;
+                left: 13px;
+            }
+    
+            &::after {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 0;
+                border-top: 4px solid transparent;
+                border-bottom: 4px solid transparent;
+                border-left: 8px solid #2C2F36;
+                top: 19px;
+                right: 17px;
+            }
+        }
+    }
+
+    &__facebook {
+        position: relative;
+        width: 44px;
+        height: 44px;
+        background: rgba(180,187,206,0.3);
+        border-radius: 22px;
+        margin-left: 24px;
+        border: none;
+    
+        &::before {
+            position: absolute;
+            content: "";
+            width: 10.5px;
+            height: 20px;
+            background-image: url('../img/face_picture.png');
+            background-repeat: no-repeat;
+            top: 11px;
+            left: 17px;
+        }
+    
+        &:hover {
+            background: #2C2F36;
+            position: relative;
+    
+            &::before {
+            position: absolute;
+            content: "";
+            width: 10.5px;
+            height: 20px;
+            background-image: url('../img/face_wite.png');
+            background-repeat: no-repeat;
+            top: 11px;
+            left: 17px;
+            }
+        }
     }
 }
 
@@ -218,6 +293,8 @@
         }
     
         &__email {
+            display: flex;
+            justify-content: end;
             font-weight: 500;
             font-size: 14px;
             line-height: 16px;
@@ -228,10 +305,5 @@
     .button-link {
         display: flex;
         justify-content: end;
-
-        &--contact {
-            margin-bottom: 60px;
-            justify-content: start;
-        }
     }
 }

@@ -1,5 +1,6 @@
 .question {
     margin-left: 15px;
+    margin: 0 auto;
     background: radial-gradient(98.97% 276.64% at 1.03% 40.7%, #EBF6FF 0%, #EFF8FF 100%);
     border-radius: 35px;
     min-width: 345px;
@@ -28,31 +29,13 @@
 
         &--privacy-policy {
             color: #2F80ED;
+            text-decoration: none;
         }
     }
 }
 
-.input-test-name, .description-test-name, .stap-two-test{
-    display: flex;
-    justify-content: end;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: transparent;
-    margin-bottom: 15px;
-}
-
-.input-test-telefon, .description-test-telefon {
-    display: flex;
-    justify-content: end;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: transparent;
-    margin-bottom: 15px;
-}
-
-.input-test-email, .description-test-email{
+.input-question-error, .input-description-error, .input-staptwo-error, 
+.input-stapthree-error, .input-contact-error{
     display: flex;
     justify-content: end;
     font-weight: 500;

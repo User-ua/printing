@@ -2,6 +2,7 @@
     &__wrapper {
         margin-left: 15px;
         margin-bottom: 100px;
+        margin-right: 15px;
     }
 
     &__list {
@@ -11,7 +12,8 @@
     &__item {
         margin-bottom: 27px;
         background: radial-gradient(98.97% 276.64% at 1.03% 40.7%, #EBF6FF 0%, #EFF8FF 100%);
-        width: 345px;
+        min-width: 345px;
+        width: auto;
         height: 201px;
         border-radius: 35px;
         padding: 32px 36px 37px 146px;

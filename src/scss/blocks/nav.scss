@@ -42,6 +42,13 @@
         line-height: 19px;
         color: #2C2F36;
         text-decoration: none;
+
+        &--footer {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 13px;
+        }
  
     }   
 }
@@ -81,7 +88,9 @@
         }
         
         &__link {
-            margin: 0;
+            &--footer {
+                margin-bottom: 13px;
+            }
         }
     }
 }
