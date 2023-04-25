@@ -58,12 +58,13 @@
 @media (min-width: 900px) {
     .slider {
         &__wrapper {
-            width: 1170px;
             margin: 0 auto;
             margin-bottom: 180px;
         }
     
         &__title-wrapper {
+            width: 1170px;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             margin-bottom: 64px;
@@ -75,7 +76,7 @@
     }
 
     .slider-container {
-        width: 1350px;
+        width: 1340px;
         margin: 0 auto; 
 
         &__line {

@@ -123,6 +123,7 @@
         margin: 0 auto;
         background: url('../img/bg.jpg') no-repeat;
         margin-bottom: 100px;
+        overflow: hidden;
     }
 
     .topsection-wrapper {
@@ -132,6 +133,7 @@
         padding-top: 150px;
         padding-left: 15px;
         padding-bottom: 0;
+        
 
         &__picture {
             position: absolute;
