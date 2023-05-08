@@ -6,8 +6,20 @@
     box-shadow: 0px 4px 68px rgba(33, 33, 33, 0.06);
     border-radius: 35px;
 
+    &--description {
+        height: auto;
+    }
+
     &__wrapper {
         padding: 44px 24px;
+    }
+
+    &__stap-title {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        color: #2C2F36;
+        margin-bottom: 32px;
     }
 
     &--clouse {
@@ -60,7 +72,7 @@
             }
         }
 
-        &--contact {
+        /*&--contact {
             width: auto;
             margin: 0;
             margin-bottom: 32px;
@@ -68,7 +80,7 @@
             &::before {
                 display: none;
             }
-        }
+        }*/
     }
 
     &__title {
@@ -84,12 +96,16 @@
         display: flex;
         
         &--stap-next {
-            margin-bottom: 176px;
+            margin-bottom: 191px;
         }
     }
 
-    &__upload {
+    &__upload-container {
         margin-bottom: 24px;
+    }
+
+    &__upload {
+        margin-bottom: 12px;
         font-weight: 600;
         font-size: 16px;
         line-height: 140%;
@@ -97,27 +113,26 @@
     }
 
     &__file-container {
-        margin-bottom: 24px;
-    }
-
-    &__file {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 140%;
-        color: transparent;
         margin-bottom: 12px;
     }
 
-    .form-stap {
-        font-weight: 800;
-        font-size: 24px;
-        line-height: 29px;
-        color: #2C2F36;
-        margin-bottom: 32px;
+    &__file {
+        display: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        color: red;
+        margin-bottom: 12px;
+    }
+
+    & .test-failed {
+        &.form-block {
+            &__file {
+                display: block;
+            }
+        }
     }
 }
-
-
 
 .form-input-fields {
     position: relative;
@@ -288,7 +303,7 @@
 }
     
 .foto-information {
-    margin-bottom: 24px;
+    margin-bottom: 21px;
 
     &__content {
         font-weight: 500;
@@ -296,12 +311,16 @@
         line-height: 140%;
         color: #959CAC;
 
+        &--jpg {
+            height: 70px;
+        }
+
         &--size {
             margin-bottom: 10px;
         }
     }
 
-    &__size {
+    &--size {
         display: flex;
         justify-content: space-between;
         margin-bottom: 24px;
@@ -316,6 +335,7 @@
 
     &__content {
         min-width: 241px;
+        height: 91px;
         padding: 16px 32px 16px 24px;
         font-weight: 500;
         font-size: 14px;
@@ -328,17 +348,24 @@
     .form-block {
         width: 670px;
         height: 635px;
+
+        &--description {
+            height: auto;
+        }
     
         &__wrapper {
             padding: 44px 40px;
+        }
+
+        &__title {
+            margin-bottom: 47px;
         }
 
         &__photo-upload {
             width: 590px;
             height: 109px;
             padding: 44px 91px 43px 126px;
-            margin-bottom: 16px;
-           
+            margin-bottom: 16px; 
         }
 
         &__text {
@@ -363,9 +390,30 @@
         &__label-block {
             display: flex;
 
-            &--stap-next {
-                margin-bottom: 150px;
+            &--terms {
+                display: flex;
+                margin-bottom: 30px;
             }
+
+            &--stap-next {
+                margin-bottom: 140px;
+            }
+        }
+
+        &__label {
+            &--email {
+                position: relative;
+    
+                &::after {
+                    position: absolute;
+                    content: "*";
+                    color: red;
+                    width: 10px;
+                    height: 10px;
+                    left: 160px;
+                    top: 0;
+                }
+            }   
         }
     
         /*&__label {
@@ -404,7 +452,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         &__file-container {
@@ -415,7 +463,8 @@
         }
     
         &__upload {
-            margin-bottom: 0; 
+            margin-bottom: 0;
+            margin-right: 140px; 
         }
     
         &__file {
@@ -428,7 +477,6 @@
     }
 
     .form-input-fields {
-        width: auto;
         &--stap-two {
             display: block;
         }
@@ -445,12 +493,8 @@
             margin-right: 30px;
         }
 
-        &--stap-three-name {
-            margin-bottom: 30px;
-        }
-
         &--stap-three-tel {
-            margin-bottom: 150px;
+            margin-bottom: 140px;
         }
 
         & .input {
@@ -506,12 +550,16 @@
         &__content {
             width: 50%;
 
+            &--img {
+                width: auto;
+            }
+
             &--size {
                 margin-bottom: 0;
             }
         }
     
-        &__size {
+        &--size {
             margin-bottom: 32px;
             justify-content: start;
         }
@@ -522,6 +570,7 @@
 
         &__content {
             width: auto;
+            height: 70px;
             padding-left: 24px;
             padding-top: 15px;
             padding-bottom: 35px;

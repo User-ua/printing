@@ -1,5 +1,5 @@
-<section class="question-section">
-    <form class="question">
+<section class="question" lang="es-ES">
+    <form class="question__form">
         <div class="question__wrapper">
             <div class="question__info">   
                 <h2 class="title-secondary title-secondary--question">Остались вопросы?</h2>   
@@ -8,23 +8,29 @@
             <div class="question__input">
                 <div class="form-label">
                     <div class="form-input-fields form-input-fields--your-name">
-                        <input placeholder=" " type="text" class="input input-form-question input--question input--your-name" autocomplete="off">
-                        <label for="">Ваше имя</label>
-                        <span class="input-question-error">Укажите Ваше имя</span>
+                        <input placeholder=" " id="name" type="text" class="input input-form-question input--question input--your-name" autocomplete="off">
+                        <label for="name">Ваше имя</label>
+                        <div class="error-block">
+                            <span class="input-question-error">Укажите Ваше имя</span>
+                        </div>
                     </div>
                     <div class="form-input-fields">
-                        <input placeholder=" " type="text" class="input input-form-question input--question input--your-tel" autocomplete="off">
-                        <label for="">Телефон</label>
-                        <span class="input-question-error">Укажите в формате 38-000-000-00-00</span>
+                        <input placeholder=" " id="telefon" type="text" class="input input-form-question input--question input--your-tel" autocomplete="off">
+                        <label for="telefon">Телефон</label>
+                        <div class="error-block">
+                            <span class="input-question-error">Укажите в формате 38-000-000-00-00</span>
+                        </div>
                     </div>
                 </div>
                 <div class="form-input-fields form-input-fields--text">
-                    <textarea placeholder=" " type="text" class="input input-form-question input--question-text" autocomplete="off"></textarea>
-                    <label for="">Ваш вопрос</label>
-                    <span class="input-question-error">Напишите Ваш вопрос</span>
+                    <textarea placeholder=" " id="question" class="input input-form-question input--question-text" autocomplete="off"></textarea>
+                    <label for="question">Ваш вопрос</label>
+                    <div class="error-block">
+                        <span class="input-question-error">Напишите Ваш вопрос</span>
+                    </div>
                 </div>
                 <div class="button-blok">
-                    <button class="button button__form">Отправить</button>
+                    <button class="button button--form">Отправить</button>
                     <div class="question__comment">Нажимая на кнопку, вы соглашаетесь 
                     с <a href="#" class="question__comment--privacy-policy">Политикой конфиденциальности</a>
                     </div>

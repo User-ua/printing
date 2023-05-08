@@ -1,102 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@@include('html/head.html',
+@@include('html/head.html',{
     "title":"Главная"
 })
 <body>
   @@include('html/header.html',{})
   <section class="topsection">
-    <div class="topsection-wrapper">
-      <img class="topsection-wrapper__picture" src="img/header-picture.png" alt="декоративная картинка">
-      <div class="title-wrapper" >
-        <h1 class="title title__top title__top--breakWord">Услуги <span class="title__top--breakWord"><span class="title-wrapper__thred title-wrapper__thred--home">3D</span>-печати</span></h1>
+    <div class="wrapper wrapper--topsection">
+      <img class="wrapper__picture" src="img/header-picture.png" alt="Picture">
+      <div class="title-wrapper title-wrapper--topsection" >
+        <h1 class="title title--top">Услуги <span class="title--top-breakWord"><span class="thred thred--home">3D</span>-печати</span></h1>
       </div>
-      <ul class="topsection-wrapper__list">
-        <li class="topsection-wrapper__item topsection-wrapper__item--house"><p class="topsection-wrapper__content topsection-wrapper__content--house">Используем готовую модель или поможем с проектированием</p></li>
-        <li class="topsection-wrapper__item topsection-wrapper__item--stack"><p class="topsection-wrapper__content topsection-wrapper__content--stack">Производим как единичные экземпляры, так и выпускаем тиражи</p></li>
-        <li class="topsection-wrapper__item topsection-wrapper__item--printer"><p class="topsection-wrapper__content topsection-wrapper__content--printer">Печатаем по технологии FDM и SLA</p></li>
+      <ul class="list">
+        <li class="list__item list__item--house"><p class="text text--house">Используем готовую модель или поможем с проектированием</p></li>
+        <li class="list__item list__item--stack"><p class="text text--stack">Производим как единичные экземпляры, так и выпускаем тиражи</p></li>
+        <li class="list__item list__item--printer"><p class="text text--printer">Печатаем по технологии FDM и SLA</p></li>
       </ul>
     </div>
   </section>
 
   <section class="manufacturing">
-    <div class="manufacturing__title-wrapper">
-      <h2 class="title-secondary title-secondary--manufacturing">Изготовим что угодно</h2>
-    </div>
-    <div class="list-wrapper">
-      <ul class="product-list">
-        <li class="product-list__item">
-          <article class="product-card product-card__one">
+    <h2 class="title-secondary title-secondary--manufacturing">Изготовим что угодно</h2>
+    <div class="manufacturing__list-wrapper">
+      <ul class="list list--manufacturing">
+        <li class="list__item">
+          <article class="product-card product-card--one">
             <h3 class="product-card__title">
               <a href="#" class="product-card__link">Промышленные прототипы</a>
             </h3>
-            <p class="product-card__text">Для испытания образцов перед началом производства</p>
+            <p class="text text--product">Для испытания образцов перед началом производства</p>
           </article>
         </li>
-        <li class="product-list__item">
-          <article class="product-card product-card__two">
+        <li class="list__item">
+          <article class="product-card product-card--two">
             <h3 class="product-card__title">
               <a href="#" class="product-card__link">Архитектурные макеты</a>
             </h3>
-            <p class="product-card__text">Для наглядной презентации ваших проектов</p>
+            <p class="text text--product">Для наглядной презентации ваших проектов</p>
           </article>
         </li>
-        <li class="product-list__item">
-          <article class="product-card product-card__three">
+        <li class="list__item">
+          <article class="product-card product-card--three">
             <h3 class="product-card__title">
               <a href="#" class="product-card__link">Ювелирные изделия</a>
             </h3>
-            <p class="product-card__text">Для придания индивидуального стиля</p>
+            <p class="text text--product">Для придания индивидуального стиля</p>
           </article>
         </li>
-        <li class="product-list__item">
-          <article class="product-card product-card__four">
+        <li class="list__item">
+          <article class="product-card product-card--four">
             <h3 class="product-card__title">
               <a href="#" class="product-card__link">Скульптуры</a>
             </h3>
-            <p class="product-card__text">Для творческой декорации интерьера</p>
+            <p class="text text--product">Для творческой декорации интерьера</p>
           </article>
         </li>
-        <li class="product-list__item">
-          <article class="product-card product-card__five">
+        <li class="list__item">
+          <article class="product-card product-card--five">
             <h3 class="product-card__title">
               <a href="#" class="product-card__link">Инженерные детали</a>
             </h3>
-            <p class="product-card__text">Для воплощения в жизнь смелых идей</p>
+            <p class="text text--product">Для воплощения в жизнь смелых идей</p>
           </article>
         </li>
-        <li class="product-list__item">
-          <article class="product-card product-card__six">
+        <li class="list__item">
+          <article class="product-card product-card--six">
             <h3 class="product-card__title">
               <a href="#" class="product-card__link">Презентационные макеты</a>
             </h3>
-            <p class="product-card__text">Для демонстрации на выставках или на витринах</p>
+            <p class="text text--product">Для демонстрации на выставках или на витринах</p>
           </article>
         </li>
-        <li class="product-list__item">
-          <article class="product-card product-card__seven">
+        <li class="list__item">
+          <article class="product-card product-card--seven">
             <h3 class="product-card__title">
               <a href="#" class="product-card__link">Медицинские 
                 и образовательные модели</a>
             </h3>
-            <p class="product-card__text">Для использования в качестве учебных пособий</p>
+            <p class="text text--product">Для использования в качестве учебных пособий</p>
           </article>
         </li>
-        <li class="product-list__item">
-          <article class="product-card product-card__eight">
+        <li class="list__item">
+          <article class="product-card product-card--eight">
             <h3 class="product-card__title">
               <a href="#" class="product-card__link">Автозапчасти</a>
             </h3>
-            <p class="product-card__text">Для замены редких или снятых с производства деталей</p>
+            <p class="text text--product">Для замены редких или снятых с производства деталей</p>
           </article>
         </li>
-        <li class="product-list__item">
-          <article class="product-card product-card__nine">
+        <li class="list__item">
+          <article class="product-card product-card--nine">
             <h3 class="product-card__title">
               <a href="#" class="product-card__link">Сувенирная продукция</a>
             </h3>
-            <p class="product-card__text">Для создания необычных и запоминающихся даров</p>
+            <p class="text text--product">Для создания необычных и запоминающихся даров</p>
           </article>
         </li>
       </ul>

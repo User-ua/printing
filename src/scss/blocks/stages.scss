@@ -132,6 +132,8 @@
 
 @media (min-width: 900px) {
     .stages {
+        overflow: hidden;
+        
         &__wrapper {
             margin: 0 auto;
             width: 1170px;

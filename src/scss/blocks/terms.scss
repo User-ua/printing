@@ -65,7 +65,7 @@
     }
 }
 
-.inputfile {
+input[type=file] {
     display: none;
 }
 
@@ -107,43 +107,6 @@
         &__line {
             width: 390px;
             margin-bottom: 24px;
-        }
-    }
-
-    .form-block {
-        width: 670px;
-        height: 635px;
-    
-        &__wrapper {
-            padding: 44px 40px;
-        }
-    
-        &__title {
-            margin-bottom: 47px;
-    
-        }
-    
-        &__label-block {
-            &--terms {
-                display: flex;
-                margin-bottom: 30px;
-            }
-        }
-    
-        &__label {
-            &--email {
-                position: relative;
-    
-                &::after {
-                    position: absolute;
-                    content: "*";
-                    color: red;
-                    width: 10px;
-                    height: 10px;
-                    left: 160px;
-                    top: 0;
-                }
-            }   
         }
     }
 }

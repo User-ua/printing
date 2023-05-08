@@ -1,0 +1,72 @@
+.text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #2C2F36;
+
+    &--house {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            background: #9BA9B5;
+            opacity: 0.2;
+            border-radius: 36px;
+            width: 150px;
+            height: 3px;
+            left: 0;
+            top: 70px;
+        }
+    }
+
+    &--stack {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            background: #9BA9B5;
+            opacity: 0.2;
+            border-radius: 36px;
+            width: 150px;
+            height: 3px;
+            left: 0;
+            top: 70px;
+        }
+    }
+
+    &--product {
+        text-align: center;
+        transform: translateY(136px);
+        margin-left: 46px;
+        margin-right: 46px;
+    }
+}
+
+@media (min-width: 900px) {
+    .text {
+        &--house {
+            width: 162px;
+
+            &::after {
+                transform: rotate(90deg);
+                left: 115px;
+                top: 0px;
+            }
+        }
+
+        &--stack {
+            width: 195px;
+
+            &::after {
+                transform: rotate(90deg);
+                left: 145px;
+                top: 0px;
+            }
+        }
+
+        &--printer {
+            width: 186px;
+        }
+    }
+}

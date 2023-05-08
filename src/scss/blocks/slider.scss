@@ -63,7 +63,7 @@
         }
     
         &__title-wrapper {
-            width: 1170px;
+            max-width: 1170px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -76,11 +76,11 @@
     }
 
     .slider-container {
-        width: 1340px;
+        max-width: 1340px;
         margin: 0 auto; 
 
         &__line {
-            width: 1470px;
+            max-width: 1470px;
             height: auto;
             position: relative;
             left: 0; 

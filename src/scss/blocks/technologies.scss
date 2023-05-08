@@ -1,0 +1,111 @@
+.technologies-block {
+    width: 345px;
+    height: 50px;
+    background: radial-gradient(98.97% 276.64% at 1.03% 40.7%, #EBF6FF 0%, #EFF8FF 100%);
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding: 14px 293px 14px 24px;
+    margin-bottom: 24px;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid #FB8C00;
+    }
+
+    &__description {
+        &--title {
+            &::after {
+                display: none;
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+        &--text {
+           display: none;
+        }
+        
+        &--content {
+            &::after {
+                position: absolute;
+                content: "";
+                background-image: url(../img/plus.png);
+                background-repeat: no-repeat;
+                width: 10px;
+                height: 10px;
+                top: 7px;
+                left: 285px;
+            }
+        }
+    }
+
+    &--open {
+        height: 273px;
+        padding: 14px 24px 30px 24px;
+
+        & .technologies-block__description {
+            &--text {
+                display: block;
+            }
+
+            &--title {
+                &::after {
+                    display: block;
+                }
+    
+                &::before {
+                    display: block;
+                }
+            }
+
+            &--content {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__description {
+        &--title {
+            margin-bottom: 30px;
+            position: relative;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 140%;
+            color: #FB8C00;
+
+            &::after {
+                position: absolute;
+                content: "";
+                background-color: #FB8C00;
+                width: 10px;
+                height: 3px;
+                top: 10px;
+                left: 285px;
+            }
+    
+            &::before {
+                position: absolute;
+                content: "";
+                background-color: #B4BBCE;
+                opacity: 0.5;
+                border-radius: 8px;
+                width: 344px;
+                height: 3px;
+                top: 35px;
+                left: -24px;
+            }
+        }
+
+        &--text {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            color: #2C2F36;
+    
+        }
+    }
+}

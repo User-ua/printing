@@ -34,7 +34,13 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 750px) {
+    .smile {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
     .smile {
         width: 670px;
         height: 635px;

@@ -1,12 +1,14 @@
 .question {
-    margin-left: 15px;
-    margin: 0 auto;
-    background: radial-gradient(98.97% 276.64% at 1.03% 40.7%, #EBF6FF 0%, #EFF8FF 100%);
-    border-radius: 35px;
-    min-width: 345px;
-    width: 70%;
-    height: auto;
-    margin-bottom: 100px;
+    &__form {
+        margin-left: 15px;
+        margin: 0 auto;
+        background: radial-gradient(98.97% 276.64% at 1.03% 40.7%, #EBF6FF 0%, #EFF8FF 100%);
+        border-radius: 35px;
+        min-width: 345px;
+        width: 70%;
+        height: auto;
+        margin-bottom: 100px;
+    }
 
     &__wrapper {
         padding: 50px 24px;
@@ -34,19 +36,30 @@
     }
 }
 
+.error-block {
+    width: auto;
+    height: 30px;
+}
+
 .input-question-error, .input-description-error, .input-staptwo-error, 
 .input-stapthree-error, .input-contact-error{
-    display: flex;
-    justify-content: end;
+    text-align: right;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    color: transparent;
-    margin-bottom: 15px;
+    color: #F00808;
+}
+
+.input-question-error, .input-description-error, .input-staptwo-error, 
+.input-stapthree-error, .input-contact-error{
+    display: none;
 }
 
 .test-failed {
-    color: #F00808;
+    &.input-question-error, &.input-description-error, &.input-staptwo-error, 
+    &.input-stapthree-error, &.input-contact-error{
+    display: block;
+}
 }
 
 .input {
@@ -71,24 +84,26 @@
 
 @media (min-width: 1200px) {
     .question {
-        margin-left: 0;
-        background: rgba(10,144,66,0.1);
-        border-radius: 35px;
-        width: 1170px;
-        height: 433px;
-        margin: 0 auto;
-        margin-bottom: 100px;
+        &__form {
+            margin-left: 0;
+            background: rgba(10,144,66,0.1);
+            border-radius: 35px;
+            width: 1170px;
+            height: 433px;
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
     
         &__wrapper {
             display: flex;
             padding: 70px;
         }
-
+    
         &__info {
             width: 50%;
             margin-right: 20px;
         }
-
+    
         &__title {
             width: auto;
         }
@@ -97,7 +112,7 @@
             margin-bottom: 0;
             width: 380px;
         }
-
+    
         &__input {
             width: 50%;
             margin-left: 35px;
@@ -106,6 +121,16 @@
 
     .form-label {
         display: flex;
+    }
+
+    .error-block {
+        width: auto;
+        height: 36px;
+
+        &--file {
+            display: flex;
+            align-items: center;
+        }
     }
 
     .button-blok {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <header class="header">
   <div class="header__wrapper">
     <a href="/" class="logo">
-      <img class="logo__img" src="img/logo.png">
+      <img class="logo__img" src="img/logo.png" alt="Logo">
     </a> 
     <nav class="nav">
       <button class="button button--menu">
@@ -39,18 +39,18 @@
 </header>
     <main class="main">
         <section class="top-printing">
-            <div class="top-printing__title-wrapper"> 
-                <h1 class="title title__desktop"><span class="title-wrapper__thred title-wrapper__thred--printing">3D</span>-печать</span></h1>
+            <div class="wrapper-universal"> 
+                <h1 class="title-universal"><span class="thred thred--printing">3D</span>-печать</h1>
             </div>
         </section>
-        <section class="services services-block">
-            <div class="services__wrapper">
-                <div class="services__offer">
-                    <p class="services__offer--text">Предлагаем услуги 3D-печати для производства прототипов или готовых изделий любой формы, цвета и прочности. Готовы производить как единичные экземпляры, так и целые партии для мелких и больших производств.</p>
-                    <div class="three-d-line"></div>
+        <div class="services">
+            <div class="wrapper wrapper--services">
+                <div class="services__block-left">
+                    <p class="services__block-left-text">Предлагаем услуги 3D-печати для производства прототипов или готовых изделий любой формы, цвета и прочности. Готовы производить как единичные экземпляры, так и целые партии для мелких и больших производств.</p>
+                    <div class="thred--line"></div>
                 </div>
-                <div class="technologies">
-                    <p class="technologies__text">В нашей студии используются две основных технологии печати:</p>
+                <div class="services__block-right">
+                    <p class="services__block-right-text services__block-right-text--top">В нашей студии используются две основных технологии печати:</p>
                     <div class="technologies-block technologies-block--fdm">
                         <div class="technologies-block__description technologies-block__description--title"><p class="technologies-block__description--content">FDM</p></div>
                         <div class="technologies-block__description technologies-block__description--text">Печать методом аддитивного производства: расплавленный пластик (или другой филамент) наносится слой за слоем для построения объекта. Для создания изделий из широкого спектра материалов с различными характеристиками и свойствами.</div>
@@ -59,10 +59,10 @@
                         <div class="technologies-block__description technologies-block__description--title"><p class="technologies-block__description--content">SLA</p></div>
                         <div class="technologies-block__description technologies-block__description--text">Печать методом аддитивного производства: расплавленный пластик (или другой филамент) наносится слой за слоем для построения объекта. Для создания изделий из широкого спектра материалов с различными характеристиками и свойствами.</div>
                     </div>
-                    <p class="technologies__text">Благодаря высокой точности проработки и качеству материалов можем быть полезны для целого ряда отраслей: промышленных стартапов, автомобильного производства, сферы архитектуры и медицины, сувениров и произведений искусства.</p>
+                    <p class="services__block-right-text">Благодаря высокой точности проработки и качеству материалов можем быть полезны для целого ряда отраслей: промышленных стартапов, автомобильного производства, сферы архитектуры и медицины, сувениров и произведений искусства.</p>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="slider">
     <div class="slider__wrapper">
       <div class="slider__title-wrapper">
@@ -75,17 +75,17 @@
       <div class="slider-container">
         <ul class="slider-container__line">
           <li class="slider-container__image">
-            <img class="slider-container__picture" src="img/slider_one.png">
+            <img class="slider-container__picture" src="img/slider_one.png" alt="industrial prototypes">
             <p class="slider-container__text">Промышленные прототипы</p>
             <p class="slider-container__litle-text">Технология: FDM</p> 
           </li>
           <li class="slider-container__image">
-            <img class="slider-container__picture" src="img/slider_two.png">
+            <img class="slider-container__picture" src="img/slider_two.png" alt="Technology">
             <p class="slider-container__text">Технология: FDM</p>
             <p class="slider-container__litle-text">Технология: SLA</p>
           </li>
           <li class="slider-container__image">
-            <img class="slider-container__picture" src="img/slider_three.png">
+            <img class="slider-container__picture" src="img/slider_three.png" alt="Jewelry">
             <p class="slider-container__text">Ювелирные изделия</p>
             <p class="slider-container__litle-text">Технология: SLA</p>
           </li>
@@ -94,7 +94,7 @@
     </div>  
 </section>
         <section class="advantages">
-            <div class="advantages__wrapper">
+            <div class="wrapper wrapper--advantages">
                 <ul class="advantages__list">
                     <li class="advantages__item--title"><h2 class="title-secondary--advantages title-secondary">Наши преимущества</h2></li>
                     <li class="advantages__item">
@@ -122,9 +122,9 @@
         </section>
         <section class="work">
     <h2 class="title-secondary title-secondary--work">Как мы работаем </h2>
-    <div class="work-wrapper">
-      <div class="work-container">
-        <div class="work-container__picture"></div>
+    <div class="work__wrapper">
+      <div class="work__container">
+        <div class="work__picture"></div>
       </div>
       
       <div class="work-list">
@@ -148,287 +148,316 @@
   </section>   
 
         <section class="sales">
-            <div class="sales__wrapper">
+            <div class="wrapper wrapper--sales">
                 <h2 class="title-secondary title-secondary--sales">Цены</h2>
                 <div class="sales-container">
                     <div class="sales-container__wrapper">
                         <div class="sales-container__menu">
-                          <p class="sales-container__menu--fdm">FDM</p> 
-                          <p class="sales-container__menu--sla">SLA</p>
+                            <button class="menu-button menu-button--fdm menu-button-open">FDM</button>
+                            <button class="menu-button menu-button--sla">SLA</button>
                         </div>
-                        <p class="sales-container__method">Метод послойного наплавления, применяется для широкого спектра материалов.</p>
-                        
-                        <ul class="sales-container__list">
-                            <li class="sales-container__item sales-container__item--desktop sales-container__item--desktop-header">
-                                <p class="sales-container__material sales-container__material--row sales-container__material--row-top">Материал/Высота слоя</p>
-                                <p class="sales-container__standart">Стандартные (ABS, PLA)</p>
-                            </li>
-                            <li class="sales-container__item sales-container__item--header">
-                                <p class="sales-container__material sales-container__material--row">Стандартное качество 300 микрон</p>
-                                <p class="sales-container__prise">от 4 грн/грамм</p>
-                            </li>
-                            <li class="sales-container__item sales-container__item--header">
-                                <p class="sales-container__material sales-container__material--row">Оптимальное качество 200 микрон</p>
-                                <p class="sales-container__prise">от 5,6 грн/грамм</p>
-                            </li>
-                            <li class="sales-container__item sales-container__item--header">
-                                <p class="sales-container__material sales-container__material--row">Высокое качество 100 микрон</p>
-                                <p class="sales-container__prise">от 8,9 грн/грамм</p>
-                            </li>
-                        </ul>
-                        <div class="sales-container__line"></div>
-                        <p class="sales-container__material">Материал/Высота слоя</p>
-                        <ul class="sales-container__list sales-container__list--color">
-                            <li class="sales-container__item sales-container__item--desktop"><p class="sales-container__standart">Высокопрочные и ударостойкие</p></li>
-                            <li class="sales-container__item">
-                                <p class="sales-container__material">Стандартное качество 300 микрон</p>
-                                <p class="sales-container__prise">от 4,2 грн/грамм</p>
-                            </li>
-                            <li class="sales-container__item">
-                                <p class="sales-container__material">Оптимальное качество 200 микрон</p>
-                                <p class="sales-container__prise">от 5,8 грн/грамм</p>
-                            </li>
-                            <li class="sales-container__item">
-                                <p class="sales-container__material">Высокое качество 100 микрон</p>
-                                <p class="sales-container__prise">от 8,9 грн/грамм</p>
-                            </li>
-                        </ul>
-                        <div class="sales-container__line"></div>
-                        <p class="sales-container__material">Материал/Высота слоя</p>
-                        <ul class="sales-container__list">
-                            <li class="sales-container__item sales-container__item--desktop"> <p class="sales-container__standart">Гибкие и резиноподобные</p></li>
-                            <li class="sales-container__item">
-                                <p class="sales-container__material">Стандартное качество 300 микрон</p>
-                                <p class="sales-container__prise">от 5,5 грн/грамм</p>
-                            </li>
-                            <li class="sales-container__item">
-                                <p class="sales-container__material">Оптимальное качество 200 микрон</p>
-                                <p class="sales-container__prise">от 7,1 грн/грамм</p>
-                            </li>
-                            <li class="sales-container__item">
-                                <p class="sales-container__material">Высокое качество 100 микрон</p>
-                                <p class="sales-container__prise">от 10,4 грн/грамм</p>
-                            </li>
-                        </ul>
-                        <div class="sales-container__line"></div>
-                        <p class="sales-container__material">Материал/Высота слоя</p>
-                        <ul class="sales-container__list sales-container__list--color">
-                            <li class="sales-container__item sales-container__item--desktop"><p class="sales-container__standart">Декоративные и специальные</p></li>
-                            <li class="sales-container__item sales-container__item--reverse">
-                                <p class="sales-container__material">Стандартное качество 300 микрон</p>
-                                <p class="sales-container__prise">от 4,5 грн/грамм</p>
-                            </li>
-                            <li class="sales-container__item sales-container__item--reverse">
-                                <p class="sales-container__material">Оптимальное качество 200 микрон</p>
-                                <p class="sales-container__prise">от 6,1 грн/грамм</p>
-                            </li>
-                            <li class="sales-container__item sales-container__item--reverse">
-                                <p class="sales-container__material">Высокое качество 100 микрон</p>
-                                <p class="sales-container__prise">от 9,4 грн/грамм</p>
-                            </li>
-                        </ul>
+                        <div class="sales-container__content-fdm ">
+                            <p class="sales-container__method">Метод послойного наплавления, применяется для широкого спектра материалов.</p>
+                            <ul class="sales-container__list">
+                                <li class="sales-container__item sales-container__item--desktop sales-container__item--desktop-header">
+                                    <p class="sales-container__material sales-container__material--row sales-container__material--row-top">Материал/Высота слоя</p>
+                                    <p class="sales-container__standart">Стандартные (ABS, PLA)</p>
+                                </li>
+                                <li class="sales-container__item sales-container__item--header">
+                                    <p class="sales-container__material sales-container__material--row">Стандартное качество 300 микрон</p>
+                                    <p class="sales-container__prise">от 4 грн/грамм</p>
+                                </li>
+                                <li class="sales-container__item sales-container__item--header">
+                                    <p class="sales-container__material sales-container__material--row">Оптимальное качество 200 микрон</p>
+                                    <p class="sales-container__prise">от 5,6 грн/грамм</p>
+                                </li>
+                                <li class="sales-container__item sales-container__item--header">
+                                    <p class="sales-container__material sales-container__material--row">Высокое качество 100 микрон</p>
+                                    <p class="sales-container__prise">от 8,9 грн/грамм</p>
+                                </li>
+                            </ul>
+                            <div class="sales-container__line"></div>
+                            <p class="sales-container__material">Материал/Высота слоя</p>
+                            <ul class="sales-container__list sales-container__list--color">
+                                <li class="sales-container__item sales-container__item--desktop"><p class="sales-container__standart">Высокопрочные и ударостойкие</p></li>
+                                <li class="sales-container__item">
+                                    <p class="sales-container__material">Стандартное качество 300 микрон</p>
+                                    <p class="sales-container__prise">от 4,2 грн/грамм</p>
+                                </li>
+                                <li class="sales-container__item">
+                                    <p class="sales-container__material">Оптимальное качество 200 микрон</p>
+                                    <p class="sales-container__prise">от 5,8 грн/грамм</p>
+                                </li>
+                                <li class="sales-container__item">
+                                    <p class="sales-container__material">Высокое качество 100 микрон</p>
+                                    <p class="sales-container__prise">от 8,9 грн/грамм</p>
+                                </li>
+                            </ul>
+                            <div class="sales-container__line"></div>
+                            <p class="sales-container__material">Материал/Высота слоя</p>
+                            <ul class="sales-container__list">
+                                <li class="sales-container__item sales-container__item--desktop"> <p class="sales-container__standart">Гибкие и резиноподобные</p></li>
+                                <li class="sales-container__item">
+                                    <p class="sales-container__material">Стандартное качество 300 микрон</p>
+                                    <p class="sales-container__prise">от 5,5 грн/грамм</p>
+                                </li>
+                                <li class="sales-container__item">
+                                    <p class="sales-container__material">Оптимальное качество 200 микрон</p>
+                                    <p class="sales-container__prise">от 7,1 грн/грамм</p>
+                                </li>
+                                <li class="sales-container__item">
+                                    <p class="sales-container__material">Высокое качество 100 микрон</p>
+                                    <p class="sales-container__prise">от 10,4 грн/грамм</p>
+                                </li>
+                            </ul>
+                            <div class="sales-container__line"></div>
+                            <p class="sales-container__material">Материал/Высота слоя</p>
+                            <ul class="sales-container__list sales-container__list--color">
+                                <li class="sales-container__item sales-container__item--desktop"><p class="sales-container__standart">Декоративные и специальные</p></li>
+                                <li class="sales-container__item sales-container__item--reverse">
+                                    <p class="sales-container__material">Стандартное качество 300 микрон</p>
+                                    <p class="sales-container__prise">от 4,5 грн/грамм</p>
+                                </li>
+                                <li class="sales-container__item sales-container__item--reverse">
+                                    <p class="sales-container__material">Оптимальное качество 200 микрон</p>
+                                    <p class="sales-container__prise">от 6,1 грн/грамм</p>
+                                </li>
+                                <li class="sales-container__item sales-container__item--reverse">
+                                    <p class="sales-container__material">Высокое качество 100 микрон</p>
+                                    <p class="sales-container__prise">от 9,4 грн/грамм</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sales-container__content-sla">
+                            <div class="select">
+                                <div class="select__input-block">
+                                    <div class="select__input"></div>
+                                    <button class="button-select"></button>
+                                </div>
+                                <div class="select__panell">
+                                    <ul class="select__list">
+                                        <li class="select__item" data-name>Стандартное качество 300 микрон</li>
+                                        <li class="select__item" data-name>Оптимальное качество 200 микрон</li>
+                                        <li class="select__item" data-name>Высокое качество 100 микрон</li>
+                                        <li class="select__item" data-name>Премиум</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div> 
             </div>
             <section id="sand" class="price">
   <div class="price__wrapper">
-    <h2 class="title-secondary title-secondary--prise">Рассчитать стоимость <span class="price__thred">3D</span>-печати</h2>
+    <h2 class="title-secondary title-secondary--prise">Рассчитать стоимость <span class="thred--blocks">3D</span>-печати</h2>
     <div class="price-container">
       <div class="promo">
-        <div class="promo__wrapper">
-          <div class="promo__menu">
-            <button class="promo__menu--button promo__menu--button-material promo__menu--button-open">Материалы</button>
-            <button class="promo__menu--button promo__menu--button-printer">Принтеры</button>
-          </div>
-          <ul class="promo__list-block promo__list-block-material">
-            <li class="promo__list-item">
-              <details class="promo__list-item--details">
-                <summary class="promo__title">ABS PRO (FDM)</summary>
-                <p class="promo__title--text">ABS-пластик - ударопрочная техническая термопластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
-              </details>
-            </li>
-            <li class="promo__list-item">
-              <details class="promo__list-item--details">
-                <summary class="promo__title">PLA (FDM)</summary>
-                <p class="promo__title--text">Печать методом аддитивного производства: расплавленный пластик (или другой филамент) наносится слой за слоем для построения объекта. Для создания изделий из широкого спектра материалов с различными характеристиками и свойствами.</p>
-              </details>
-            </li>
-            <li class="promo__list-item">
-              <details class="promo__list-item--details">
-                <summary class="promo__title">ELASTAN (FDM)</summary>
-                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
-              </details>
-            </li>
-            <li class="promo__list-item">
-              <details class="promo__list-item--details">
-                <summary class="promo__title">COPET (FDM)</summary>
-                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
-              </details>
-            </li>
-            <li class="promo__list-item">
-              <details class="promo__list-item--details">
-                <summary class="promo__title">NYLON CARBON (FDM)</summary>
-                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
-              </details>
-            </li>
-            <li class="promo__list-item">
-              <details class="promo__list-item--details">
-                <summary class="promo__title">TANGO (POLYJET)</summary>
-                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
-              </details>
-            </li>
-            <li class="promo__list-item">
-              <details class="promo__list-item--details">
-                <summary class="promo__title">VERO WHITE (POLYJET)</summary>
-                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
-              </details>
-            </li>
-            <li class="promo__list-item">
-              <details class="promo__list-item--details">
-                <summary class="promo__title">VERO CLEAR (POLYJET)</summary>
-                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
-              </details>
-            </li>
-          </ul>
-          <ul class="promo__list-block promo__list-block-printer">
-            <li class="promo__list-item">
-              <details class="promo__list-item--details">
-                <summary class="promo__title">ELASTAN (FDM)</summary>
-                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
-              </details>
-            </li>
-            <li class="promo__list-item">
-              <details class="promo__list-item--details">
-                <summary class="promo__title">COPET (FDM)</summary>
-                <p class="promo__title--text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
-              </details>
-            </li>
-          </ul>
-        </div>
+    <div class="promo__wrapper">
+      <div class="promo__menu">
+        <button class="menu-button menu-button-material menu-button-open">Материалы</button>
+        <button class="menu-button menu-button-printer">Принтеры</button>
       </div>
-
+      <ul class="promo__list-block promo__list-block-material">
+        <li class="promo__list-item">
+          <details class="promo__list-item--details">
+            <summary class="promo__title">ABS PRO (FDM)</summary>
+            <p class="promo__text">ABS-пластик - ударопрочная техническая термопластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
+          </details>
+        </li>
+        <li class="promo__list-item">
+          <details class="promo__list-item--details">
+            <summary class="promo__title">PLA (FDM)</summary>
+            <p class="promo__text">Печать методом аддитивного производства: расплавленный пластик (или другой филамент) наносится слой за слоем для построения объекта. Для создания изделий из широкого спектра материалов с различными характеристиками и свойствами.</p>
+          </details>
+        </li>
+        <li class="promo__list-item">
+          <details class="promo__list-item--details">
+            <summary class="promo__title">ELASTAN (FDM)</summary>
+            <p class="promo__text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+          </details>
+        </li>
+        <li class="promo__list-item">
+          <details class="promo__list-item--details">
+            <summary class="promo__title">COPET (FDM)</summary>
+            <p class="promo__text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+          </details>
+        </li>
+        <li class="promo__list-item">
+          <details class="promo__list-item--details">
+            <summary class="promo__title">NYLON CARBON (FDM)</summary>
+            <p class="promo__text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+          </details>
+        </li>
+        <li class="promo__list-item">
+          <details class="promo__list-item--details">
+            <summary class="promo__title">TANGO (POLYJET)</summary>
+            <p class="promo__text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+          </details>
+        </li>
+        <li class="promo__list-item">
+          <details class="promo__list-item--details">
+            <summary class="promo__title">VERO WHITE (POLYJET)</summary>
+            <p class="promo__text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+          </details>
+        </li>
+        <li class="promo__list-item">
+          <details class="promo__list-item--details">
+            <summary class="promo__title">VERO CLEAR (POLYJET)</summary>
+            <p class="promo__text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+          </details>
+        </li>
+      </ul>
+      <ul class="promo__list-block promo__list-block-printer">
+        <li class="promo__list-item">
+          <details class="promo__list-item--details">
+            <summary class="promo__title">ELASTAN (FDM)</summary>
+            <p class="promo__text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+          </details>
+        </li>
+        <li class="promo__list-item">
+          <details class="promo__list-item--details">
+            <summary class="promo__title">COPET (FDM)</summary>
+            <p class="promo__text">Этот текст просто демонстрирует правильную работу и может быть заменен на любой другой</p>
+          </details>
+        </li>
+      </ul>
+    </div>
+  </div>
       <div class="form-block form-block-index form-block--stap-one">
-        <div class="form-block__wrapper">
-          <h3 class="form-stap">Шаг 1 из 3</h3>
-          <div class="form-indicator">
-            <div class="form-indicator__active"></div>
-            <div class="form-indicator__dot"></div>
-            <div class="form-indicator__passive"></div>
-            <div class="form-indicator__dot"></div>
-            <div class="form-indicator__passive"></div>
+    <div class="form-block__wrapper">
+      <h3 class="form-block__stap-title">Шаг 1 из 3</h3>
+      <div class="form-indicator">
+        <div class="form-indicator__active"></div>
+        <div class="form-indicator__dot"></div>
+        <div class="form-indicator__passive"></div>
+        <div class="form-indicator__dot"></div>
+        <div class="form-indicator__passive"></div>
+      </div>
+      <div class="form-block__photo-upload">
+        <p class="form-block__text">Кликните, чтобы прикрепить 3D модель или фото</p>
+      </div>
+      <div class="foto-information">
+        <p class="foto-information__content foto-information__content--size">Допустимые расширения:</p>
+        <p class="foto-information__content foto-information__content--jpg">.jpg, .jpeg, .png, .gif, .pdf, .psd, .ai, .max, .cdr, .3ds, .stl, .igs, .model, .mxp, .obj, .wrl, .3dm, .fbx, .matpart, .matamx, .zip, .rar, .7z, .skp, .dae, .ply, .magics, .mgx, .x3d, .x3dv, .3mf, .stp, .step, .prt, .zpr</p>
+      </div>
+      <div class="foto-information foto-information--size">
+        <p class="foto-information__content">Максимальный размер файла:</p>
+        <p class="foto-information__content">10 Мб</p>
+      </div>
+      <div class="foto-link">
+        <p class="foto-link__content">Или добавьте ссылку на макет в облаке (Dropbox, Mega, Google Drive и т.п.)</p>
+      </div>
+      <div class="button-block">
+        <button class="button button--next" type="button" disabled>Назад</button>
+        <button class="button button--prev button--prev-stap-one" type="button">далее</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="form-block form-block--stap-two form-block--clouse">
+    <div class="form-block__wrapper">
+      <h3 class="form-block__stap-title">Шаг 2 из 3</h3>
+      <div class="form-indicator form-indicator--stap-two">
+        <div class="form-indicator__active"></div>
+        <div class="form-indicator__dot form-indicator__dot--active"></div>
+        <div class="form-indicator__active"></div>
+        <div class="form-indicator__dot"></div>
+        <div class="form-indicator__passive"></div>
+      </div>
+      <p class="form-block__text form-block__text--stap">Введите данные фигуры</p>
+      <div class="form-block__label-block">
+        <div class="form-input-fields form-input-fields--width">
+          <input placeholder=" " id="width" type="text" class="input input-next" autocomplete="off">
+          <label for="width">Ширина, мм</label>
+          <div class="error-block">
+            <span class="input-staptwo-error">Укажите ширину</span>
           </div>
-          <div class="form-block__photo-upload">
-            <p class="form-block__text">Кликните, чтобы прикрепить 3D модель или фото</p>
+        </div>
+        <div class="form-input-fields form-input-fields--width-desktop">
+          <input placeholder=" " id="height" type="text" class="input input-next" autocomplete="off">
+          <label for="height">Высота, мм</label>
+          <div class="error-block">
+            <span class="input-staptwo-error">Укажите высоту</span>
           </div>
-          <div class="foto-information">
-            <p class="foto-information__content foto-information__content--size">Допустимые расширения:</p>
-            <p class="foto-information__content">.jpg, .jpeg, .png, .gif, .pdf, .psd, .ai, .max, .cdr, .3ds, .stl, .igs, .model, .mxp, .obj, .wrl, .3dm, .fbx, .matpart, .matamx, .zip, .rar, .7z, .skp, .dae, .ply, .magics, .mgx, .x3d, .x3dv, .3mf, .stp, .step, .prt, .zpr</p>
-          </div>
-          <div class="foto-information__size">
-            <p class="foto-information__content">Максимальный размер файла:</p>
-            <p class="foto-information__content">10 Мб</p>
-          </div>
-          <div class="foto-link">
-            <p class="foto-link__content">Или добавьте ссылку на макет в облаке (Dropbox, Mega, Google Drive и т.п.)</p>
-          </div>
-          <div class="button-block">
-            <button class="button button__next" type="button" disabled>Назад</button>
-            <button class="button button__prev button__prev--stap-one" type="button">далее</button>
+        </div>
+        <div class="form-input-fields form-input-fields--stap-two">
+          <input placeholder=" " id="length" type="text" class="input input-next" autocomplete="off">
+          <label for="length">Длинна, мм</label>
+          <div class="error-block">
+            <span class="input-staptwo-error">Укажите длинну</span>
           </div>
         </div>
       </div>
-      
-      <div class="form-block form-block--stap-two form-block--clouse">
-        <div class="form-block__wrapper">
-          <h3 class="form-stap">Шаг 2 из 3</h3>
-          <div class="form-indicator form-indicator--stap-two">
-            <div class="form-indicator__active"></div>
-            <div class="form-indicator__dot form-indicator__dot--active"></div>
-            <div class="form-indicator__active"></div>
-            <div class="form-indicator__dot"></div>
-            <div class="form-indicator__passive"></div>
+      <div class="form-block__label-block form-block__label-block--stap-next">
+        <div class="form-input-fields form-input-fields--width">
+          <input placeholder=" " id="quantity" type="text" class="input input-next" autocomplete="off">
+          <label for="quantity">Количкство</label>
+          <div class="error-block">
+            <span class="input-staptwo-error">Укажите количество</span>
           </div>
-          <p class="form-block__text form-block__text--stap">Введите данные фигуры</p>
-          <div class="form-block__label-block">
-            <div class="form-input-fields form-input-fields--width">
-              <input placeholder=" " type="text" class="input input-next" autocomplete="off">
-              <label for="">Ширина, мм</label>
-              <span class="input-staptwo-error">Укажите ширину</span>
-            </div>
-            <div class="form-input-fields form-input-fields--width-desktop">
-              <input placeholder=" " type="text" class="input input-next" autocomplete="off">
-              <label for="">Высота, мм</label>
-              <span class="input-staptwo-error">Укажите высоту</span>
-            </div>
-            <div class="form-input-fields form-input-fields--stap-two">
-              <input placeholder=" " type="text" class="input input-next" autocomplete="off">
-              <label for="">Длинна, мм</label>
-              <span class="input-staptwo-error">Укажите длинну</span>
-            </div>
-          </div>
-          <div class="form-block__label-block form-block__label-block--stap-next">
-            <div class="form-input-fields form-input-fields--width">
-              <input placeholder=" " type="text" class="input input-next" autocomplete="off">
-              <label for="">Количкство</label>
-              <span class="input-staptwo-error">Укажите количество</span>
-            </div>
-            <div class="form-input-fields">
-              <input placeholder=" " type="text" class="input input-next" autocomplete="off">
-              <label for="">Цвет</label>
-              <span class="input-staptwo-error">Укажите цвет</span>
-            </div>
-          </div>
-          <div class="button-block">
-            <button class="button button__next button__next--stap-two" type="button">Назад</button>
-            <button class="button button__prev button__prev--stap-two" type="button">далее</button>
+        </div>
+        <div class="form-input-fields">
+          <input placeholder=" " id="color" type="text" class="input input-next" autocomplete="off">
+          <label for="color">Цвет</label>
+          <div class="error-block">
+            <span class="input-staptwo-error">Укажите цвет</span>
           </div>
         </div>
       </div>
-      
-      <div class="form-block form-block--stap-three form-block--clouse">
-        <div class="form-block__wrapper">
-          <h3 class="form-stap">Шаг 3 из 3</h3>
-          <div class="form-indicator form-indicator--stap-two">
-            <div class="form-indicator__active"></div>
-            <div class="form-indicator__dot form-indicator__dot--active"></div>
-            <div class="form-indicator__active"></div>
-            <div class="form-indicator__dot form-indicator__dot--active"></div>
-            <div class="form-indicator__active"></div>
-          </div>
-          <p class="form-block__text form-block__text--stap">Оставьте ваши данные</p>
-          <div class="form-input-fields form-input-fields--stap-three-name">
-            <input placeholder=" " type="text" class="input input--stap-three input--name-stap-three" autocomplete="off">
-            <label for="">Ваше имя</label>
-            <span class="input-stapthree-error">Укажите имя</span>
-          </div>
-          <div class="form-input-fields form-input-fields--stap-three-tel">
-            <input placeholder=" " type="text" class="input input--stap-three input--telefon-stap-three" autocomplete="off">
-            <label for="">Телефон</label>
-            <span class="input-stapthree-error">Укажите телефон</span>
-          </div>
-          <div class="button-block">
-            <button class="button button__next button__next--stap-three" type="button">Назад</button>
-            <button class="button button__prev button__prev--stap-three" type="button">далее</button>
-          </div>
+      <div class="button-block">
+        <button class="button button--next button--next-stap-two" type="button">Назад</button>
+        <button class="button button--prev button--prev-stap-two" type="button">далее</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="form-block form-block--stap-three form-block--clouse">
+    <div class="form-block__wrapper">
+      <h3 class="form-block__stap-title">Шаг 3 из 3</h3>
+      <div class="form-indicator form-indicator--stap-two">
+        <div class="form-indicator__active"></div>
+        <div class="form-indicator__dot form-indicator__dot--active"></div>
+        <div class="form-indicator__active"></div>
+        <div class="form-indicator__dot form-indicator__dot--active"></div>
+        <div class="form-indicator__active"></div>
+      </div>
+      <p class="form-block__text form-block__text--stap">Оставьте ваши данные</p>
+      <div class="form-input-fields form-input-fields--stap-three-name">
+        <input placeholder=" " id="username" type="text" class="input input--stap-three input--name-stap-three" autocomplete="off">
+        <label for="username">Ваше имя</label>
+        <div class="error-block">
+          <span class="input-stapthree-error">Укажите имя</span>
         </div>
       </div>
-      
+      <div class="form-input-fields form-input-fields--stap-three-tel">
+        <input placeholder=" " id="tel" type="text" class="input input--stap-three input--telefon-stap-three" autocomplete="off">
+        <label for="tel">Телефон</label>
+        <div class="error-block">
+          <span class="input-stapthree-error">Укажите телефон</span>
+        </div>
+      </div>
+      <div class="button-block">
+        <button class="button button--next button--next-stap-three" type="button">Назад</button>
+        <button class="button button--prev button--prev-stap-three" type="button">далее</button>
+      </div>
+    </div>
+  </div>
       <div class="smile form-block--clouse">
-        <button class="button-clouse" type="button"></button>
-        <div class="smile__wrapper">
-          <img class="smile__picture" src="img/smile.png">
-          <p class="smile__title">Спасибо за заявку!</p>
-          <p class="smile__text">Скоро наш менеджер свяжется с вами
-            и уточнит стоимость вашего изделия</p>
-            <button class="button button__next button__next--smile">Назад</button>
-        </div>
-      </div>
+  <button class="button-clouse" type="button"></button>
+  <div class="smile__wrapper">
+      <img class="smile__picture" src="img/smile.png" alt="smiley">
+      <p class="smile__title">Спасибо за заявку!</p>
+      <p class="smile__text">Скоро наш менеджер свяжется с вами
+        и уточнит стоимость вашего изделия</p>
+      <button class="button button--smile button--smile-moddeling">Назад</button>
+  </div>
+</div>
     </div>
   </div>
 </section>
         </section>
-        <section class="question-section">
-    <form class="question">
+        <section class="question" lang="es-ES">
+    <form class="question__form">
         <div class="question__wrapper">
             <div class="question__info">   
                 <h2 class="title-secondary title-secondary--question">Остались вопросы?</h2>   
@@ -437,23 +466,29 @@
             <div class="question__input">
                 <div class="form-label">
                     <div class="form-input-fields form-input-fields--your-name">
-                        <input placeholder=" " type="text" class="input input-form-question input--question input--your-name" autocomplete="off">
-                        <label for="">Ваше имя</label>
-                        <span class="input-question-error">Укажите Ваше имя</span>
+                        <input placeholder=" " id="name" type="text" class="input input-form-question input--question input--your-name" autocomplete="off">
+                        <label for="name">Ваше имя</label>
+                        <div class="error-block">
+                            <span class="input-question-error">Укажите Ваше имя</span>
+                        </div>
                     </div>
                     <div class="form-input-fields">
-                        <input placeholder=" " type="text" class="input input-form-question input--question input--your-tel" autocomplete="off">
-                        <label for="">Телефон</label>
-                        <span class="input-question-error">Укажите в формате 38-000-000-00-00</span>
+                        <input placeholder=" " id="telefon" type="text" class="input input-form-question input--question input--your-tel" autocomplete="off">
+                        <label for="telefon">Телефон</label>
+                        <div class="error-block">
+                            <span class="input-question-error">Укажите в формате 38-000-000-00-00</span>
+                        </div>
                     </div>
                 </div>
                 <div class="form-input-fields form-input-fields--text">
-                    <textarea placeholder=" " type="text" class="input input-form-question input--question-text" autocomplete="off"></textarea>
-                    <label for="">Ваш вопрос</label>
-                    <span class="input-question-error">Напишите Ваш вопрос</span>
+                    <textarea placeholder=" " id="question" class="input input-form-question input--question-text" autocomplete="off"></textarea>
+                    <label for="question">Ваш вопрос</label>
+                    <div class="error-block">
+                        <span class="input-question-error">Напишите Ваш вопрос</span>
+                    </div>
                 </div>
                 <div class="button-blok">
-                    <button class="button button__form">Отправить</button>
+                    <button class="button button--form">Отправить</button>
                     <div class="question__comment">Нажимая на кнопку, вы соглашаетесь 
                     с <a href="#" class="question__comment--privacy-policy">Политикой конфиденциальности</a>
                     </div>
@@ -468,9 +503,9 @@
       <div class="footer__block">
         <div class="logo-block">
           <a href="/" class="logo">
-            <img class="logo__img logo__img--footer" src="img/logo.png">
+            <img class="logo__img logo__img--footer" src="img/logo.png" alt="Logo">
           </a>
-          <div class="footer__text">
+          <div class="nav nav--footer">
             <a class="nav__link nav__link--footer" href="threed-printing.html">3D-печать</a>
             <a class="nav__link nav__link--footer" href="modeling.html">3D-моделирование</a>
             <a class="nav__link nav__link--footer" href="contacts.html">Контакты</a>
@@ -478,7 +513,7 @@
         </div>
         <div class="contact">
           <div class="contact__telefon-box">
-            <a href="tel:+38 (096) 77-50-115" class="contact__telefon-namber">+38 (096) 77-50-115</a>
+            <a href="tel:+38(096)77-50-115" class="contact__telefon-namber">+38 (096) 77-50-115</a>
           </div>
           <div class="info">
             <div class="info__adress-wrapper">
@@ -494,7 +529,7 @@
           </div>
         </div>
       </div>
-      <div class="footer__line"></div>
+      <div class="footer--line"></div>
       <div class="footer__rights">
         <div class="footer__year">@2021. Все права защищены</div>
         <div class="footer__made-in">Сделано в Webnauts c </div>  

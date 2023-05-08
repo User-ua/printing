@@ -13,7 +13,7 @@
         <header class="header">
   <div class="header__wrapper">
     <a href="/" class="logo">
-      <img class="logo__img" src="img/logo.png">
+      <img class="logo__img" src="img/logo.png" alt="Logo">
     </a> 
     <nav class="nav">
       <button class="button button--menu">
@@ -39,48 +39,47 @@
   </div> 
 </header>    
         <main class="main">
-            <section class="top-printing">
-                <div class="top-printing__title-wrapper" >
-                <h1 class="title title__desktop">Контакты</h1>
-                </div>
-            </section>
-    
             <section class="contacts">
+                <div class="top-printing">
+                    <div class="wrapper-universal" >
+                        <h1 class="title-universal">Контакты</h1>
+                    </div>
+                </div>
+    
                 <div class="contacts__wrapper">
                     <div class="contacts__wrapper-info">
-                        <p class="contact__telefon-namber contact__telefon-namber--contact">+38 (097) 999-99-99</p>
-                        <p class="info__adress info__adress--contact">г. Киев, ул. Гагарина 25/68</p>  
-                        <p class="info__email info__email--contact">pochta@gmail.com</p> 
-                        <div class="button-link button-link--contact">
-                        <div class="button-link__youtube">
-                            <button class="button__youtube" type="button"></button>
+                        <p class="contacts__telefon">+38 (097) 999-99-99</p>
+                        <p class="contacts__adress">г. Киев, ул. Гагарина 25/68</p>  
+                        <p class="contacts__email">pochta@gmail.com</p> 
+                        <div class="button-link">       
+                            <a href="https://www.youtube.com" class="button-link__youtube"></a>
+                            <a href="https://www.facebook.com" class="button-link__facebook"></a>
                         </div>
-                        <div class="button-link__facebook">
-                            <button class="button__facebook" type="button"></button>
-                        </div>
-                        </div>
-                        <div class="footer__line footer__line--contact"></div>
-                        <p class="form-block__text form-block__text--contact">Свяжитесь с нами</p>
-                        <div class="form-input-fields form-input-fields--contact">
-                            <input placeholder=" " type="text" class="input input--contact" autocomplete="off">
-                            <label for="">Ваше имя</label>
-                            <span class="input-contact-error">Укажите Ваше имя</span>
-                        </div>
-                        <div class="form-input-fields form-input-fields--contact">
-                            <input placeholder=" " type="text" class="input input--contact input--contact-telefon" autocomplete="off">
-                            <label for="">Телефон</label>
-                            <span class="input-contact-error">Укажите в формате 38-000-000-00-00</span>
-                        </div>
-                        <div class="form-input-fields form-input-fields--contact">
-                            <textarea placeholder=" " type="text" class="input input--contact input--contact-text" autocomplete="off"></textarea>
-                            <label for="">Ваш вопрос</label>
-                            <span class="input-contact-error">Напишите Ваш вопрос</span>
-                        </div>
+                        <div class="footer--line-contact"></div>
+                        <form class="form-contacts">   
+                            <p class="form-contacts__text">Свяжитесь с нами</p>
+                            <div class="form-input-fields form-input-fields--contact">
+                                <input placeholder=" " id="contacts-name" type="text" class="input input--contact" autocomplete="off">
+                                <label for="contacts-name">Ваше имя</label>
+                                <span class="input-contact-error">Укажите Ваше имя</span>
+                            </div>
+                            <div class="form-input-fields form-input-fields--contact">
+                                <input placeholder=" " id="contacts-tel" type="text" class="input input--contact input--contact-telefon" autocomplete="off">
+                                <label for="contacts-tel">Телефон</label>
+                                <span class="input-contact-error">Укажите в формате 38-000-000-00-00</span>
+                            </div>
+                            <div class="form-input-fields form-input-fields--contact">
+                                <textarea placeholder=" " id="contacts-question" class="input input--contact input--contact-text" autocomplete="off"></textarea>
+                                <label for="contacts-question">Ваш вопрос</label>
+                                <span class="input-contact-error">Напишите Ваш вопрос</span>
+                            </div>
+                            <button class="button button--contact">Напишите нам</button>
+                        </form>
                         
-                        <button class="button button--contact">Напишите нам</button>
-                        <div class="footer__rights">
-                            <div class="footer__year">@2021. Все права защищены</div>
-                            <div class="footer__made-in">Сделано в Webnauts c </div>  
+                        
+                        <div class="contacts__promoution">
+                            <div class="footer--year">@2021. Все права защищены</div>
+                            <div class="footer--made-in">Сделано в Webnauts c </div>  
                         </div>
                     </div>
                     <div class="map">
@@ -95,9 +94,9 @@
       <div class="footer__block">
         <div class="logo-block">
           <a href="/" class="logo">
-            <img class="logo__img logo__img--footer" src="img/logo.png">
+            <img class="logo__img logo__img--footer" src="img/logo.png" alt="Logo">
           </a>
-          <div class="footer__text">
+          <div class="nav nav--footer">
             <a class="nav__link nav__link--footer" href="threed-printing.html">3D-печать</a>
             <a class="nav__link nav__link--footer" href="modeling.html">3D-моделирование</a>
             <a class="nav__link nav__link--footer" href="contacts.html">Контакты</a>
@@ -105,7 +104,7 @@
         </div>
         <div class="contact">
           <div class="contact__telefon-box">
-            <a href="tel:+38 (096) 77-50-115" class="contact__telefon-namber">+38 (096) 77-50-115</a>
+            <a href="tel:+38(096)77-50-115" class="contact__telefon-namber">+38 (096) 77-50-115</a>
           </div>
           <div class="info">
             <div class="info__adress-wrapper">
@@ -121,7 +120,7 @@
           </div>
         </div>
       </div>
-      <div class="footer__line"></div>
+      <div class="footer--line"></div>
       <div class="footer__rights">
         <div class="footer__year">@2021. Все права защищены</div>
         <div class="footer__made-in">Сделано в Webnauts c </div>  

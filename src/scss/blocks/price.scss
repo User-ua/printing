@@ -68,18 +68,16 @@
         &:hover {
             color: #2F80ED;
         }
-
-        &--text {
-            min-width: 246px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 140%;
-            color: #2C2F36;   
-        }
     }
 
-    
+    &__text {
+        min-width: 246px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        color: #2C2F36;   
+    }
 
     &__list-item {
         margin-bottom: 25px;
@@ -99,10 +97,12 @@
             background: url('../img/minus_blu.png') right 10px no-repeat;
             border-bottom: #2F80ED 3px solid;
 
-            & .promo__title {
-                color: #2F80ED;
+            & .promo {
+                &__title {
+                    color: #2F80ED;
+            }
 
-                &--text {
+                &__text {
                     padding-bottom: 15px;
                 }
             }

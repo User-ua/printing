@@ -1,0 +1,64 @@
+.previev {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+
+    &--image {
+        position: relative;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        overflow: hidden;
+
+        &.removing {
+            transform: scale(0);
+            transition: transform .3s;
+        }
+
+        &:hover {
+            & .previev-remove {
+                opacity: 1;
+            }  
+        }
+
+        &:hover {
+            & .previev-info {
+                bottom: 4px;
+            }  
+        }
+
+        & img {
+            width: 100px;
+            height: auto;
+        }
+
+        & .previev-remove {
+            opacity: 0;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-weight: bold;
+            background: rgb(255, 255, 255, 0.5);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity .22s;
+        }
+
+        & .previev-info {
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: -30px;
+            font-weight: bold;
+            font-size: 12px;
+            background: rgb(255, 255, 255, 0.5);
+            display: flex;
+            justify-content: space-between;
+            transition: bottom .22s;
+        }
+    }  
+}
+

@@ -10,7 +10,8 @@
     &--upload {
         padding: 8px 24px;
         background-color: #B4BBCE;
-        
+        display: inline;
+        cursor: pointer;
     }
 
     &:hover {
@@ -55,57 +56,59 @@
         }   
     }
     
-    &__next {
+    &--next {
         background: #B4BBCE;
         border-radius: 37px;
         padding: 8px 34px;
-
-        &--smile {
-            padding: 14px 56px;
-        }
 
         &:hover {
             background: #2C2F36;
         }
     }
+
+    &--smile {
+        background: #B4BBCE;
+        border-radius: 37px;
+        padding: 8px 34px;
+        padding: 14px 56px;
+    }
     
-    &__prev {
+    &--prev {
         background: #FB8C00;
         border-radius: 37px;
         padding: 8px 34px;   
     }
 
-    &__form {
+    &--form {
         margin-bottom: 16px;
         padding: 14px 44px;
     }
 
-    &__send {
+    &--send {
         display: none;
     }
 }
 
-.promo {
-    &__menu {
-        &--button {
-            margin: 0;
-            margin-bottom: 5px;
-            margin-right: 32px;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 140%;
-            color: #2C2F36;
-            opacity: 0.4;
-            padding-bottom: 5px;
-            
-            
-            &-open {
-                color: #FB8C00;
-                opacity: 1;
-                border-bottom: 3px solid #FB8C00;
-            }
-        }
+.menu-button {
+    background: #F1F5F8;
+    margin-right: 32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    color: #2C2F36;
+    opacity: 0.4;
+    padding-bottom: 5px;
+    
+    
+    &-open {
+        color: #FB8C00;
+        opacity: 1;
+        border-bottom: 3px solid #FB8C00;
+    }
+
+    &--fdm, &--sla {
+        background: #FFFFFF;
     }
 }
 
@@ -161,10 +164,51 @@
     }
 }
 
+.button-select {
+    position: relative;
+    width: 30px;
+    height: 100%;
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background: #7B7E85;
+        width: 10px;
+        height: 2px;    
+        transform:rotate(45deg);
+        top: 13px;
+        left: 1px;
+    }
+    
+    &::after {
+        position: absolute;
+        content: "";
+        background: #7B7E85;
+        width: 10px;
+        height: 2px;    
+        transform:rotate(-45deg);
+        top: 13px;
+        left: 7px;
+    }
+    
+    &:hover::before {
+        background: #FF7129;
+        width: 10px;
+        height: 3px;
+    }
+    
+    &:hover::after {
+        background: #FF7129;
+        width: 10px;
+        height: 3px;
+    }
+}
+
 @media (min-width: 900px) {
     .button {
-        
-
         &--nav {
             position: relative;
             padding: 13px 30px 13px 58px;
@@ -253,20 +297,20 @@
             margin-left: 24px;
         }
         
-        &__next {
+        &--next {
             padding: 14px 56px;
         }
         
-        &__prev {
+        &--prev {
             padding: 14px 56px;  
         }
 
-        &__send {
+        &--send {
             display: block;
             padding: 14px 64px 14px 89px;
         }
 
-        &__form {
+        &--form {
             margin-bottom: 0;
             padding: 14px 76px;
             margin-right: 30px;

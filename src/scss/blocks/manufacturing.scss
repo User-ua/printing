@@ -1,153 +1,15 @@
 .manufacturing {
     margin-bottom: 194px;
 
-    &__title-wrapper {
-        margin-left: 15px;
-    }
-}
-
-.list-wrapper {
-    position: relative;
-    margin-bottom: 100px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    
-    &::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-    }
-}
-
-.product-list {
-    position: relative;
-    display: flex;
-    margin-top: 80px;
-    
-
-    &__item {
-        list-style: none;
-    }
-}
-
-.product-card {
-    &__one {
-        &::before {
-            position: absolute;
-            content: "";
-            z-index: 10;
-            width: 200px;
-            height: 162px;
-            background-image: url('../img/picture-one.png');
-            background-repeat: no-repeat;
-            left: 28%;
-            top: -60px;
-        }
-    }
-
-    &__two {
-        &::before {
-            position: absolute;
-            content: "";
-            z-index: 10;
-            width: 76px;
-            height: 210px;
-            background-image: url('../img/picture-two.png');
-            background-repeat: no-repeat;
-            left: 40%;
-            top: -100px;
-        }
-    }
-
-    &__three {
-        &::before{
-            position: absolute;
-            content: "";
-            z-index: 10;
-            width: 214px;
-            height: 184px;
-            background-image: url('../img/picture-three.png');
-            background-repeat: no-repeat;
-            left: 20%;
-            top: -80px;
-        }
-    }
-
-    &__four {
-        &::before {
-            position: absolute;
-            content: "";
-            z-index: 10;
-            width: 180px;
-            height: 178px;
-            background-image: url('../img/picture-four.png');
-            background-repeat: no-repeat;
-            left: 23%;
-            top: -70px;
-        }
-    }
-    &__five {
-        &::before {
-            position: absolute;
-            content: "";
-            z-index: 10;
-            width: 100px;
-            height: 161px;
-            background-image: url('../img/picture-five.png');
-            background-repeat: no-repeat;
-            left: 36%;
-            top: -60px;
-        }
-    }
-    &__six {
-        &::before {
-            position: absolute;
-            content: "";
-            z-index: 10;
-            width: 166px;
-            height: 188px;
-            background-image: url('../img/picture-six.png');
-            background-repeat: no-repeat;
-            left: 26%;
-            top: -70px;
-        }
-    }
-    &__seven {
-        &::before {
-            position: absolute;
-            content: "";
-            z-index: 10;
-            width: 175px;
-            height: 108px;
-            background-image: url('../img/picture-seven.png');
-            background-repeat: no-repeat;
-            left: 25%;
-            top: -35px;
-        }
-    }
-    &__eight {
-        &::before {
-            position: absolute;
-            content: "";
-            z-index: 10;
-            width: 74px;
-            height: 162px;
-            background-image: url('../img/picture-eight.png');
-            background-repeat: no-repeat;
-            left: 39%;
-            top: -45px;
-        }
-    }
-    &__nine {
-        &::before {
-            position: absolute;
-            content: "";
-            z-index: 10;
-            width: 86px;
-            height: 164px;
-            background-image: url('../img/picture-nine.png');
-            background-repeat: no-repeat;
-            left: 38%;
-            top: -50px;
+    &__list-wrapper {
+        position: relative;
+        margin-bottom: 100px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
         }
     }
 }
@@ -157,23 +19,11 @@
         max-width: 1170px;
         margin: 0 auto;
         margin-bottom: 194px;
+
+        &__list-wrapper {
+            position: static;
+            overflow-y: visible;
+            overflow-x: visible;
+        }
     }   
-
-    .list-wrapper {
-        position: static;
-        overflow-y: visible;
-        overflow-x: visible;
-    }
-
-    .product-list {
-        display: grid;
-        grid-template: repeat(3, 284px) / repeat(3, 370px);
-        grid-row-gap: 126px;
-        grid-column-gap: 30px;
-    }
-    
-    .product-card {
-        width: 370px;
-        height: 284px;
-    }
 }

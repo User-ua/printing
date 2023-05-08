@@ -3,10 +3,22 @@
     url("../img/price_bg_adbottom.png") bottom/100% 300px no-repeat,  
     radial-gradient(98.97% 276.64% at 1.03% 40.7%, #EBF6FF 0%, #EFF8FF 100%);
 
-    &__wrapper {
-        padding-top: 150px;
-        padding-left: 15px;
-        padding-bottom: 32px;
+    & .sales-container {
+        &__content-sla {
+            display: none;
+        }
+    }
+
+    &__block-open {
+        &.sales-container {
+            &__content-sla {
+                display: block;
+            }
+
+            &__content-fdm {
+                display: none;
+            }
+        }
     }
 
     .promo {
@@ -30,45 +42,6 @@
     &__menu {
         display: flex;
         margin-bottom: 65px;
-
-        &--fdm {
-            position: relative;
-            margin-right: 32px;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 140%;
-            color: #FB8C00;
-
-            &::after {
-                position: absolute;
-                content: "";
-                background-color: #FB8C00;
-                width: 50px;
-                height: 3px;
-                left: 0;
-                top: 50px;
-            }
-        }
-
-        &--sla {
-            position: relative;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 140%;
-            color: #2C2F36;
-            opacity: 0.4;
-
-            &::after {
-                position: absolute;
-                content: "";
-                background-color: #2C2F36;
-                opacity: 0.4;
-                width: 246px;
-                height: 3px;
-                left: -32px;
-                top: 50px;
-            }
-        }
     }
 
     &__method {
@@ -112,7 +85,7 @@
     }
 
     &__line {
-        width: 300px;
+        width: 100%;
         height: 3px;
         background: #B4BBCE;
         opacity: 0.2;
@@ -149,6 +122,13 @@
             display: block;
         }
     }
+
+    .sales-container {
+        &__item {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
 
 @media (min-width: 1200px) {
@@ -159,13 +139,6 @@
         radial-gradient(98.97% 276.64% at 1.03% 40.7%, #EBF6FF 0%, #EFF8FF 100%);
         margin-bottom: 0;
         margin: 0 auto;
-    
-        &__wrapper {
-            padding-top: 257px;
-            width: 1170px;
-            margin: 0 auto;
-            padding-left: 0;
-        }
             
         .price {
             margin-bottom: 0;
@@ -193,12 +166,6 @@
         &__menu {
             margin-bottom: 55px;
             margin-left: 70px;
-    
-            &--sla {
-                &::after {
-                    width: 980px;
-                }
-            }
         }
 
         &__method {
@@ -236,6 +203,7 @@
         }
     
         &__item {
+            display: block;
             width: 136px;
             margin-right: 113px;
             margin-bottom: 0;

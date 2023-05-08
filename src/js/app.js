@@ -1,5 +1,8 @@
+/*import * as flsfunction from './modules/function.js';
+flsfunction.isWebp;*/
+
 const sliderElement = document.querySelector(".slider");
-const servisesElement = document.querySelector(".services-block");
+const servisesElement = document.querySelector(".services__block-right");
 const fotmBlockElement = document.querySelector(".form-block-index");
 const smileForm = document.querySelector(".smile");
 
@@ -11,6 +14,7 @@ const buttonClickHandler = function() {
     openNavElement.classList.toggle("nav--open"); 
     openButtonElement.classList.toggle("button--open");     
 }
+
 openButtonElement.addEventListener("click", buttonClickHandler);
 
 /*button-close*/
@@ -38,8 +42,8 @@ if (priseElement)
     e.preventDefault();
     if( window.innerWidth < 900 ) {
         window.location.href = `#sand`;
-        openNavElement.classList.toggle("nav--open"); 
-        openButtonElement.classList.toggle("button--open");
+        openNavElement.classList.remove("nav--open"); 
+        openButtonElement.classList.remove("button--open");
     } else {
         window.location.href = `#sand`;
     }     
@@ -64,16 +68,16 @@ sandButtonElement.addEventListener("click", salesButtonClickHandler);
 /*material and printer button*/
 
 
-const materialButtonElement = document.querySelector(".promo__menu--button-material");
-const printerButtonSmileElement = document.querySelector(".promo__menu--button-printer");
+const materialButtonElement = document.querySelector(".menu-button-material");
+const printerButtonSmileElement = document.querySelector(".menu-button-printer");
 const promoListBlockMaterial = document.querySelector(".promo__list-block-material");
 const promoListBlockPrinter = document.querySelector(".promo__list-block-printer");
 
 if (promoListBlockMaterial) 
 {
 const promoNavButoon = function () {
-    printerButtonSmileElement.classList.toggle("promo__menu--button-open"); 
-    materialButtonElement.classList.toggle("promo__menu--button-open"); 
+    printerButtonSmileElement.classList.toggle("menu-button-open"); 
+    materialButtonElement.classList.toggle("menu-button-open"); 
     promoListBlockMaterial.classList.toggle("promo__list-block-open"); 
     promoListBlockPrinter.classList.toggle("promo__list-block-open"); 
 }
@@ -81,14 +85,33 @@ const promoNavButoon = function () {
     printerButtonSmileElement.addEventListener("click", promoNavButoon);
 }
 
+/*fdm and sla button*/
+
+const fdmButtonElement = document.querySelector(".menu-button--fdm");
+const slaButtonElement = document.querySelector(".menu-button--sla");
+const listBlockFdm = document.querySelector(".sales-container__content-fdm");
+const listBlockSla = document.querySelector(".sales-container__content-sla");
+
+if (listBlockFdm) 
+{
+const salesNavButoon = function () {
+    slaButtonElement.classList.toggle("menu-button-open"); 
+    fdmButtonElement.classList.toggle("menu-button-open"); 
+    listBlockFdm.classList.toggle("sales__block-open"); 
+    listBlockSla.classList.toggle("sales__block-open"); 
+}
+    fdmButtonElement.addEventListener("click", salesNavButoon);
+    slaButtonElement.addEventListener("click", salesNavButoon);
+}
+
 /*fotm-block*/
 
-const prevButtonElementStapOne = document.querySelector(".button__prev--stap-one");
-const nextButtonSmileElement = document.querySelector(".button__next--smile");
-const nextButtonSmileModdelingElement = document.querySelector(".button__next--smile-moddeling");
-const nextButtonElementStapTwo = document.querySelector(".button__next--stap-two");
-const nextButtonElementStepThree = document.querySelector(".button__next--stap-three");
-const termsForm = document.querySelector(".terms--form-block");
+const prevButtonElementStapOne = document.querySelector(".button--prev-stap-one");
+const nextButtonSmileElement = document.querySelector(".button--smile");
+const nextButtonSmileModdelingElement = document.querySelector(".button--smile-moddeling");
+const nextButtonElementStapTwo = document.querySelector(".button--next-stap-two");
+const nextButtonElementStepThree = document.querySelector(".button--next-stap-three");
+const termsForm = document.querySelector(".form-block--description");
 const priseFormStapOne = document.querySelector(".form-block--stap-one");
 const priseFormStapTwo = document.querySelector(".form-block--stap-two");
 const priseFormStapThree = document.querySelector(".form-block--stap-three");
@@ -103,26 +126,29 @@ const priseFormStapThree = document.querySelector(".form-block--stap-three");
         priseFormStapTwo.classList.toggle("form-block--clouse"); 
         priseFormStapThree.classList.toggle("form-block--clouse");     
     }
-    const clickHandlerStapThree = function() {
-        priseFormStapThree.classList.toggle("form-block--clouse"); 
-        smileForm.classList.toggle("form-block--clouse");     
+    const clickHandlerStapThree = function(e) {
+        if (priseFormStapThree) {
+            priseFormStapThree.classList.toggle("form-block--clouse"); 
+            smileForm.classList.toggle("form-block--clouse");   
+        } 
     }
     const clickHandlerSmileModdeling = function() {
+        
         termsForm.classList.toggle("form-block--clouse"); 
         smileForm.classList.toggle("form-block--clouse");     
     }
 if (fotmBlockElement)
-{    
-    prevButtonElementStapOne.addEventListener("click", clickHandlerStapOne);
-    nextButtonSmileElement.addEventListener("click", clickHandlerStapThree);
+{   prevButtonElementStapOne.addEventListener("click", clickHandlerStapOne);
     nextButtonElementStapTwo.addEventListener("click", clickHandlerStapOne);
     nextButtonElementStepThree.addEventListener("click", clickHandlerStapTwo);
-}
-if (nextButtonSmileModdelingElement) {
-    nextButtonSmileModdelingElement.addEventListener("click", clickHandlerSmileModdeling);
-}
+   
+        
     
-
+}
+if (smileForm) {
+    nextButtonSmileModdelingElement.addEventListener("click", clickHandlerSmileModdeling);
+    nextButtonSmileElement.addEventListener("click", clickHandlerStapThree);
+}
 
 /*slider*/
 
@@ -171,7 +197,7 @@ slaTechnology.addEventListener("click", slaTechnologyHandler);
 
 /*form question*/
 
-const questionFormElement = document.querySelector(".button__form");
+const questionFormElement = document.querySelector(".button--form");
 const formInputQuestion = document.querySelectorAll(".input-form-question");
 const inputQuestionError = document.querySelectorAll(".input-question-error");
 
@@ -203,7 +229,6 @@ const questionformsend = function(e) {
             } else {
                 formAddError(input);
                 questionInput[index].classList.add("test-failed");
-                console.log(questionInput[index]);
             } 
         }    
     }
@@ -249,11 +274,12 @@ for (let index = 0; index < formInputQuestion.length; index++){
 
 /*Form description*/
 
-const descriptionFormElement = document.querySelector(".button__send");
-const descriptionFormElementStap = document.querySelector(".button__prev--stap");
+const descriptionFormElement = document.querySelector(".button--send");
+const descriptionFormElementStap = document.querySelector(".button--prev");
 const formInputDescription = document.querySelectorAll(".input--form-description");
 const inputDescriptionError = document.querySelectorAll(".input-description-error");
 const formBlockFile = document.querySelector(".form-block__file");
+
 
 let descriptionInput = [];
 
@@ -289,13 +315,11 @@ const descriptionFormSend = function(e) {
 
     let n = 0;
 
-    if(user.length >= 1) {
-        formBlockFile.classList.remove("test-failed");
-        console.log(user);
-        n = 1;
-    } else {
+    if(formBlockFile.classList.contains("form-block-test")) {
         formBlockFile.classList.add("test-failed");
         n = 0;
+    } else {
+        n = 1;
     }
 
     for (let index = 0; index < formInputDescription.length; index++) {
@@ -307,7 +331,6 @@ const descriptionFormSend = function(e) {
         if (n > 4) {
             termsForm.classList.toggle("form-block--clouse");
             smileForm.classList.toggle("form-block--clouse"); 
-            changeHandler;
         }
     }
     
@@ -351,32 +374,64 @@ for (let index = 0; index < formInputDescription.length; index++){
     const input = formInputDescription[index];
     input.addEventListener("input", formDescriptionInputBugFix);
 }
+;
 
-/*inputfile*/
+if (termsForm){
+    const selector = document.getElementById("file")
+    upload(selector, {
+        multi: true,
+        accept: ['.png', '.jpg'],
+    });
+}
 
-const user = [];
 
-const buttonUpload = document.querySelector(".inputfile");
+import {upload} from "./upload.js";
+
+/*select*/
+
+const selectBlock = document.querySelector(".select__input-block");
+const selectInput = document.querySelector(".select__input");
+const selectPanell = document.querySelector(".select__panell");
+const selectList = document.querySelectorAll(".select__item");
+const selectButton = document.querySelector(".button-select")
 
 
-const changeHandler = function (e) {
-    if(e.target.files.length >= 1) {
-        formBlockFile.classList.remove("test-failed");
-    } else {    
-        formBlockFile.classList.add("test-failed");
+const selectColection = [];
+
+const selectHandler = function () {
+    
+    selectPanell.classList.toggle("select-open");
+
+    selectColection.length = 0
+    
+    for (let index = 0; index < selectList.length; index++) {
+        selectList[index].id = Math.random();
+        selectColection.push(selectList[index]); 
     }
-    
-    let typefile = e.target.files;
-    user.push(typefile);
-    
 }
-if (buttonUpload) {
-    buttonUpload.addEventListener("change", changeHandler);
+
+const choiceHendler = function(e) {
+    selectInput.textContent = " "
+    for (let index = 0; index < selectColection.length; index++) {
+        if (e.target.id === selectColection[index].id) {
+            const name = e.target.id;
+            
+            const text = document.getElementById (`${name}`);
+            selectInput.insertAdjacentHTML('afterbegin', text.textContent);
+            /*selectPanell.classList.toggle("select-open");*/  
+        }
+    }   
 }
+if (selectBlock) {
+    selectButton.addEventListener('click', selectHandler);
+    selectPanell.addEventListener('click', choiceHendler);
+}
+
+
 
 /*Form stapTwo*/
 
-const nextStapTwoButtonElement = document.querySelector(".button__prev--stap-two");
+const nextStapTwoButtonElement = document.querySelector(".button--prev-stap-two");
 const formInputNext = document.querySelectorAll(".input-next");
 const inputStapTwoError = document.querySelectorAll(".input-staptwo-error");
 
@@ -403,7 +458,6 @@ const formnext = function(e) {
         if( window.innerWidth < 1200 ) {
             if (index === 2) {
                 formAddError(input);
-                console.log(index )
             }
         }
     }
@@ -424,7 +478,6 @@ const formnext = function(e) {
     }
 
     if (n > 4) {
-        console.log(n)
         priseFormStapTwo.classList.toggle("form-block--clouse");
         priseFormStapThree.classList.toggle("form-block--clouse");
     }
@@ -465,7 +518,7 @@ for (let index = 0; index < formInputNext.length; index++){
 
 /*Form stapThree*/
 
-const nextStapThreeButtonElement = document.querySelector(".button__prev--stap-three");
+const nextStapThreeButtonElement = document.querySelector(".button--prev-stap-three");
 const formInputStapThree = document.querySelectorAll(".input--stap-three");
 const inputStapThreeError = document.querySelectorAll(".input-stapthree-error");
 
@@ -511,7 +564,6 @@ const stapThreeFormSend = function(e) {
     }
 
     if (n > 1) {
-        console.log(n)
         priseFormStapThree.classList.toggle("form-block--clouse");
         smileForm.classList.toggle("form-block--clouse");
     }
@@ -569,7 +621,6 @@ const contactFormsend = function(e) {
 
     for (let index = 0; index < inputContactError.length; index++) {
         contactInput.push(inputContactError[index]);
-        console.log("hi");
     }
 
     for (let index = 0; index < formInputContact.length; index++){
@@ -591,7 +642,6 @@ const contactFormsend = function(e) {
             } else {
                 formAddError(input);
                 contactInput[index].classList.add("test-failed");
-                console.log(contactInput[index]);
             } 
         }    
     }
@@ -634,3 +684,16 @@ for (let index = 0; index < formInputContact.length; index++){
     const input = formInputContact[index];
     input.addEventListener("input", formContactInputBugFix);
 }
+
+const person = {
+    name: "ivan",
+    age: 40,
+    adress: {
+        city: "Kachovka",
+        street: "Pobeda",
+    }
+}
+
+
+
+
