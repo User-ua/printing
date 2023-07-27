@@ -5,9 +5,11 @@
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
+    "start": "gulp",
     "svgSprive": "gulp svgSprive",
     "zip": "gulp deployZIP",
-    "deploy": "gulp deployFTP"
+    "deployFTP": "gulp deployFTP",
+    "deploy": "gulp deploy"
   },
   "author": "User-ua",
   "license": "ISC",
