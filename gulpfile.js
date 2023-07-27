@@ -52,11 +52,3 @@ export {deployFTP}
 
 //Віполнение сценария по умолчанию
 gulp.task('default',  dev);
-
-const gulp = require('gulp');
-const ghPages = require('gulp-gh-pages');
-
-gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
-});
