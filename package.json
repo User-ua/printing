@@ -9,7 +9,7 @@
     "start": "gulp",
     "svgSprive": "gulp svgSprive",
     "zip": "gulp deployZIP",
-    "deploy": "gulp deployFTP"
+    "deploy": "gulp deploy"
   },
   "author": "User-ua",
   "license": "ISC",

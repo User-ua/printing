@@ -23,8 +23,9 @@ import {scss} from './mygulp/tasks/scss.js';
 import {js} from './mygulp/tasks/js.js';
 import {images} from './mygulp/tasks/images.js';
 import {otfToTtf, ttfToWoff, fontsStyle} from './mygulp/tasks/fonts.js';
-import {zip} from './mygulp/tasks/zip.js';
-import {ftp} from './mygulp/tasks/ftp.js';
+//import {zip} from './mygulp/tasks/zip.js';
+//import {ftp} from './mygulp/tasks/ftp.js';
+import {deploy} from './mygulp/tasks/zip.js';
 import {svgSprive} from './mygulp/tasks/svgSprive.js';
 
 //Наблюдатель за изменениями в файлах
@@ -43,20 +44,15 @@ const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 const mainTasks = gulp.series(fonts, gulp.parallel(copy, otfToTtf, html, scss, js, images));
 
 //Построение сценариев выполнени задач
-const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
-const deployZIP = gulp.series(reset, mainTasks, zip);
-const deployFTP = gulp.series(reset, mainTasks, ftp);
+const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server), deploy);
+//const deployZIP = gulp.series(reset, mainTasks, zip);
+//const deployFTP = gulp.series(reset, mainTasks, ftp);
 
-export {deployZIP}
-export {deployFTP}
+//export {deployZIP}
+//export {deployFTP}
 
 //Віполнение сценария по умолчанию
 gulp.task('default',  dev);
 
-const gulp = require('gulp');
-const ghPages = require('gulp-gh-pages');
 
-gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
-});
+
