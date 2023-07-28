@@ -8,8 +8,7 @@
     "start": "gulp",
     "svgSprive": "gulp svgSprive",
     "zip": "gulp deployZIP",
-    "deployFTP": "gulp deployFTP",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deployFTP"
   },
   "author": "User-ua",
   "license": "ISC",
