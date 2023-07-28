@@ -17,7 +17,7 @@
 
 import ghPages from 'gulp-gh-pages';
 
-export const deploy = () => {
+const deploy = () => {
     return gulp.src('./dist/**/*')
     .pipe(ghPages());
 }

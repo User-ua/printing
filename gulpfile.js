@@ -25,7 +25,6 @@ import {images} from './mygulp/tasks/images.js';
 import {otfToTtf, ttfToWoff, fontsStyle} from './mygulp/tasks/fonts.js';
 //import {zip} from './mygulp/tasks/zip.js';
 //import {ftp} from './mygulp/tasks/ftp.js';
-import {deploy} from './mygulp/tasks/zip.js';
 import {svgSprive} from './mygulp/tasks/svgSprive.js';
 
 //Наблюдатель за изменениями в файлах
@@ -44,7 +43,7 @@ const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 const mainTasks = gulp.series(fonts, gulp.parallel(copy, otfToTtf, html, scss, js, images));
 
 //Построение сценариев выполнени задач
-const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server), deploy);
+const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 //const deployZIP = gulp.series(reset, mainTasks, zip);
 //const deployFTP = gulp.series(reset, mainTasks, ftp);
 
@@ -54,5 +53,9 @@ const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server), deploy
 //Віполнение сценария по умолчанию
 gulp.task('default',  dev);
 
+import ghPages from 'gulp-gh-pages';
 
-
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
