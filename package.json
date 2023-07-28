@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
+    
     "start": "gulp",
     "svgSprive": "gulp svgSprive",
     "zip": "gulp deployZIP",
