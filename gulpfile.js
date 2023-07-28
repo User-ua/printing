@@ -36,15 +36,6 @@ function watcher () {
     gulp.watch (path.watch.img, images);
 }
 
-const gulp = require('gulp');
-const ghPages = require('gulp-gh-pages');
-
-const deploy = () => {
-    return gulp.src('./dist/**/*')
-    .pipe(ghPages());
-}
-
-
 export { svgSprive }
 
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
@@ -52,7 +43,7 @@ const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 const mainTasks = gulp.series(fonts, gulp.parallel(copy, otfToTtf, html, scss, js, images));
 
 //Построение сценариев выполнени задач
-const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server), deploy);
+const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const deployZIP = gulp.series(reset, mainTasks, zip);
 const deployFTP = gulp.series(reset, mainTasks, ftp);
 
@@ -61,3 +52,11 @@ export {deployFTP}
 
 //Віполнение сценария по умолчанию
 gulp.task('default',  dev);
+
+const gulp = require('gulp');
+const ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
